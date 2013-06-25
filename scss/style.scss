@@ -12,23 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 General comments (optional).
 */
-/******
-GLOBAL
-*******/
-html {
-  margin: 0; }
 
-#page {
-  width: 1024px;
-  margin: 0 auto; }
-
-/*************
-	MASTHEAD
-**************/
-.main-header-logo {
-  width: 960px;
-  height: 201px; }
-
-#tech-hexagons {
-  float: right;
-  margin-top: -210px; }
+@import "variables";
+@import "global";
+@import "masthead";
