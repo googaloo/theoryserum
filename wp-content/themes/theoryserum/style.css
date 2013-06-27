@@ -1,16 +1,110 @@
 /*
-Theme Name: Twenty Eleven
-Theme URI: http://wordpress.org/extend/themes/twentyeleven
-Author: the WordPress team
-Author URI: http://wordpress.org/
-Description: The 2011 theme for WordPress is sophisticated, lightweight, and adaptable. Make it yours with a custom menu, header image, and background -- then go further with available theme options for light or dark color scheme, custom link colors, and three layout choices. Twenty Eleven comes equipped with a Showcase page template that transforms your front page into a showcase to show off your best content, widget support galore (sidebar, three footer areas, and a Showcase page widget area), and a custom "Ephemera" widget to display your Aside, Link, Quote, or Status posts. Included are styles for print and for the admin editor, support for featured images (as custom header images on posts and pages and as large images on featured "sticky" posts), and special styles for six different post formats.
-Version: 1.5
+Theme Name: Learn Wordpress
+Theme URI: http://wordpress.org/
+Description: My Wordpress Theme
+Author: Rustdog
+Author URI: http://beardedchildren.com
+Version: 1.0
+Tags:
+
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
-Text Domain: twentyeleven
+
+General comments (optional).
 */
+/******
+GLOBAL
+*******/
+html {
+  margin: 0; }
 
-/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
--------------------------------------------------------------- */
+#page {
+  width: 1024px;
+  margin: 0 auto; }
 
+/*************
+	MASTHEAD
+**************/
+.main-header-logo {
+  width: 960px;
+  height: 201px; }
+
+#tech-hexagons {
+  float: right;
+  margin-top: -210px;
+  display: none; }
+
+.hexagon-box {
+  float: right;
+  margin-top: -190px; }
+
+.hexagon {
+  width: 58px;
+  height: 67px; }
+
+.hexagon:nth-child(2) {
+  margin: -68px 0 0 65px; }
+
+.hexagon:nth-child(3) {
+  margin: -68px 0 0 130px; }
+
+.hexagon:nth-child(4) {
+  margin: -10px 0 0 33px; }
+
+.hexagon:nth-child(5) {
+  margin: -68px 0 0 98px; }
+
+.hexagon:nth-child(6) {
+  margin: -68px 0 0 163px; }
+
+.hexagon:nth-child(7) {
+  margin: -10px 0 0 0; }
+
+.hexagon:nth-child(8) {
+  margin: -66px 0 0 65px; }
+
+.hexagon:nth-child(9) {
+  margin: -68px 0 0 132px; }
+
+/* ANIMATIONS */
+.hexagon:hover {
+  animation: scaleFade 0.5s;
+  animation-iteration-count: 1;
+  -webkit-animation: scaleFade 0.5s;
+  -webkit-animation-iteration-count: 1; }
+
+@keyframes scaleFade {
+  0% {
+    transform: scale(1, 1); }
+
+  50% {
+    transform: scale(0.85, 0.85);
+    opacity: 0; }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 1; } }
+
+@-webkit-keyframes scaleFade {
+  0% {
+    -webkit-transform: scale(1, 1); }
+
+  50% {
+    -webkit-transform: scale(0.85, 0.85);
+    opacity: 0; }
+
+  100% {
+    -webkit-transform: scale(1, 1);
+    opacity: 1; } }
+
+@-moz-keyframes scaleFade {
+  0% {
+    -moz-transform: scale(1, 1); }
+
+  50% {
+    -moz-transform: scale(0.85, 0.85);
+    opacity: 0; }
+
+  100% {
+    -moz-transform: scale(1, 1);
+    opacity: 1; } }
