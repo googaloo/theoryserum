@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 /**
  * Front to the WordPress application. This file doesn't do anything, but loads
@@ -15,3 +16,10 @@ define('WP_USE_THEMES', true);
 
 /** Loads the WordPress Environment and Template */
 require('./wp-blog-header.php');
+=======
+<?php get_header(); ?>
+
+
+
+<?php get_footer(); ?>
+>>>>>>> 8e8b24ca77562f15df540d0c0823521cd65db57a
