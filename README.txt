@@ -1,1 +1,0 @@
-This is the official Github repo for TheorySerum

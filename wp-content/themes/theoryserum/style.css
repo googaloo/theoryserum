@@ -27,16 +27,28 @@ html {
 **************/
 .main-header-logo {
   width: 960px;
-  height: 201px; }
+  height: 201px;
+  z-index: 9999; }
 
 #tech-hexagons {
   float: right;
   margin-top: -210px;
   display: none; }
 
+.tech-rotate-box {
+  width: 190px;
+  height: 190px;
+  float: left;
+  margin: -265px 0 0 -110px;
+  animation: rotateTech 3s infinite;
+  -webkit-animation: rotateTech 5s infinite;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  z-index: 1; }
+
 .hexagon-box {
   float: right;
-  margin-top: -190px; }
+  margin: -7px -45px 0 0; }
 
 .hexagon {
   width: 58px;
@@ -68,16 +80,14 @@ html {
 
 /* ANIMATIONS */
 .hexagon:hover {
-  animation: scaleFade 0.5s;
-  animation-iteration-count: 1;
-  -webkit-animation: scaleFade 0.5s;
-  -webkit-animation-iteration-count: 1; }
+  animation: scaleFade 0.5s 1;
+  -webkit-animation: scaleFade 0.5s 1; }
 
 @keyframes scaleFade {
   0% {
     transform: scale(1, 1); }
 
-  50% {
+  25% {
     transform: scale(0.85, 0.85);
     opacity: 0; }
 
@@ -89,7 +99,7 @@ html {
   0% {
     -webkit-transform: scale(1, 1); }
 
-  50% {
+  25% {
     -webkit-transform: scale(0.85, 0.85);
     opacity: 0; }
 
@@ -101,10 +111,58 @@ html {
   0% {
     -moz-transform: scale(1, 1); }
 
-  50% {
+  25% {
     -moz-transform: scale(0.85, 0.85);
     opacity: 0; }
 
   100% {
     -moz-transform: scale(1, 1);
     opacity: 1; } }
+
+@keyframes rotateTech {
+  0% {
+    transform: rotate(0deg); }
+
+  25% {
+    transform: rotate(90deg); }
+
+  50% {
+    transform: rotate(180deg); }
+
+  75% {
+    transform: rotate(270deg); }
+
+  100% {
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes rotateTech {
+  0% {
+    -webkit-transform: rotate(0deg); }
+
+  25% {
+    -webkit-transform: rotate(90deg); }
+
+  50% {
+    -webkit-transform: rotate(180deg); }
+
+  75% {
+    -webkit-transform: rotate(270deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@-moz-keyframes rotateTech {
+  0% {
+    -moz-transform: rotate(0deg); }
+
+  25% {
+    -moz-transform: rotate(90deg); }
+
+  50% {
+    -moz-transform: rotate(180deg); }
+
+  75% {
+    -moz-transform: rotate(270deg); }
+
+  100% {
+    -moz-transform: rotate(360deg); } }
