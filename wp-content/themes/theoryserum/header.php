@@ -19,15 +19,15 @@
 
 				<div class="hexagon-box">
 
-					<div class='hexagon' style="background: url('<?php echo get_template_directory_uri() ?>/images/hexagon.png'), no-repeat;"></div>
-					<div class='hexagon' style="background: url('<?php echo get_template_directory_uri() ?>/images/hexagon.png'), no-repeat;"></div>
-					<div class='hexagon' style="background: url('<?php echo get_template_directory_uri() ?>/images/hexagon.png'), no-repeat;"></div>
-					<div class='hexagon' style="background: url('<?php echo get_template_directory_uri() ?>/images/hexagon.png'), no-repeat;"></div>
-					<div class='hexagon' style="background: url('<?php echo get_template_directory_uri() ?>/images/hexagon.png'), no-repeat;"></div>
-					<div class='hexagon' style="background: url('<?php echo get_template_directory_uri() ?>/images/hexagon.png'), no-repeat;"></div>
-					<div class='hexagon' style="background: url('<?php echo get_template_directory_uri() ?>/images/hexagon.png'), no-repeat;"></div>
-					<div class='hexagon' style="background: url('<?php echo get_template_directory_uri() ?>/images/hexagon.png'), no-repeat;"></div>
-					<div class='hexagon' style="background: url('<?php echo get_template_directory_uri() ?>/images/hexagon.png'), no-repeat;"></div>
+					<div class='hexagon' style="background: url('<?php echo get_template_directory_uri(); ?>/images/hexagon.png'), no-repeat;"></div>
+					<div class='hexagon' style="background: url('<?php echo get_template_directory_uri(); ?>/images/hexagon.png'), no-repeat;"></div>
+					<div class='hexagon' style="background: url('<?php echo get_template_directory_uri(); ?>/images/hexagon.png'), no-repeat;"></div>
+					<div class='hexagon' style="background: url('<?php echo get_template_directory_uri(); ?>/images/hexagon.png'), no-repeat;"></div>
+					<div class='hexagon' style="background: url('<?php echo get_template_directory_uri(); ?>/images/hexagon.png'), no-repeat;"></div>
+					<div class='hexagon' style="background: url('<?php echo get_template_directory_uri(); ?>/images/hexagon.png'), no-repeat;"></div>
+					<div class='hexagon' style="background: url('<?php echo get_template_directory_uri(); ?>/images/hexagon.png'), no-repeat;"></div>
+					<div class='hexagon' style="background: url('<?php echo get_template_directory_uri(); ?>/images/hexagon.png'), no-repeat;"></div>
+					<div class='hexagon' style="background: url('<?php echo get_template_directory_uri(); ?>/images/hexagon.png'), no-repeat;"></div>
 
 				</div> <!-- end .hexagon-box -->
 
@@ -38,8 +38,23 @@
 
 		</div>
 
-		<nav class="main-nav">
+		<nav>
 
+			<?php //wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>			
+			<?php $nav_args = array(
+		        
+		        'depth'       => 0,
+				'sort_column' => 'menu_order, post_title',
+				'menu_class'  => 'main-menu',
+				'include'     => '',
+				'exclude'     => '',
+				'echo'        => true,
+				'show_home'   => 'Blog',
+				'link_before' => '',
+				'link_after'  => '' 
 
+				);
+			?>
+			<?php wp_page_menu( $nav_args ); ?>
 
 		</nav>

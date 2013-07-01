@@ -1,0 +1,1293 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"hexagonT",
+				"hexagonTarget"
+			],
+			[
+				"hexagon",
+				"hexagon1"
+			],
+			[
+				"after",
+				"after-banner-bucket"
+			],
+			[
+				"need_to",
+				"need_to_know"
+			],
+			[
+				"vol",
+				"vol_iss"
+			],
+			[
+				"after_",
+				"after_art_bucket"
+			],
+			[
+				"write",
+				"write_file"
+			],
+			[
+				"art",
+				"artCount"
+			],
+			[
+				"select-art-",
+				"select-art-dept"
+			],
+			[
+				"need_t",
+				"need_to_know"
+			],
+			[
+				"update",
+				"updatePreview"
+			],
+			[
+				"need",
+				"needKnow1"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"need_to_kno",
+				"need_to_know_header"
+			],
+			[
+				"rotating",
+				"rotating_banner_link"
+			],
+			[
+				"fee",
+				"feedback_link"
+			],
+			[
+				"sec",
+				"secondary_color"
+			],
+			[
+				"ft_ar",
+				"ft_art_body"
+			],
+			[
+				"ft",
+				"ft_art_head"
+			],
+			[
+				"inlin",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "wp-content/themes/theoryserum/functions.php",
+			"settings":
+			{
+				"buffer_size": 669,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/theoryserum/index.php",
+			"settings":
+			{
+				"buffer_size": 48,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/theoryserum/scss/global.scss",
+			"settings":
+			{
+				"buffer_size": 92,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/theoryserum/footer.php",
+			"settings":
+			{
+				"buffer_size": 566,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/theoryserum/scss/style.scss",
+			"settings":
+			{
+				"buffer_size": 365,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/theoryserum/scss/variables.scss",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/theoryserum/style.css",
+			"settings":
+			{
+				"buffer_size": 2792,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/theoryserum/js/script.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/theoryserum/header.php",
+			"settings":
+			{
+				"buffer_size": 2024,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/theoryserum/js/hexagon-canvas.js",
+			"settings":
+			{
+				"buffer_size": 6145,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/theoryserum/normalize.css",
+			"settings":
+			{
+				"buffer_size": 7345,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 307.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pacagin",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"packainst",
+				"Package Control: Install Package"
+			],
+			[
+				"packinst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"syntahtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"synta",
+				"Set Syntax: PHP"
+			],
+			[
+				"syntactio",
+				"Set Syntax: ActionScript"
+			],
+			[
+				"synjava",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"packagein",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
+				"syntaxjso",
+				"Set Syntax: JSON"
+			],
+			[
+				"syntaxjac",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syntaxph",
+				"Set Syntax: PHP"
+			],
+			[
+				"consol",
+				"Set Syntax: R Console"
+			],
+			[
+				"paca",
+				"Package Control: Install Package"
+			],
+			[
+				"packain",
+				"Package Control: Install Package"
+			],
+			[
+				"packageinst",
+				"Package Control: Install Package"
+			],
+			[
+				"packaginst",
+				"Package Control: Install Package"
+			],
+			[
+				"packinsta",
+				"Package Control: Install Package"
+			],
+			[
+				"package control install",
+				"Package Control: Install Package"
+			],
+			[
+				"syntaxphp",
+				"Set Syntax: PHP"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"toggl",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"toggle mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"toggle min",
+				"View: Toggle Minimap"
+			],
+			[
+				"javascript",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/normalize.css",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/header.php",
+		"/Applications/MAMP/htdocs/theoryserum/wp-config.php",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/js/hexagon-canvas.js",
+		"/Users/rlodom/Desktop/062713_ApolloExpress_25.html",
+		"/Users/rlodom/Desktop/EaselJS-master/examples/DragAndDrop_hitArea.html",
+		"/Users/rlodom/Desktop/EaselJS-master/examples/Filters_input.html",
+		"/Users/rlodom/Desktop/EaselJS-master/examples/Filters_simple.html",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/js/kineticjs.js",
+		"/Users/rlodom/Desktop/061213_Apollo_Edu_Mgrs_Doug.html",
+		"/Users/rlodom/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/js/BoxBlurFilter.js",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/js/easeljs-0.6.1.min.js",
+		"/Users/rlodom/Desktop/EaselJS-master/examples/Icons.html",
+		"/Applications/MAMP/htdocs/theoryserum/README.txt",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/style.css",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/style.scss",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/twentyeleven/style.css",
+		"/Volumes/campus/C-APO-Corporate/Public Affairs/Creative Services/Rusty/Resources/templates/WIU_template.html",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/js/ddSlick.js",
+		"/Volumes/campus/C-APO-Corporate/Public Affairs/Creative Services/Rusty/Resources/templates/Apollo_Advisor_Template.html",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/config/config.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/config/autoload.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/models/home_model.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/js/home.js",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/home_view.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/controllers/generator.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/controllers/home.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/js/generator.js",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/includes/template.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/controllers/create_newsletter.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/includes/header.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/libraries/templates/newsletters/Apollo_express.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/newsletter_view.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/libraries/templates/newsletters/Ping.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/css/scss/_preview.scss",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/libraries/templates/newsletters/Phoenix_view.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/libraries/templates/newsletters/Apollo_advisor.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/libraries/templates/newsletters/The_local.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/upload-ft-image.php",
+		"/Users/rlodom/Desktop/Back-To-School-Drive.html",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/css/style.css",
+		"/Users/rlodom/Desktop/haxe_test/hello.hxml",
+		"/Users/rlodom/Desktop/haxe_test/demo.hxml",
+		"/Users/rlodom/Desktop/haxe_test/Demo.hx",
+		"/Users/rlodom/Desktop/haxe_test/Hello.hx",
+		"/Users/rlodom/Desktop/whatever.hx",
+		"/Users/rlodom/Desktop/pages/page (8).html",
+		"/Users/rlodom/Desktop/nodeTest/server.js",
+		"/Users/rlodom/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/config/database.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/includes/footer.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/uploaded-banner-image.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/uploaded-ft-image.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/css/scss/_variables.scss",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/libraries/templates/newsletters/Phoenix_local.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/.htaccess",
+		"/Users/rlodom/Desktop/generator.sql",
+		"/Users/rlodom/Desktop/gruntTest/src/game/game.ts",
+		"/Users/rlodom/Desktop/page.html",
+		"/Users/rlodom/Desktop/DreamBig Analytics/page (23).html",
+		"/Users/rlodom/Desktop/DreamBig Analytics/page (17).html",
+		"/Users/rlodom/Desktop/DreamBig Analytics/page (21).html",
+		"/Users/rlodom/Desktop/tinymce/js/tinymce/jquery.tinymce.min.js",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/js/tinymce/jscripts/tiny_mce/jquery.tinymce.js",
+		"/Users/rlodom/Desktop/tinymce/js/tinymce/tinymce.min.js",
+		"/Volumes/campus/C-APO-Corporate/Public Affairs/Creative Services/Rusty/templates/epic_postcard.html",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/css/scss/_generator.scss",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/css/scss/style.scss",
+		"/Users/rlodom/Desktop/page (3).html",
+		"/Users/rlodom/Desktop/page (2).html",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/css/scss/_global.scss",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/upload-banner-image.php",
+		"/Users/rlodom/Desktop/page (9).html",
+		"/Users/rlodom/Desktop/ApolloExpress_Code.html",
+		"/Users/rlodom/Desktop/Apollo_Express.html",
+		"/Users/rlodom/Desktop/Planview_Email.html",
+		"/Users/rlodom/Desktop/page (6).html",
+		"/Users/rlodom/Desktop/aws-sdk-php-master/src/Aws/Common/Credentials/Credentials.php",
+		"/Users/rlodom/Desktop/aws-sdk-php-master/src/Aws/Common/Resources/aws-config.php",
+		"/Applications/MAMP/htdocs/tester/comp.php",
+		"/Applications/MAMP/htdocs/tester/what.php",
+		"/Users/rlodom/Desktop/Apollo Express HTML/apollo-express.html",
+		"/Users/rlodom/Desktop/032113_apollo_express18.html",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/js/jquery-tinymce.js",
+		"/Users/rlodom/Desktop/behind_the_numbers_postcard_03-02-2013.html",
+		"/Users/rlodom/Desktop/2013-04-02-behind-the-numbers.html",
+		"/Users/rlodom/Desktop/Apollo_Advisor_Template.html",
+		"/Users/rlodom/Desktop/tinymce/examples/simple.html",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/controllers/uploaded-image.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/upload-image.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/uploaded-image.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/config/s3.php",
+		"/Users/rlodom/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/Users/rlodom/Library/Application Support/Sublime Text 2/Packages/User/JSON.sublime-settings",
+		"/Users/rlodom/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/rlodom/Library/Application Support/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/js/newsletter.js",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/untitled",
+		"/Applications/MAMP/htdocs/bearded-children/wp-content/themes/beardedchildren/functions.php",
+		"/Applications/MAMP/htdocs/bearded-children/wp-content/themes/beardedchildren/js/bc-slider.js",
+		"/Applications/MAMP/htdocs/bearded-children/wp-content/themes/beardedchildren/bc-video-archive.php",
+		"/Applications/MAMP/htdocs/bearded-children/wp-content/themes/beardedchildren/front-page.php",
+		"/Applications/MAMP/htdocs/bearded-children/wp-content/themes/beardedchildren/sidebar-bc-slider.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/libraries/templates/newsletters/Aes.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/generator_view.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/system/libraries/Calendar.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/libraries/templates/newsletters/aes.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/system/libraries/Aes.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/templates/newsletters/aes.php",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/controllers/blamo.css",
+		"/Applications/MAMP/htdocs/email-newsletter-generator/application/controllers/whatever.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"hexagon[ranHex]",
+			"1",
+			"hexagon1",
+			"EEEEEE",
+			"hexegon",
+			"blur",
+			"-",
+			"boxblurfilte",
+			"boxblurfilter",
+			"displayobject",
+			"$bucket",
+			"$bucket\n\n\n\n\n\n\n\n\n$bucket",
+			"s3\ns3",
+			"s3",
+			"tinymce",
+			"ft_art_btn",
+			"ft_art_btn\n\n\n\n\nft_art_btn",
+			"ft_art_btn\n\n\n\nft_art_btn",
+			"cellpading",
+			"volume",
+			"$after_ft_bucket",
+			"$if_rotating_banner",
+			"$if_ft_article_image",
+			"$if_dividers",
+			"$need_to_know",
+			"$if_need_to_know",
+			"$vol_iss",
+			"$if_rotating_banner",
+			"$if_ft_article_image",
+			"$if_dividers",
+			"$if_need_to_know",
+			"$vol_iss",
+			"if_ft_article_image",
+			"divider",
+			"need_to_know",
+			"express",
+			"vol_iss",
+			"volume-issue-container",
+			"banner",
+			"'',",
+			"bucket",
+			"upload",
+			"express",
+			"$misc",
+			"apollo_express",
+			"apollo",
+			"text",
+			"feat-art-cta-",
+			"text",
+			"cta-text",
+			"ft-art-cta-text",
+			"ft_art_cta_text",
+			"ft_art_cta",
+			"rewrite",
+			"phaser",
+			"learn",
+			"ft-art-cta-text",
+			"$ft_art_btn",
+			"art_headline_color",
+			"all_articles",
+			"spacer",
+			"ft_art_btn",
+			"$ft_art_btn",
+			"jump",
+			"$ft_art_btn",
+			"$ft_art_btn\n\n\n$ft_art_btn",
+			"$ft_art_btn",
+			"ft_art_img",
+			"write_file",
+			"templ",
+			"char_limit",
+			"char-limit",
+			"char",
+			"article-box",
+			"=== 1",
+			"console.",
+			"#art-dept",
+			"var i",
+			"empty",
+			"count",
+			"table",
+			"need-know-1",
+			"artCount",
+			"deptColor",
+			"artDept",
+			"td",
+			"updateArticleNames",
+			"close-article",
+			"close",
+			"button_color",
+			"need-to-know-list",
+			"ul",
+			"after_ft_bucket",
+			"after_f",
+			"learn",
+			"leard",
+			"$title",
+			"content",
+			"4f96c6",
+			"after_ft_bucket",
+			"survey",
+			"img",
+			"survey",
+			"line-height",
+			"input type=\"text\"",
+			"survey",
+			"issue-background",
+			"divider",
+			"photo-wrapper",
+			"featur",
+			"featured",
+			"section-divider-mobile",
+			"footer-news-thumbnail-container",
+			"need-to-know-cont",
+			"128",
+			"echo",
+			"f4be8c",
+			"52a0d4",
+			"e87d24",
+			"		\n",
+			"char-count",
+			"getContent",
+			"charCount",
+			"nput-feat-body_container",
+			"cheeser",
+			"email_banner",
+			"'",
+			"cta-text"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "wp-content/themes/theoryserum/functions.php",
+					"settings":
+					{
+						"buffer_size": 669,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								663,
+								663
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "wp-content/themes/theoryserum/index.php",
+					"settings":
+					{
+						"buffer_size": 48,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24,
+								24
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wp-content/themes/theoryserum/scss/global.scss",
+					"settings":
+					{
+						"buffer_size": 92,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								43,
+								43
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "wp-content/themes/theoryserum/footer.php",
+					"settings":
+					{
+						"buffer_size": 566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								558,
+								558
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "wp-content/themes/theoryserum/scss/style.scss",
+					"settings":
+					{
+						"buffer_size": 365,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								327,
+								327
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "wp-content/themes/theoryserum/scss/variables.scss",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "wp-content/themes/theoryserum/style.css",
+					"settings":
+					{
+						"buffer_size": 2792,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1794,
+								1794
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "wp-content/themes/theoryserum/js/script.js",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "wp-content/themes/theoryserum/header.php",
+					"settings":
+					{
+						"buffer_size": 2024,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2023,
+								2023
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "wp-content/themes/theoryserum/js/hexagon-canvas.js",
+					"settings":
+					{
+						"buffer_size": 6145,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6143,
+								6143
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2942.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "wp-content/themes/theoryserum/normalize.css",
+					"settings":
+					{
+						"buffer_size": 7345,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1296.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"norma",
+				"wp-content/themes/theoryserum/normalize.css"
+			],
+			[
+				"can",
+				"wp-content/themes/theoryserum/js/hexagon-canvas.js"
+			],
+			[
+				"header",
+				"wp-content/themes/theoryserum/header.php"
+			],
+			[
+				"scri",
+				"wp-content/themes/theoryserum/js/script.js"
+			],
+			[
+				"style",
+				"wp-content/themes/theoryserum/style.css"
+			],
+			[
+				"boxbl",
+				"wp-content/themes/theoryserum/js/BoxBlurFilter.js"
+			],
+			[
+				"ease",
+				"wp-content/themes/theoryserum/js/easeljs-0.6.1.min.js"
+			],
+			[
+				"easel",
+				"wp-content/themes/theoryserum/js/easeljs-0.6.1.min.js"
+			],
+			[
+				"conf",
+				"wp-config-sample.php"
+			],
+			[
+				"gener",
+				"application/js/generator.js"
+			],
+			[
+				"head",
+				"application/views/includes/header.php"
+			],
+			[
+				"auto",
+				"application/config/autoload.php"
+			],
+			[
+				"config",
+				"application/config/config.php"
+			],
+			[
+				"creanew",
+				"application/controllers/create_newsletter.php"
+			],
+			[
+				"create",
+				"application/controllers/create_newsletter.php"
+			],
+			[
+				"generat",
+				"application/js/generator.js"
+			],
+			[
+				"templa",
+				"application/views/includes/template.php"
+			],
+			[
+				"newvi",
+				"application/views/newsletter_view.php"
+			],
+			[
+				"apoll",
+				"application/libraries/templates/newsletters/Apollo_express.php"
+			],
+			[
+				"homemod",
+				"application/models/home_model.php"
+			],
+			[
+				"homev",
+				"application/views/home_view.php"
+			],
+			[
+				"hom",
+				"application/controllers/home.php"
+			],
+			[
+				"home",
+				"application/controllers/home.php"
+			],
+			[
+				"upload",
+				"application/views/upload-ft-image.php"
+			],
+			[
+				"css",
+				"application/css/style.css"
+			],
+			[
+				"prevscss",
+				"application/css/scss/_preview.scss"
+			],
+			[
+				"expres",
+				"application/libraries/templates/newsletters/Apollo_express.php"
+			],
+			[
+				"theloc",
+				"application/libraries/templates/newsletters/The_local.php"
+			],
+			[
+				"generjs",
+				"application/js/generator.js"
+			],
+			[
+				"local",
+				"application/libraries/templates/newsletters/Phoenix_local.php"
+			],
+			[
+				"homevi",
+				"application/views/home_view.php"
+			],
+			[
+				"databas",
+				"application/config/database.php"
+			],
+			[
+				"footer",
+				"application/views/includes/footer.php"
+			],
+			[
+				"apollo",
+				"application/libraries/templates/newsletters/Apollo_express.php"
+			],
+			[
+				"view",
+				"application/views/newsletter_view.php"
+			],
+			[
+				"htacc",
+				"application/.htaccess"
+			],
+			[
+				"prev",
+				"application/css/scss/_preview.scss"
+			],
+			[
+				"prevscs",
+				"application/css/scss/_preview.scss"
+			],
+			[
+				"phoenixlo",
+				"application/libraries/templates/newsletters/Phoenix_local.php"
+			],
+			[
+				"previscs",
+				"application/css/scss/_preview.scss"
+			],
+			[
+				"generscss",
+				"application/css/scss/_generator.scss"
+			],
+			[
+				"preview",
+				"application/css/scss/_preview.scss"
+			],
+			[
+				"uploaded",
+				"application/views/uploaded-banner-image.php"
+			],
+			[
+				"scss",
+				"application/css/scss/_generator.scss"
+			],
+			[
+				"generscs",
+				"application/css/scss/_generator.scss"
+			],
+			[
+				"varia",
+				"application/css/scss/_variables.scss"
+			],
+			[
+				"previ",
+				"application/css/scss/_preview.scss"
+			],
+			[
+				"genera",
+				"application/css/scss/_generator.scss"
+			],
+			[
+				"genert",
+				"application/controllers/generator.php"
+			],
+			[
+				"sty",
+				"application/css/style.css"
+			],
+			[
+				"hea",
+				"application/views/includes/header.php"
+			],
+			[
+				"jquer",
+				"application/js/jquery-tinymce.js"
+			],
+			[
+				"genercss",
+				"application/css/scss/_generator.scss"
+			],
+			[
+				"uplo",
+				"application/controllers/uploaded-image.php"
+			],
+			[
+				"gen",
+				"application/css/scss/_generator.scss"
+			],
+			[
+				"con",
+				"application/config/config.php"
+			],
+			[
+				"s3",
+				"application/config/s3.php"
+			],
+			[
+				"foot",
+				"application/views/includes/footer.php"
+			],
+			[
+				"globa",
+				"application/css/scss/_global.scss"
+			],
+			[
+				"vari",
+				"application/css/scss/_variables.scss"
+			],
+			[
+				"variab",
+				"application/css/scss/_variables.scss"
+			],
+			[
+				"homevie",
+				"application/views/home_view.php"
+			],
+			[
+				"apolloex",
+				"application/libraries/templates/newsletters/Apollo_express.php"
+			],
+			[
+				"newsletvi",
+				"application/views/newsletter_view.php"
+			],
+			[
+				"function",
+				"wp-content/themes/beardedchildren/functions.php"
+			],
+			[
+				"slider",
+				"wp-content/themes/beardedchildren/sidebar-bc-slider.php"
+			],
+			[
+				"bcslid",
+				"wp-content/themes/beardedchildren/js/bc-slider.js"
+			],
+			[
+				"front",
+				"wp-content/themes/beardedchildren/front-page.php"
+			],
+			[
+				"bcvid",
+				"wp-content/themes/beardedchildren/bc-video-archive.php"
+			],
+			[
+				"newl",
+				"application/views/newsletter_view.php"
+			],
+			[
+				"calend",
+				"system/libraries/Calendar.php"
+			],
+			[
+				"aes",
+				"application/libraries/templates/newsletters/Aes.php"
+			],
+			[
+				"confi",
+				"application/config/config.php"
+			],
+			[
+				"template",
+				"application/libraries/templates/newsletters/aes.php"
+			],
+			[
+				"style.css",
+				"application/css/style.css"
+			],
+			[
+				"",
+				"application/controllers/home.php"
+			],
+			[
+				"model",
+				"application/models/home_model.php"
+			],
+			[
+				"home_mode",
+				"application/models/home_model.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 217.0,
+	"status_bar_visible": true
+}
