@@ -34,7 +34,7 @@
 	</div> <!-- end .footer -->	
 
 	</div> <!-- end #page .hfeed .site -->
-
+	<div class="ts-copyright">&copy; <?php the_date('Y'); ?> <strong>TheorySerum</strong>. All Rights Reserved.</div>
 <?php wp_footer(); ?>
 
 </body>

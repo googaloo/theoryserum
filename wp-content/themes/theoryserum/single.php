@@ -25,6 +25,4 @@ endif;
 
 </div><!-- end .single-pagination -->
 
-?>
-
 <?php get_footer(); ?>

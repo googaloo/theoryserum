@@ -24,11 +24,7 @@
 
 		<article><?php the_excerpt(); ?><a href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
 
-		<div class="my-featured-stuff-container">
-
-			<header><h2 class="subheader">My Featured Stuff</h2></header>
-
-		</div><!-- end .my-featured-stuff-container -->
+		<?php get_sidebar(); ?>
 
 	<div><!-- end .featured-sidebar-container -->
 
@@ -42,7 +38,7 @@
 
 	while ( have_posts() ) : the_post(); ?>
 
-		<p class="article-divider"></p>
+		<p class="divider"></p>
 
 		<?php if ( get_post_meta( $post->ID, 'wpcf-top-featured-post', true ) !== 'top-featured' ) : ?>
 
