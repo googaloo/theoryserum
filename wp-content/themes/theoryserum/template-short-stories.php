@@ -1,10 +1,23 @@
+<?php
+
+/*
+ * 
+ *  Template Name: Short Stories
+ * 
+ */
+
+?>
+
 <?php get_header(); ?>
+
+	<h1 class="stories-header">Short Stories</h1>
 
 	<?php
 
-	$feat_query = new WP_Query( array( 'meta_value' => 'top-featured','posts_per_page' => -1 ) );
+	// Needs to run through all posts to grab latest top featured so 'posts_per_page' needs to be large enough to run through it
+	$short_stories_top_featured_query = new WP_Query( array( 'post_type' => 'my-short-stories','posts_per_page' => -1 ) );
 
-	while ($feat_query->have_posts() ) : $feat_query->the_post(); ?>
+	while ($short_stories_top_featured_query->have_posts() ) : $short_stories_top_featured_query->the_post(); ?>
 
 	<div class="featured-sidebar-container">
 
@@ -16,7 +29,6 @@
 
 		<header>
 
-			<div class="post-cat-box"><?php echo get_the_category_list(); ?></div><!-- end .post-cat-box -->
 			<h2><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
 			<div class="post-date"><?php the_date(); ?></div><!-- end .post-date -->
 
@@ -36,11 +48,13 @@
 
 	wp_reset_postdata();
 
-	while ( have_posts() ) : the_post(); ?>
+	$short_stories_query = new WP_Query( array( 'post_type' => 'my-short-stories','posts_per_page' => 10 ) );
 
-		<p class="divider"></p>
+	while ( $short_stories_query->have_posts() ) : $short_stories_query->the_post(); ?>
 
 		<?php if ( get_post_meta( $post->ID, 'wpcf-top-featured-post', true ) !== 'top-featured' ) : ?>
+
+			<p class="divider"></p>
 
 			<div class="article-ft-img">
 
@@ -62,7 +76,6 @@
 
 			<header>
 
-				<div class="post-cat-box"><?php echo get_the_category_list(); ?></div><!-- end .post-cat-box -->
 				<h2><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
 				<div class="post-date"><?php the_date(); ?></div><!-- end .post-date -->
 

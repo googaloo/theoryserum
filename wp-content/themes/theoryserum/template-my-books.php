@@ -14,7 +14,7 @@
 
 	<?php
 
-	$books_featured_query = new WP_Query( array( 'post_type' => 'books','posts_per_page' => 11 ) );
+	$books_featured_query = new WP_Query( array( 'post_type' => 'books','posts_per_page' => -1 ) );
 
 	while ( $books_featured_query->have_posts() ) : $books_featured_query->the_post(); ?>
 

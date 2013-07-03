@@ -24,7 +24,7 @@ function start_scripts() {
 // Navs //
 //////////
 
-register_nav_menu( 'primary', __( 'Primary Menu', 'theoryserum' ) );
+//register_nav_menu( 'primary', __( 'Primary Menu', 'theoryserum' ) );
 
 //////////
 // MISC //
