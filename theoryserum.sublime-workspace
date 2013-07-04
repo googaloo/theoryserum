@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"hea",
+				"header	Tag"
+			],
+			[
 				"hexagonT",
 				"hexagonTarget"
 			],
@@ -91,7 +95,7 @@
 			"file": "wp-content/themes/theoryserum/functions.php",
 			"settings":
 			{
-				"buffer_size": 669,
+				"buffer_size": 965,
 				"line_ending": "Unix"
 			}
 		},
@@ -99,15 +103,23 @@
 			"file": "wp-content/themes/theoryserum/index.php",
 			"settings":
 			{
-				"buffer_size": 48,
+				"buffer_size": 2686,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wp-content/themes/theoryserum/scss/global.scss",
+			"file": "wp-content/themes/theoryserum/sidebar.php",
 			"settings":
 			{
-				"buffer_size": 92,
+				"buffer_size": 155,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/theoryserum/single.php",
+			"settings":
+			{
+				"buffer_size": 666,
 				"line_ending": "Unix"
 			}
 		},
@@ -115,7 +127,7 @@
 			"file": "wp-content/themes/theoryserum/footer.php",
 			"settings":
 			{
-				"buffer_size": 566,
+				"buffer_size": 1516,
 				"line_ending": "Unix"
 			}
 		},
@@ -123,15 +135,7 @@
 			"file": "wp-content/themes/theoryserum/scss/style.scss",
 			"settings":
 			{
-				"buffer_size": 365,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/theoryserum/scss/variables.scss",
-			"settings":
-			{
-				"buffer_size": 0,
+				"buffer_size": 385,
 				"line_ending": "Unix"
 			}
 		},
@@ -139,7 +143,7 @@
 			"file": "wp-content/themes/theoryserum/style.css",
 			"settings":
 			{
-				"buffer_size": 2792,
+				"buffer_size": 3388,
 				"line_ending": "Unix"
 			}
 		},
@@ -147,7 +151,7 @@
 			"file": "wp-content/themes/theoryserum/js/script.js",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 239,
 				"line_ending": "Unix"
 			}
 		},
@@ -155,15 +159,7 @@
 			"file": "wp-content/themes/theoryserum/header.php",
 			"settings":
 			{
-				"buffer_size": 2024,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/theoryserum/js/hexagon-canvas.js",
-			"settings":
-			{
-				"buffer_size": 6145,
+				"buffer_size": 2376,
 				"line_ending": "Unix"
 			}
 		},
@@ -174,14 +170,42 @@
 				"buffer_size": 7345,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "wp-content/themes/theoryserum/scss/_global.scss",
+			"settings":
+			{
+				"buffer_size": 92,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/theoryserum/template-my-books.php",
+			"settings":
+			{
+				"buffer_size": 3038,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/theoryserum/template-short-stories.php",
+			"settings":
+			{
+				"buffer_size": 2941,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 307.0,
+		"height": 87.0,
 		"selected_items":
 		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
 			[
 				"inst",
 				"Package Control: Install Package"
@@ -193,10 +217,6 @@
 			[
 				"package",
 				"Package Control: List Packages"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
 			],
 			[
 				"pacagin",
@@ -344,10 +364,14 @@
 	},
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/my-books-template.php",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/articles.scss",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/js/hexagon-canvas.js",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/global.scss",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/variables.scss",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/normalize.css",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/header.php",
 		"/Applications/MAMP/htdocs/theoryserum/wp-config.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/js/hexagon-canvas.js",
 		"/Users/rlodom/Desktop/062713_ApolloExpress_25.html",
 		"/Users/rlodom/Desktop/EaselJS-master/examples/DragAndDrop_hitArea.html",
 		"/Users/rlodom/Desktop/EaselJS-master/examples/Filters_input.html",
@@ -473,6 +497,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"book",
+			"books_query",
+			"feat_query",
+			"top-featu",
 			"hexagon[ranHex]",
 			"1",
 			"hexagon1",
@@ -596,11 +624,7 @@
 			"char-count",
 			"getContent",
 			"charCount",
-			"nput-feat-body_container",
-			"cheeser",
-			"email_banner",
-			"'",
-			"cta-text"
+			"nput-feat-body_container"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -618,7 +642,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 12,
 			"sheets":
 			[
 				{
@@ -626,15 +650,15 @@
 					"file": "wp-content/themes/theoryserum/functions.php",
 					"settings":
 					{
-						"buffer_size": 669,
+						"buffer_size": 965,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								663,
-								663
+								603,
+								603
 							]
 						],
 						"settings":
@@ -654,67 +678,15 @@
 					"file": "wp-content/themes/theoryserum/index.php",
 					"settings":
 					{
-						"buffer_size": 48,
+						"buffer_size": 2686,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								24,
-								24
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "wp-content/themes/theoryserum/scss/global.scss",
-					"settings":
-					{
-						"buffer_size": 92,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								43,
-								43
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "wp-content/themes/theoryserum/footer.php",
-					"settings":
-					{
-						"buffer_size": 566,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								558,
-								558
+								31,
+								31
 							]
 						],
 						"settings":
@@ -729,24 +701,78 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "wp-content/themes/theoryserum/scss/style.scss",
+					"buffer": 2,
+					"file": "wp-content/themes/theoryserum/sidebar.php",
 					"settings":
 					{
-						"buffer_size": 365,
+						"buffer_size": 155,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								327,
-								327
+								154,
+								154
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "wp-content/themes/theoryserum/single.php",
+					"settings":
+					{
+						"buffer_size": 666,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								642,
+								642
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "wp-content/themes/theoryserum/footer.php",
+					"settings":
+					{
+						"buffer_size": 1516,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								603,
+								672
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -756,18 +782,18 @@
 				},
 				{
 					"buffer": 5,
-					"file": "wp-content/themes/theoryserum/scss/variables.scss",
+					"file": "wp-content/themes/theoryserum/scss/style.scss",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 385,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								385,
+								385
 							]
 						],
 						"settings":
@@ -785,15 +811,15 @@
 					"file": "wp-content/themes/theoryserum/style.css",
 					"settings":
 					{
-						"buffer_size": 2792,
+						"buffer_size": 3388,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1794,
-								1794
+								2792,
+								2792
 							]
 						],
 						"settings":
@@ -813,15 +839,15 @@
 					"file": "wp-content/themes/theoryserum/js/script.js",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 239,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								222,
+								222
 							]
 						],
 						"settings":
@@ -840,15 +866,15 @@
 					"file": "wp-content/themes/theoryserum/header.php",
 					"settings":
 					{
-						"buffer_size": 2024,
+						"buffer_size": 2376,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2023,
-								2023
+								2376,
+								2376
 							]
 						],
 						"settings":
@@ -864,33 +890,6 @@
 				},
 				{
 					"buffer": 9,
-					"file": "wp-content/themes/theoryserum/js/hexagon-canvas.js",
-					"settings":
-					{
-						"buffer_size": 6145,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6143,
-								6143
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2942.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
 					"file": "wp-content/themes/theoryserum/normalize.css",
 					"settings":
 					{
@@ -912,7 +911,87 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1296.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "wp-content/themes/theoryserum/scss/_global.scss",
+					"settings":
+					{
+						"buffer_size": 92,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								67,
+								67
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "wp-content/themes/theoryserum/template-my-books.php",
+					"settings":
+					{
+						"buffer_size": 3038,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								80,
+								118
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "wp-content/themes/theoryserum/template-short-stories.php",
+					"settings":
+					{
+						"buffer_size": 2941,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								207,
+								211
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -961,6 +1040,22 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"books",
+				"wp-content/themes/theoryserum/my-books-template.php"
+			],
+			[
+				"masthe",
+				"wp-content/themes/theoryserum/scss/_masthead.scss"
+			],
+			[
+				"masthea",
+				"wp-content/themes/theoryserum/scss/_masthead.scss"
+			],
+			[
+				"globa",
+				"wp-content/themes/theoryserum/scss/_global.scss"
+			],
 			[
 				"norma",
 				"wp-content/themes/theoryserum/normalize.css"
@@ -1192,10 +1287,6 @@
 			[
 				"foot",
 				"application/views/includes/footer.php"
-			],
-			[
-				"globa",
-				"application/css/scss/_global.scss"
 			],
 			[
 				"vari",
