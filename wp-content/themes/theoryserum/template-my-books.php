@@ -19,45 +19,54 @@
 	while ( $books_featured_query->have_posts() ) : $books_featured_query->the_post(); ?>
 
 		<div class="featured-book-container">
-		<?php if ( get_post_meta( $post->ID, 'wpcf-featured-post', true ) === 'featured' ) : ?>
 
-			<div class="featured-book-img-container">
+				<div class="featured-container">
 
-				<?php if ( has_post_thumbnail() ) {
-					the_post_thumbnail('ts-books-full');
-				} ?>
+			<?php if ( get_post_meta( $post->ID, 'wpcf-featured-post', true ) === 'featured' ) : ?>
 
-			</div><!-- end featured-book-image-container -->
+				<div class="featured-book-img-container">
 
-				<header>
+					<?php if ( has_post_thumbnail() ) {
+						the_post_thumbnail('ts-books-full');
+					} ?>
 
-					<h2 class="book-header"><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
+				</div><!-- end featured-book-image-container -->
 
-				</header>
+					<header>
 
-				<p class="book-descr"><?php the_content(); ?></p>
+						<h2 class="top-featured-book-header top-featured-header"><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
 
-				<div class="books-social">
+					</header>
 
-					<a rel='social-share' href="https://www.facebook.com/sharer/sharer.php?u=<?php echo the_permalink(); ?>" target="_blank" class="books-social-btns"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" alt="<?php the_title(); ?> Facebook Share" /></a>
-					<a rel='social-share' href="http://www.twitter.com/share?url=<?php echo the_permalink(); ?>" target="_blank" class="books-social-btns"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" alt="<?php the_title(); ?> Twitter Share" /></a>
-					<p class="isbn">ISBN: <?php echo get_post_meta( $post->ID, 'wpcf-isbn', true); ?></p>
+					<p class="book-descr"><?php the_content(); ?></p>
 
-				</div><!-- end .books-social -->
+					<div class="books-social">
+
+						<a rel='social-share' href="https://www.facebook.com/sharer/sharer.php?u=<?php echo the_permalink(); ?>" target="_blank" class="books-social-btns"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" alt="<?php the_title(); ?> Facebook Share" /></a>
+						<a rel='social-share' href="http://www.twitter.com/share?url=<?php echo the_permalink(); ?>" target="_blank" class="books-social-btns"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" alt="<?php the_title(); ?> Twitter Share" /></a>
+						<p class="isbn">ISBN: <?php echo get_post_meta( $post->ID, 'wpcf-isbn', true); ?></p>
+
+					</div><!-- end .books-social -->
+
+				</div><!-- end .featured-container -->
 
 				<?php get_sidebar(); ?>
 
 		<?php endif; ?>
 
-		<div><!-- end .featured-book-container -->
+		</div><!-- end .featured-book-container -->
 
 	<?php endwhile;
 
-	wp_reset_query();
+	wp_reset_query(); ?>
 
-	$books_query = new WP_Query( array( 'post_type' => 'books','posts_per_page' => 10 ) );
+	
+
+	<?php $books_query = new WP_Query( array( 'post_type' => 'books','posts_per_page' => 10 ) );
 
 	while ( $books_query->have_posts() ) : $books_query->the_post(); ?>
+
+	<div class="article-container">
 
 		<p class="divider"></p>
 
@@ -91,8 +100,10 @@
 
 	 	<?php
 
-		endif;
+		endif; ?>
 
-	endwhile;
+		</div><!-- end .article-container -->
+
+	<?php endwhile;
 
 get_footer(); 

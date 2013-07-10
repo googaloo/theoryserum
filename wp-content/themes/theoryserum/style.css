@@ -1,9 +1,9 @@
 /*
-Theme Name: Learn Wordpress
-Theme URI: http://wordpress.org/
-Description: My Wordpress Theme
-Author: Rustdog
-Author URI: http://beardedchildren.com
+Theme Name: TheorySerum
+Theme URI: http://www.theoryserum.com/
+Description: TheorySerum Theme
+Author: Rustin L Odom
+Author URI: http://www.rustinlodom.com
 Version: 1.0
 Tags:
 
@@ -12,15 +12,157 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 General comments (optional).
 */
+/*****
+RESET
+******/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/******
+FONTS
+*******/
+/* BEBAS */
+@font-face {
+  font-family: 'bebasregular';
+  src: url("fonts/BEBAS___-webfont.eot");
+  src: url("fonts/BEBAS___-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/BEBAS___-webfont.woff") format("woff"), url("fonts/BEBAS___-webfont.ttf") format("truetype"), url("fonts/BEBAS___-webfont.svg#bebasregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* CABIN */
+@font-face {
+  font-family: 'cabin';
+  src: url("fonts/cabin-regular-webfont.eot");
+  src: url("fonts/cabin-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/cabin-regular-webfont.woff") format("woff"), url("fonts/cabin-regular-webfont.ttf") format("truetype"), url("fonts/cabin-regular-webfont.svg#cabinregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'cabin';
+  src: url("fonts/cabin-bold-webfont.eot");
+  src: url("fonts/cabin-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/cabin-bold-webfont.woff") format("woff"), url("fonts/cabin-bold-webfont.ttf") format("truetype"), url("fonts/cabin-bold-webfont.svg#cabinbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'cabin';
+  src: url("fonts/cabin-bolditalic-webfont.eot");
+  src: url("fonts/cabin-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/cabin-bolditalic-webfont.woff") format("woff"), url("fonts/cabin-bolditalic-webfont.ttf") format("truetype"), url("fonts/cabin-bolditalic-webfont.svg#cabinbold_italic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'cabin';
+  src: url("fonts/cabin-italic-webfont.eot");
+  src: url("fonts/cabin-italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/cabin-italic-webfont.woff") format("woff"), url("fonts/cabin-italic-webfont.ttf") format("truetype"), url("fonts/cabin-italic-webfont.svg#cabinitalic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'cabinmedium';
+  src: url("fonts/cabin-medium-webfont.eot");
+  src: url("fonts/cabin-medium-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/cabin-medium-webfont.woff") format("woff"), url("fonts/cabin-medium-webfont.ttf") format("truetype"), url("fonts/cabin-medium-webfont.svg#cabinmedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'cabinmedium';
+  src: url("fonts/cabin-mediumitalic-webfont.eot");
+  src: url("fonts/cabin-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/cabin-mediumitalic-webfont.woff") format("woff"), url("fonts/cabin-mediumitalic-webfont.ttf") format("truetype"), url("fonts/cabin-mediumitalic-webfont.svg#cabinmedium_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'cabinsemibold';
+  src: url("fonts/cabin-semibold-webfont.eot");
+  src: url("fonts/cabin-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/cabin-semibold-webfont.woff") format("woff"), url("fonts/cabin-semibold-webfont.ttf") format("truetype"), url("fonts/cabin-semibold-webfont.svg#cabinsemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'cabinsemibold';
+  src: url("fonts/cabin-semibolditalic-webfont.eot");
+  src: url("fonts/cabin-semibolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/cabin-semibolditalic-webfont.woff") format("woff"), url("fonts/cabin-semibolditalic-webfont.ttf") format("truetype"), url("fonts/cabin-semibolditalic-webfont.svg#cabinsemibold_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
 /******
 GLOBAL
 *******/
 html {
   margin: 0; }
 
+body {
+  font-family: cabin;
+  font-size: 14px;
+  color: #595959; }
+
+h1, h2, h3, h4 {
+  font-family: bebasregular;
+  font-weight: thin; }
+
+a {
+  text-decoration: none;
+  font-weight: normal;
+  color: #85d1da; }
+
+a:hover {
+  color: #8cdae0; }
+
 #page {
   width: 1024px;
   margin: 0 auto; }
+
+.ts-copyright {
+  float: left; }
+
+.subheader {
+  font-size: 1.5em;
+  color: #70a8da; }
 
 /*************
 	MASTHEAD
@@ -164,14 +306,34 @@ html {
     -moz-transform: rotate(360deg); } }
 
 /* MENU */
+#nav-box {
+  height: 30px;
+  background: #a1dae2;
+  border: 2px solid #88b8bc;
+  opacity: 0.2;
+  position: absolute;
+  left: 0;
+  top: 199px;
+  width: 2560px; }
+
+.main-menu {
+  font-family: bebasregular;
+  margin-top: -4px;
+  width: 1024px; }
+
 .main-menu ul {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  margin: 0 auto;
+  width: 55%; }
 
 .main-menu ul li {
   float: left;
   padding: 10px 0 10px 35px;
   margin-left: 50px; }
+
+.main-menu ul li a {
+  color: #4c6868; }
 
 .main-menu ul li:nth-child(1) {
   background: url("images/blog-icon.png") no-repeat left; }
@@ -187,3 +349,156 @@ html {
 
 .main-menu ul li:first-child {
   margin-left: 0; }
+
+/*******
+FIREFOX
+*******/
+@-moz-document url-prefix() {
+  .main-menu ul li {
+    margin-top: -4px; } }
+
+/******
+CHROME
+******/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  #nav-box {
+    top: 226px; } }
+.featured-sidebar-container {
+  float: left;
+  margin: 15px 0 0 0; }
+
+.article-container {
+  width: 1024px;
+  float: left; }
+
+.article-content-container {
+  width: 1000px; }
+
+.article-content-container h2 {
+  margin: 0;
+  line-height: 1em; }
+
+.article-img {
+  float: left;
+  padding: 0 12px 5px 0; }
+
+.featured-container {
+  float: left;
+  width: 700px; }
+
+.post-categories {
+  list-style: none;
+  margin: -28px 0 0 0;
+  padding: 0;
+  clear: both;
+  float: left; }
+
+.post-categories li a {
+  padding: 5px;
+  color: #FFFFFF;
+  font-family: bebasregular; }
+
+.post-categories li a:hover {
+  opacity: 0.75; }
+
+.top-featured-header {
+  padding: 2px 0;
+  margin: 20px 0 0 0; }
+
+.divider {
+  height: 1px;
+  background: #d8d8d7;
+  margin: 35px 0; }
+
+.ts-pagination-container {
+  float: left;
+  margin: 25px 0;
+  background: #eaf6f7;
+  width: 100%;
+  font-family: bebasregular; }
+
+.ts-pagination-list {
+  float: right;
+  margin: 0 20px 0 0; }
+
+.ts-pagination-list li {
+  color: #ceebee;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle; }
+
+.ts-pagination-list li:first-child {
+  background: url("images/pagination-prev-bg.png") no-repeat;
+  width: 73px;
+  height: 37px;
+  padding: 0 25px 0 8px; }
+
+.ts-pagination-list li:nth-child(2) {
+  background: url("images/pagination-home-bg.png") no-repeat;
+  width: 95px;
+  height: 37px;
+  padding: 0 30px 0 0; }
+
+.ts-pagination-list li:last-child {
+  background: url("images/pagination-next-bg.png") no-repeat;
+  background-position: 8px;
+  width: 73px;
+  height: 37px;
+  padding: 0 20px 0 0px; }
+
+/******
+SIDEBAR
+*******/
+.my-featured-stuff-container {
+  width: 300px;
+  float: right;
+  margin-left: 15px; }
+
+.sidebar-post-header {
+  color: #a8a8a8;
+  background: #e9e9e9;
+  margin: 10px 0;
+  padding: 5px 0 5px 15px;
+  font-weight: normal; }
+
+.footer {
+  float: left;
+  margin: 30px 0 0 0;
+  padding: 0 0 55px 0; }
+
+.footer-piece {
+  float: left;
+  margin-left: 38px; }
+
+.footer-about {
+  width: 35%; }
+
+.footer-follow {
+  width: 16%; }
+
+.footer-categories {
+  width: 16%; }
+
+.footer-pages {
+  width: 16%; }
+
+.social-icon-list {
+  list-style: none;
+  margin-top: -15px; }
+
+.social-icon-list li {
+  margin-top: 15px; }
+
+.social-icon {
+  float: left;
+  margin: 15px 0 0 0; }
+
+.social-text {
+  margin: -22px 0 0 50px;
+  float: left;
+  width: 100%; }
+
+.ts-copyright {
+  text-align: right;
+  width: 100%;
+  padding: 45px 0 0 0; }

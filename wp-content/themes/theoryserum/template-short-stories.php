@@ -21,24 +21,28 @@
 
 	<div class="featured-sidebar-container">
 
-	<?php if ( get_post_meta( $post->ID, 'wpcf-top-featured-post', true ) === 'top-featured' ) :
+		<div class="featured-container">
 
-		if ( has_post_thumbnail() ) {
-			the_post_thumbnail('ts-top-featured');
-		} ?>
+		<?php if ( get_post_meta( $post->ID, 'wpcf-top-featured-post', true ) === 'top-featured' ) :
 
-		<header>
+			if ( has_post_thumbnail() ) {
+				the_post_thumbnail('ts-top-featured');
+			} ?>
 
-			<h2><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
-			<div class="post-date"><?php the_date(); ?></div><!-- end .post-date -->
+			<header>
 
-		</header>
+				<h2 class="top-featured-story-header top-featured-header"><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
+				<div class="post-date"><?php the_date(); ?></div><!-- end .post-date -->
 
-		<article><?php the_excerpt(); ?><a href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
+			</header>
 
-		<?php get_sidebar(); ?>
+			<article><?php the_excerpt(); ?><a href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
 
-	<div><!-- end .featured-sidebar-container -->
+	</div><!-- end .featured-container -->
+
+	<?php get_sidebar(); ?>
+
+	</div><!-- end .featured-sidebar-container -->
 
 	<?php
 
@@ -51,6 +55,8 @@
 	$short_stories_query = new WP_Query( array( 'post_type' => 'my-short-stories','posts_per_page' => 10 ) );
 
 	while ( $short_stories_query->have_posts() ) : $short_stories_query->the_post(); ?>
+
+	<div class="article-container">
 
 		<?php if ( get_post_meta( $post->ID, 'wpcf-top-featured-post', true ) !== 'top-featured' ) : ?>
 
@@ -85,9 +91,11 @@
 
 	 <?php
 
-		endif;
+		endif; ?>
 
-	endwhile;
+		</div><!-- end .article-container -->
+
+	<?php endwhile;
 
 	// PAGINATION
 	if ( $prev_link = get_previous_posts_link() ) {

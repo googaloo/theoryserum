@@ -33,28 +33,29 @@
 
 			</div>
 
-			<div class="tech-rotate-box" style="background: url('<?php echo get_template_directory_uri() ?>/images/rotator.png');"><img class="tech-follow" src="" /></div> <!-- end .tech-follow-box -->
+			<div class="tech-rotate-box" style="background: url('<?php echo get_template_directory_uri() ?>/images/rotator.png');"></div> <!-- end .tech-follow-box -->
 
 
-		</div>
+		</div><!-- end .masthead -->
 
+		<div id="nav-box"></div><!--end #nav-box -->
 		<nav>
 
 			<?php //wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>			
 			<?php $nav_args = array(
-		        
-		        'depth'       => 0,
+
+				'depth'       => 0,
 				'sort_column' => 'menu_order, post_title',
 				'menu_class'  => 'main-menu',
 				'include'     => '',
-				'exclude'     => '',
+				'exclude'     => '93',
 				'echo'        => true,
 				'show_home'   => 'Blog',
 				'link_before' => '',
 				'link_after'  => '' 
 
 				);
-			?>
-			<?php wp_page_menu( $nav_args ); ?>
+				?>
+				<?php wp_page_menu( $nav_args ); ?>
 
-		</nav>
+			</nav>

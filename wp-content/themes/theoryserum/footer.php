@@ -1,40 +1,45 @@
 
 	<div class="footer">
 
-		<div class="footer-about">
+		<div class="footer-about footer-piece">
 
-			<h3 class="other-header">About</h3>
+			<h3 class="subheader">About</h3>
 			<p>Monica dawson moloch donna troy nightcrawler lizard spider-man black mamba. Cat violator trickster bloodaxe chamber. Monica dawson moloch donna troy nightcrawler lizard spider-man black mamba. Cat violator trickster bloodaxe chamber. Monica dawson moloch donna troy nightcrawler lizard spider-man black mamba. Cat violator trickster bloodaxe chamber.</p>
 
 		</div> <!-- end .footer-about -->
 
-		<div class="footer-follow">
+		<div class="footer-follow footer-piece">
 
-			<h3 class="other-header">Follow</h3>
-			<a href="#"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" />Facebook</a>
-			<a href="#"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" />Twitter</a>
-			<a href="#"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/rss.png" />RSS</a>
+			<h3 class="subheader">Follow</h3>
+			<ul class="social-icon-list">
+				<li><a href="#"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" /><span class="social-text">Facebook</span></a></li>
+				<li><a href="#"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" /><span class="social-text">Twitter</span></a></li>
+				<li><a href="#"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/rss.png" /><span class="social-text">RSS</span></a></li>
+			</ul>
 
 		</div> <!-- end .footer-about -->
 
-		<div class="footer-categories">
+		<div class="footer-categories footer-piece">
 
-			<h3 class="other-header">Categories</h3>
+			<h3 class="subheader">Categories</h3>
 			<?php wp_list_categories( array('style'=>'none') ); ?>
 
 		</div> <!-- end .footer-about -->
 
-		<div class="footer-pages">
+		<div class="footer-pages footer-piece">
 
-			<h3 class="other-header">Pages</h3>
-			<?php wp_list_pages( array('title_li' => '') ); ?>
+			<h3 class="subheader">Pages</h3>
+			<ul>
+				<?php wp_list_pages( array('title_li' => '') ); ?>
+			</ul>
 
 		</div> <!-- end .footer-about -->
-
+		<div class="ts-copyright">&copy; <?php the_date('Y'); ?> <strong>TheorySerum</strong>. All Rights Reserved.</div>
 	</div> <!-- end .footer -->	
 
-	</div> <!-- end #page .hfeed .site -->
-	<div class="ts-copyright">&copy; <?php the_date('Y'); ?> <strong>TheorySerum</strong>. All Rights Reserved.</div>
+</div> <!-- end #page .hfeed .site -->
+
+
 <?php wp_footer(); ?>
 
 </body>

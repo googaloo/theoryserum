@@ -3,13 +3,20 @@
 <?php
 
 if ( have_posts() ) : 
-	while ( have_posts() ) : the_post();
+	while ( have_posts() ) : the_post(); ?>
 
-		if ( has_post_thumbnail() ) {
+		<div class="article-img">
+
+		<?php if ( has_post_thumbnail() ) {
 			the_post_thumbnail('full');
 		} ?>
 
-		<h2><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
+	</div><!-- end .article-img -->
+
+		<div class="post-cat-box"><?php echo get_the_category_list(); ?></div><!-- end .post-cat-box -->
+		<header>
+			<h2><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
+		</header>
 		<?php the_content();
 
 	endwhile;

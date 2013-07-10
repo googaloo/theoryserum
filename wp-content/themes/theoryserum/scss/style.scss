@@ -1,9 +1,9 @@
 /*
-Theme Name: Learn Wordpress
-Theme URI: http://wordpress.org/
-Description: My Wordpress Theme
-Author: Rustdog
-Author URI: http://beardedchildren.com
+Theme Name: TheorySerum
+Theme URI: http://www.theoryserum.com/
+Description: TheorySerum Theme
+Author: Rustin L Odom
+Author URI: http://www.rustinlodom.com
 Version: 1.0
 Tags:
 
@@ -13,7 +13,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 General comments (optional).
 */
 
+@import "reset";
 @import "variables";
+@import "fonts";
 @import "global";
 @import "masthead";
 @import "articles";
+@import "sidebar";
+@import "footer";

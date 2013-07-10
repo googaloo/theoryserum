@@ -6,7 +6,37 @@ html {
 	margin: 0;
 }
 
+body {
+	font-family: cabin;
+	font-size: 14px;
+	color: #595959;
+}
+
+h1, h2, h3, h4 {
+	font-family: bebasregular;
+	font-weight: thin;
+}
+
+a {
+	text-decoration: none;
+	font-weight: normal;
+	color: #85d1da;
+}
+
+a:hover {
+	color: #8cdae0;
+}
+
 #page {
  width: 1024px;
  margin: 0 auto;   
+}
+
+.ts-copyright {
+	float: left;
+}
+
+.subheader {
+	font-size: 1.5em;
+	color: #70a8da;
 }

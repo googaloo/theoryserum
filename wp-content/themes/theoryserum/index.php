@@ -8,25 +8,33 @@
 
 	<div class="featured-sidebar-container">
 
-	<?php if ( get_post_meta( $post->ID, 'wpcf-top-featured-post', true ) === 'top-featured' ) :
+		<div class="featured-container">
 
-		if ( has_post_thumbnail() ) {
-			the_post_thumbnail('ts-top-featured');
-		} ?>
+			<div class="article-img">
 
-		<header>
+			<?php if ( get_post_meta( $post->ID, 'wpcf-top-featured-post', true ) === 'top-featured' ) :
 
-			<div class="post-cat-box"><?php echo get_the_category_list(); ?></div><!-- end .post-cat-box -->
-			<h2><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
-			<div class="post-date"><?php the_date(); ?></div><!-- end .post-date -->
+			if ( has_post_thumbnail() ) {
+				the_post_thumbnail('ts-top-featured');
+			} ?>
 
-		</header>
+		</div><!-- end article-img -->
+		<div class="post-cat-box"><?php echo get_the_category_list(); ?></div><!-- end .post-cat-box -->
+			
+			<header>
 
-		<article><?php the_excerpt(); ?><a href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
+				<h2 class="top-featured-article-header top-featured-header"><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
+				<div class="post-date"><?php the_date(); ?></div><!-- end .post-date -->
+
+			</header>
+
+			<article><?php the_excerpt(); ?><a href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
+
+		</div><!-- end .featured-container -->
 
 		<?php get_sidebar(); ?>
 
-	<div><!-- end .featured-sidebar-container -->
+	</div><!-- end .featured-sidebar-container -->
 
 	<?php
 
@@ -36,52 +44,63 @@
 
 	wp_reset_postdata();
 
-	while ( have_posts() ) : the_post(); ?>
+	if( have_posts() ) : 
+		while ( have_posts() ) : the_post(); ?>
 
-		<p class="divider"></p>
+			<?php if ( get_post_meta( $post->ID, 'wpcf-top-featured-post', true ) !== 'top-featured' ) : ?>
 
-		<?php if ( get_post_meta( $post->ID, 'wpcf-top-featured-post', true ) !== 'top-featured' ) : ?>
+				<div class="article-container">
 
-			<div class="article-ft-img">
+				<p class="divider"></p>
 
-			<?php if ( has_post_thumbnail() ) {
+				<div class="article-img">
 
-				if ( get_post_meta( $post->ID, 'wpcf-featured-post', true ) === 'featured' ) {
+				<?php if ( has_post_thumbnail() ) {
 
-					the_post_thumbnail('full');
+					if ( get_post_meta( $post->ID, 'wpcf-featured-post', true ) === 'featured' ) {
 
-				} else {
+						the_post_thumbnail('full');
 
-					the_post_thumbnail('ts-thumbnail');
+					} else {
 
-				}
+						the_post_thumbnail('ts-thumbnail');
 
-			} ?>
+					}
 
-			</div><!-- end .article-ft-img -->
-
-			<header>
-
+				} ?>
+					
+				</div><!-- end .article-img -->
 				<div class="post-cat-box"><?php echo get_the_category_list(); ?></div><!-- end .post-cat-box -->
-				<h2><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
-				<div class="post-date"><?php the_date(); ?></div><!-- end .post-date -->
 
-			</header>
+				<div class="article-content-container">
+					
+					<header>
 
-			<article><?php the_excerpt(); ?><a href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
+						<h2><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
+						<div class="post-date"><?php the_date(); ?></div><!-- end .post-date -->
 
-	 <?php
+					</header>
 
-		endif;
+					<article><?php the_excerpt(); ?><a href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
 
-	endwhile;
+				</div><!-- end .article-content-container -->
+
+			</div><!-- end .article-container -->
+
+		 <?php
+
+			endif;
+
+		endwhile; 
+
+	endif;
 
 	// PAGINATION
 	if ( $prev_link = get_previous_posts_link() ) {
 		$explode_prev_link = explode('"', get_previous_posts_link());
-		$print_prev_link = '<a href="'.$explode_prev_link[1].'">Previous</a>'; 
+		$print_prev_link = '<a href="'.$explode_prev_link[1].'">Prev</a>'; 
 	} else {
-		$print_prev_link = "Preview";
+		$print_prev_link = "Prev";
 	}
 
 	if ( $next_link = get_next_posts_link() ) {
@@ -98,10 +117,10 @@
  			<ul class="ts-pagination-list">
 
  				<li><?php echo $print_prev_link; ?></li>
- 				<li><a class="ts-pagination-home" href="<?php echo site_url(); ?>">Home</a></li>
+ 				<li><a href="<?php echo site_url(); ?>">Home</a></li>
  				<li><?php echo $print_next_link; ?></li>
 
- 			</ul>
+ 			</ul><!-- end .ts-pagination-list -->
  			
  		</div><!-- end .ts-pagination-container -->
 
