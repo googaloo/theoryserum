@@ -319,7 +319,9 @@ a:hover {
 .main-menu {
   font-family: bebasregular;
   margin-top: -4px;
-  width: 1024px; }
+  width: 1024px;
+  position: absolute;
+  top: 229px; }
 
 .main-menu ul {
   list-style: none;
@@ -355,7 +357,10 @@ FIREFOX
 *******/
 @-moz-document url-prefix() {
   .main-menu ul li {
-    margin-top: -4px; } }
+    margin-top: -4px; }
+
+  .main-menu {
+    top: 205px; } }
 
 /******
 CHROME
@@ -365,7 +370,7 @@ CHROME
     top: 226px; } }
 .featured-sidebar-container {
   float: left;
-  margin: 15px 0 0 0; }
+  margin: 55px 0 0 0; }
 
 .article-container {
   width: 1024px;
@@ -445,6 +450,9 @@ CHROME
   width: 73px;
   height: 37px;
   padding: 0 20px 0 0px; }
+
+@-moz-document url-prefix() {
+  margin: 20px 0 0 0; }
 
 /******
 SIDEBAR

@@ -191,6 +191,8 @@
 	font-family: bebasregular;
 	margin-top: -4px;
 	width: 1024px;
+	position: absolute;
+	top: 229px;
 }
 
 .main-menu ul {
@@ -236,9 +238,13 @@ FIREFOX
 
 @-moz-document url-prefix() { 
 
-.main-menu ul li {
-	margin-top: -4px;
-}
+	.main-menu ul li {
+		margin-top: -4px;
+	}
+
+	.main-menu {
+		top: 205px;
+	}
 
 }
 
