@@ -38,7 +38,7 @@
 
 		</div><!-- end .masthead -->
 
-		<div id="nav-box"></div><!--end #nav-box -->
+		<div id="nav-box" class="nav-box-no-hover"></div><!--end #nav-box -->
 		<nav>
 
 			<?php //wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>			
@@ -58,4 +58,24 @@
 				?>
 				<?php wp_page_menu( $nav_args ); ?>
 
-			</nav>
+				<!-- Handle CSS3 navigation animations on hover -->
+
+				<?php if ( is_home() ) : ?>
+
+					<script type="text/javascript">
+						jQuery(function($) {
+							$(".main-menu ul li:first").addClass("current_page_item");
+						});
+					</script>
+
+				<?php else : ?>
+
+					<script type="text/javascript">
+						jQuery(function($) {
+							$(".main-menu ul li:first").addClass("page_item");
+						});
+					</script>
+
+				<?php endif; ?>
+
+		</nav>

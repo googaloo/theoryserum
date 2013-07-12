@@ -38,6 +38,41 @@ jQuery(function($) {
 		});
 
 		//$('#nav-box').css('width', screen.width);
+		$(window).scroll(function(e) {
+			if( $(window).scrollTop() >= 200 ) {
+				$('#nav-box').css('position', 'fixed').css('top', '0');
+				$('.main-menu').css('position', 'fixed').css('top', '3px');
+			} else {
+				$('#nav-box').css('position', 'absolute').css('top', '199px');
+				$('.main-menu').css('position', 'absolute').css('top', '202px');
+			}
+
+		});
+	
+		$('#nav-box').on('mouseenter', function() {
+
+			$('#nav-box').removeClass('nav-box-no-hover');
+			$('#nav-box').addClass('nav-box-hover');
+
+		}).on('mouseleave', function() {
+
+			$('#nav-box').removeClass('nav-box-hover');
+			$('#nav-box').addClass('nav-box-no-hover');
+
+		});
+
+		$('.main-menu').on('mouseenter', function() {
+
+			$('#nav-box').removeClass('nav-box-no-hover');
+			$('#nav-box').addClass('nav-box-hover');
+
+		}).on('mouseleave', function() {
+
+			$('#nav-box').removeClass('nav-box-hover');
+			$('#nav-box').addClass('nav-box-no-hover');
+
+		});
 
 	});
+
 });

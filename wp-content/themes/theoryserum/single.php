@@ -22,6 +22,8 @@ if ( have_posts() ) :
 	endwhile;
 endif;
 
+comments_template();
+
 ?>
 
 <div class='single-pagination'>

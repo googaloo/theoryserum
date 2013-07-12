@@ -10,99 +10,107 @@
 
 <?php get_header(); ?>
 
-	<h1 class="stories-header">Short Stories</h1>
+<h1 class="stories-header">Short Stories</h1>
 
-	<?php
+<?php
 
-	// Needs to run through all posts to grab latest top featured so 'posts_per_page' needs to be large enough to run through it
-	$short_stories_top_featured_query = new WP_Query( array( 'post_type' => 'my-short-stories','posts_per_page' => -1 ) );
+// Needs to run through all posts to grab latest top featured so 'posts_per_page' needs to be large enough to run through it
+$short_stories_top_featured_query = new WP_Query( array( 'post_type' => 'my-short-stories','posts_per_page' => -1 ) );
 
-	while ($short_stories_top_featured_query->have_posts() ) : $short_stories_top_featured_query->the_post(); ?>
+while ($short_stories_top_featured_query->have_posts() ) : $short_stories_top_featured_query->the_post(); ?>
 
-	<div class="featured-sidebar-container">
+<div class="featured-sidebar-container">
 
-		<div class="featured-container">
+	<div class="featured-container">
 
-		<?php if ( get_post_meta( $post->ID, 'wpcf-top-featured-post', true ) === 'top-featured' ) :
+		<div class="article-img">
+
+			<?php if ( get_post_meta( $post->ID, 'wpcf-top-featured-post', true ) === 'top-featured' ) :
 
 			if ( has_post_thumbnail() ) {
 				the_post_thumbnail('ts-top-featured');
 			} ?>
 
-			<header>
+		</div><!-- end article-img -->
 
-				<h2 class="top-featured-story-header top-featured-header"><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
-				<div class="post-date"><?php the_date(); ?></div><!-- end .post-date -->
+			<h2 class="top-featured-article-header top-featured-header"><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
+			<p class="featured-post-date"><?php the_date(); ?></p><!-- end .post-date -->
+			<div class="featured-article-comment-number"> <a href="<?php comments_link(); ?>"><span class="comment-image"></span><?php comments_number('0','1','%'); ?></a></div><!-- end .article-comment-number -->
 
-			</header>
-
-			<article><?php the_excerpt(); ?><a href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
+		<article class="featured-article-content"><?php the_excerpt(); ?><a class="read-more" href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
 
 	</div><!-- end .featured-container -->
 
 	<?php get_sidebar(); ?>
 
-	</div><!-- end .featured-sidebar-container -->
+</div><!-- end .featured-sidebar-container -->
 
-	<?php
+<?php
 
-	endif;
+endif;
 
-	endwhile;
+endwhile;
 
-	wp_reset_postdata();
+wp_reset_postdata();
 
-	$short_stories_query = new WP_Query( array( 'post_type' => 'my-short-stories','posts_per_page' => 10 ) );
+$short_stories_query = new WP_Query( array( 'post_type' => 'my-short-stories','posts_per_page' => 10 ) );
 
-	while ( $short_stories_query->have_posts() ) : $short_stories_query->the_post(); ?>
+while ( $short_stories_query->have_posts() ) : $short_stories_query->the_post(); ?>
 
-	<div class="article-container">
+	<?php if ( get_post_meta( $post->ID, 'wpcf-top-featured-post', true ) !== 'top-featured' ) : ?>
 
-		<?php if ( get_post_meta( $post->ID, 'wpcf-top-featured-post', true ) !== 'top-featured' ) : ?>
+		<div class="article-container">
 
 			<p class="divider"></p>
 
-			<div class="article-ft-img">
+			<div class="article-img">
 
-			<?php if ( has_post_thumbnail() ) {
+				<?php if ( has_post_thumbnail() ) {
 
-				if ( get_post_meta( $post->ID, 'wpcf-featured-post', true ) === 'featured' ) {
+					if ( get_post_meta( $post->ID, 'wpcf-featured-post', true ) === 'featured' ) {
 
-					the_post_thumbnail('full');
+						the_post_thumbnail('full');
 
-				} else {
+					} else {
 
-					the_post_thumbnail('ts-thumbnail');
+						the_post_thumbnail('ts-thumbnail');
 
-				}
+					}
 
-			} ?>
+				} ?>
 
-			</div><!-- end .article-ft-img -->
+			</div><!-- end .article-img -->
 
-			<header>
+			<div class="article-content-container">
 
-				<h2><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
-				<div class="post-date"><?php the_date(); ?></div><!-- end .post-date -->
+				<header>
 
-			</header>
+					<h2 class="article-header"><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
+					
+					<p class="post-date"><?php echo get_the_date(); ?></p><!-- end .post-date -->
 
-			<article><?php the_excerpt(); ?><a href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
+					<div class="article-comment-number"> <a href="<?php comments_link(); ?>"><span class="comment-image"></span><?php comments_number('0','1','%'); ?></a></div><!-- end .article-comment-number -->
 
-	 <?php
+				</header>
 
-		endif; ?>
+				<article class="article-content"><?php the_excerpt(); ?><a class="read-more" href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
+
+			</div><!-- end .article-content-container -->
 
 		</div><!-- end .article-container -->
 
-	<?php endwhile;
+		<?php
+
+	endif;
+
+endwhile; 
 
 	// PAGINATION
 	if ( $prev_link = get_previous_posts_link() ) {
 		$explode_prev_link = explode('"', get_previous_posts_link());
-		$print_prev_link = '<a href="'.$explode_prev_link[1].'">Previous</a>'; 
+		$print_prev_link = '<a href="'.$explode_prev_link[1].'">Prev</a>'; 
 	} else {
-		$print_prev_link = "Preview";
+		$print_prev_link = "Prev";
 	}
 
 	if ( $next_link = get_next_posts_link() ) {
@@ -114,16 +122,16 @@
 
 	?>
 
- 		<div class="ts-pagination-container">
+	<div class="ts-pagination-container">
 
- 			<ul class="ts-pagination-list">
+		<ul class="ts-pagination-list">
 
- 				<li><?php echo $print_prev_link; ?></li>
- 				<li><a class="ts-pagination-home" href="<?php echo site_url(); ?>">Home</a></li>
- 				<li><?php echo $print_next_link; ?></li>
+			<li><?php echo $print_prev_link; ?></li>
+			<li><a href="<?php echo site_url(); ?>">Home</a></li>
+			<li><?php echo $print_next_link; ?></li>
 
- 			</ul>
- 			
- 		</div><!-- end .ts-pagination-container -->
+		</ul><!-- end .ts-pagination-list -->
 
-<?php get_footer(); 
+	</div><!-- end .ts-pagination-container -->
+
+	<?php get_footer(); 

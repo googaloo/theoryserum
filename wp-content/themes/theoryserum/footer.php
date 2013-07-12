@@ -30,6 +30,7 @@
 
 			<h3 class="subheader">Pages</h3>
 			<ul>
+				<li class="page_item"><a href="<?php echo get_site_url(); ?>">Blog</a></li>
 				<?php wp_list_pages( array('title_li' => '') ); ?>
 			</ul>
 

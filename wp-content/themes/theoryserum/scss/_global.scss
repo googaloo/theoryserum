@@ -9,12 +9,16 @@ html {
 body {
 	font-family: cabin;
 	font-size: 14px;
-	color: #595959;
+	color: #6b6b6b;
 }
 
 h1, h2, h3, h4 {
 	font-family: bebasregular;
 	font-weight: thin;
+}
+
+h2 {
+	font-size: 1.8em;
 }
 
 a {
@@ -39,4 +43,9 @@ a:hover {
 .subheader {
 	font-size: 1.5em;
 	color: #70a8da;
+}
+
+.coming-soon-header {
+	color: #CCCCCC;
+	font-size: 3em;
 }

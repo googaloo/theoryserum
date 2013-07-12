@@ -13,6 +13,14 @@
 	width: 35%;
 }
 
+.footer-about p {
+	font-size: 1.3em;
+	margin-top: 15px;
+	float: left;
+	//padding: 20px;
+	//background: #eaf6f7;
+}
+
 .footer-follow {
 	width: 16%;
 }
@@ -21,8 +29,25 @@
 	width: 16%;
 }
 
+.footer-categories h3 {
+	padding-bottom: 15px;
+}
+
+.footer-categories a {
+	padding-top: 5px;
+	display: block;
+}
+
 .footer-pages {
 	width: 16%;
+}
+
+.footer-pages h3 {
+	padding-bottom: 5px;
+}
+
+.footer-pages ul li {
+	padding-top: 15px;
 }
 
 .social-icon-list {
