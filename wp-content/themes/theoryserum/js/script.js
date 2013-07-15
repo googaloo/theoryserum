@@ -31,6 +31,9 @@ jQuery(function($) {
 				case 'Philosophy' :
 					$(this).css('background-color', '#FFA47A');
 					break;
+				case 'News' :
+					$(this).css('background-color', '#557EA4');
+					break;
 				default :
 					$(this).css('background-color', '#CCCCCC');
 					break;
@@ -72,6 +75,8 @@ jQuery(function($) {
 			$('#nav-box').addClass('nav-box-no-hover');
 
 		});
+
+		
 
 	});
 

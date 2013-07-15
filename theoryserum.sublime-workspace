@@ -104,6 +104,14 @@
 	"buffers":
 	[
 		{
+			"file": "wp-content/themes/theoryserum/single.php",
+			"settings":
+			{
+				"buffer_size": 1010,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "wp-content/themes/theoryserum/index.php",
 			"settings":
 			{
@@ -112,26 +120,10 @@
 			}
 		},
 		{
-			"file": "wp-content/themes/theoryserum/template-short-stories.php",
+			"file": "wp-content/themes/theoryserum/scss/_single.scss",
 			"settings":
 			{
-				"buffer_size": 3794,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/theoryserum/scss/_blog.scss",
-			"settings":
-			{
-				"buffer_size": 138,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/theoryserum/comments.php",
-			"settings":
-			{
-				"buffer_size": 3276,
+				"buffer_size": 511,
 				"line_ending": "Unix"
 			}
 		},
@@ -139,7 +131,23 @@
 			"file": "wp-content/themes/theoryserum/scss/_articles.scss",
 			"settings":
 			{
-				"buffer_size": 2624,
+				"buffer_size": 2717,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/theoryserum/comments.php",
+			"settings":
+			{
+				"buffer_size": 3776,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/theoryserum/scss/_comments.scss",
+			"settings":
+			{
+				"buffer_size": 1295,
 				"line_ending": "Unix"
 			}
 		},
@@ -147,23 +155,7 @@
 			"file": "wp-content/themes/theoryserum/scss/style.scss",
 			"settings":
 			{
-				"buffer_size": 558,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/theoryserum/template_temp_books.php",
-			"settings":
-			{
-				"buffer_size": 279,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/theoryserum/template_temp_games.php",
-			"settings":
-			{
-				"buffer_size": 276,
+				"buffer_size": 576,
 				"line_ending": "Unix"
 			}
 		},
@@ -171,55 +163,34 @@
 			"file": "wp-content/themes/theoryserum/scss/_global.scss",
 			"settings":
 			{
-				"buffer_size": 497,
+				"buffer_size": 568,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wp-content/themes/theoryserum/scss/_games.scss",
+			"file": "wp-content/themes/theoryserum/js/script.js",
 			"settings":
 			{
-				"buffer_size": 140,
+				"buffer_size": 1998,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wp-content/themes/theoryserum/scss/_books.scss",
+			"file": "wp-content/themes/theoryserum/style.css",
 			"settings":
 			{
-				"buffer_size": 140,
+				"buffer_size": 16013,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wp-content/themes/theoryserum/scss/_short_stories.scss",
+			"contents": "/*************\n	MASTHEAD\n**************/\n\n.masthead {\n //background: grey;   \n}\n\n.main-header-logo {\n  width: 960px;\n  height: 201px; \n  z-index: 1;\n}\n\n.tech-rotate-box {\n	width:190px; height:190px;\n	float: left;\n	margin: -265px 0 0 -150px;\n	animation: rotateTech 8s infinite;\n	-webkit-animation: rotateTech 8s infinite;\n	animation-timing-function: linear;\n	-webkit-animation-timing-function: linear;\n	z-index: 999;\n	opacity: 0.5;\n}\n\n.hexagon-box {\n	float:right;\n	margin: 8px -45px 0 0\n}\n\n.hexagon {\n	width: 58px; height: 67px;\n}\n\n.hexagon:nth-child(2) {\n	margin: -68px 0 0 65px;\n}\n\n.hexagon:nth-child(3) {\n	margin: -68px 0 0 130px;\n}\n\n.hexagon:nth-child(4) {\n	margin: -10px 0 0 33px;\n}\n\n.hexagon:nth-child(5) {\n	margin: -68px 0 0 98px;\n}\n\n.hexagon:nth-child(6) {\n	margin: -68px 0 0 163px;\n}\n\n.hexagon:nth-child(7) {\n	margin: -10px 0 0 0;\n}\n\n.hexagon:nth-child(8) {\n	margin: -66px 0 0 65px;\n}\n\n.hexagon:nth-child(9) {\n	margin: -68px 0 0 132px;\n}\n\n/* ANIMATIONS */\n\n.hexagon:hover {\n	animation: scaleFade 0.5s 1;\n	-webkit-animation: scaleFade 0.5s 1; // Opera / Chrome\n}\n\n@keyframes scaleFade {\n	0% {\n		transform: scale(1, 1);\n	}\n	25% {\n		transform: scale(.85, .85);\n		opacity: 0;\n		filter: alpha(opacity=0);\n	}\n	100% {\n		transform: scale(1, 1);\n		opacity: 1;\n		filter: alpha(opacity=100);\n	}\n}\n\n@-webkit-keyframes scaleFade {\n	0% {\n		-webkit-transform: scale(1, 1);\n	}\n	25% {\n		-webkit-transform: scale(.85, .85);\n		opacity: 0;\n		filter: alpha(opacity=0);\n	}\n	100% {\n		-webkit-transform: scale(1, 1);\n		opacity: 1;\n		filter: alpha(opacity=100);\n	}\n}\n\n@-moz-keyframes scaleFade {\n	0% {\n		-moz-transform: scale(1, 1);\n        //animation-timing-function: ease-in;\n	}\n	25% {\n		-moz-transform: scale(.85, .85);\n		opacity: 0;\n        //animation-timing-function: ease-out;\n	}\n	100% {\n		-moz-transform: scale(1, 1);\n		opacity: 1;\n	}\n}\n\n@keyframes rotateTech {\n	0% {\n		transform: rotate(0deg);\n	}\n	25% {\n		transform: rotate(90deg);\n	}\n	50% {\n		transform: rotate(180deg);\n	}\n	75% {\n		transform: rotate(270deg)\n	}\n	100% {\n		transform: rotate(360deg);\n	}\n}\n\n@-webkit-keyframes rotateTech {\n	0% {\n		-webkit-transform: rotate(0deg);\n	}\n	25% {\n		-webkit-transform: rotate(90deg);\n	}\n	50% {\n		-webkit-transform: rotate(180deg);\n	}\n	75% {\n		-webkit-transform: rotate(270deg)\n	}\n	100% {\n		-webkit-transform: rotate(360deg);\n	}\n}\n\n@-moz-keyframes rotateTech {\n	0% {\n		-moz-transform: rotate(0deg);\n	}\n	25% {\n		-moz-transform: rotate(90deg);\n	}\n	50% {\n		-moz-transform: rotate(180deg);\n	}\n	75% {\n		-moz-transform: rotate(270deg)\n	}\n	100% {\n		-moz-transform: rotate(360deg);\n	}\n}\n\n/* MENU */\n\n#nav-box {\n	height: 30px;\n	background: #a1dae2;\n	border: 2px solid #6be1ed;\n	position: absolute;\n	left: 0;\n	top: 199px;\n	width: 100%; \n}\n\n.nav-box-no-hover {\n	opacity: 0.5;\n	transition: opacity 0.15s linear;\n	-webkit-transition: opacity 0.15s linear;\n}\n\n.nav-box-hover {\n	transition: opacity 0.15s linear;\n	-webkit-transition: opacity 0.15s linear;\n	opacity: 0.8;\n}\n\n.main-menu {\n	font-family: bebasregular;\n	margin-top: -4px;\n	width: 1024px;\n	position: absolute;\n	top: 202px;\n}\n\n.main-menu ul {\n	list-style: none;\n	padding: 0;\n	margin: 0 auto;\n	width: 55%;\n}\n\n.main-menu ul li {\n	float: left;\n	padding: 10px 0 10px 35px;\n	margin-left: 50px;\n}\n\n.main-menu ul li a {\n	color: #4c6868;\n}\n\n.main-menu ul li:nth-child(1) {\n	background: url('images/blog-icon.png') no-repeat left;\n}\n\n.main-menu ul li:nth-child(2) {\n	background: url('images/books-icon.png') no-repeat left;\n}\n\n.main-menu ul li:nth-child(3) {\n	background: url('images/stories-icon.png') no-repeat left;\n}\n\n.main-menu ul li:nth-child(4) {\n	background: url('images/games-icon.png') no-repeat left;\n}\n\n.main-menu ul li:first-child {\n	margin-left: 0;\n}\n\n.main-menu ul li {\n	opacity: 0.25;\n	transition: opacity 0.15s linear;\n	-webkit-transition: opacity 0.15s linear;\n}\n\n.main-menu ul li:hover {\n	opacity: 1;\n	transition: opacity 0.15s linear;\n	-webkit-transition: opacity 0.15s linear;\n}\n\n.current_page_item {\n	opacity: 1;\n}\n\n/*******\nFIREFOX\n*******/\n\n@-moz-document url-prefix() { \n\n}\n\n/******\nCHROME\n******/\n\n@media screen and (-webkit-min-device-pixel-ratio:0) {\n\n}",
+			"file": "wp-content/themes/theoryserum/scss/_masthead.scss",
+			"file_size": 4098,
+			"file_write_time": 1373781431000000,
 			"settings":
 			{
-				"buffer_size": 144,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/theoryserum/single.php",
-			"settings":
-			{
-				"buffer_size": 883,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/theoryserum/template-my-books.php",
-			"settings":
-			{
-				"buffer_size": 3266,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/theoryserum/scss/_sidebar.scss",
-			"settings":
-			{
-				"buffer_size": 237,
+				"buffer_size": 4099,
 				"line_ending": "Unix"
 			}
 		}
@@ -392,40 +363,49 @@
 	},
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/style.scss",
+		"/Applications/MAMP/htdocs/theoryserum/index.php",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_sidebar.scss",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/template-my-books.php",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/single.php",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_short_stories.scss",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_books.scss",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_games.scss",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_global.scss",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/template_temp_games.php",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/template_temp_books.php",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_articles.scss",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/comments.php",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_blog.scss",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/template-short-stories.php",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/index.php",
+		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/js/script.js",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/functions.php",
 		"/Applications/MAMP/htdocs/theoryserum/wp-includes/functions.php",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/style.css",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/sidebar.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_sidebar.scss",
 		"/Applications/MAMP/htdocs/theoryserum/wp-config.php",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_footer.scss",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/footer.php",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_reset.scss",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_variables.scss",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/js/script.js",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_masthead.scss",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/header.php",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_comments.scss",
 		"/Users/rlodom/Desktop/theoryserum.sql",
 		"/Applications/MAMP/htdocs/theoryserum/wp-includes/theme-compat/footer.php",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/template-games.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/template-my-books.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/template-short-stories.php",
 		"/Users/rlodom/Desktop/070913_PhoenixView.html",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/meyer_reset.css",
 		"/Users/rlodom/Desktop/page (4).html",
 		"/Users/rlodom/Desktop/page (3).html",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_meyer_reset.scss",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/category.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/single.php",
 		"/Users/rlodom/Desktop/Bebas-fontfacekit/web fonts/bebas_regular_macroman/stylesheet.css",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_fonts.scss",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/single-my-games.php",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/template_contact.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/style.scss",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_nav.scss",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_articles.scss",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_global.scss",
 		"/Users/rlodom/Desktop/webfontkit-20130708-143114/stylesheet.css",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/sidebar.scss",
 		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/js/test.js",
@@ -510,16 +490,7 @@
 		"/Users/rlodom/Desktop/aws-sdk-php-master/src/Aws/Common/Resources/aws-config.php",
 		"/Applications/MAMP/htdocs/tester/comp.php",
 		"/Applications/MAMP/htdocs/tester/what.php",
-		"/Users/rlodom/Desktop/Apollo Express HTML/apollo-express.html",
-		"/Users/rlodom/Desktop/032113_apollo_express18.html",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/js/jquery-tinymce.js",
-		"/Users/rlodom/Desktop/behind_the_numbers_postcard_03-02-2013.html",
-		"/Users/rlodom/Desktop/2013-04-02-behind-the-numbers.html",
-		"/Users/rlodom/Desktop/Apollo_Advisor_Template.html",
-		"/Users/rlodom/Desktop/tinymce/examples/simple.html",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/controllers/uploaded-image.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/upload-image.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/uploaded-image.php"
+		"/Users/rlodom/Desktop/Apollo Express HTML/apollo-express.html"
 	],
 	"find":
 	{
@@ -682,23 +653,23 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 10,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "wp-content/themes/theoryserum/index.php",
+					"file": "wp-content/themes/theoryserum/single.php",
 					"settings":
 					{
-						"buffer_size": 3621,
+						"buffer_size": 1010,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								100,
-								100
+								986,
+								986
 							]
 						],
 						"settings":
@@ -714,18 +685,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "wp-content/themes/theoryserum/template-short-stories.php",
+					"file": "wp-content/themes/theoryserum/index.php",
 					"settings":
 					{
-						"buffer_size": 3794,
+						"buffer_size": 3621,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1288,
-								1264
+								3621,
+								3621
 							]
 						],
 						"settings":
@@ -734,25 +705,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 74.0,
+						"translation.y": 1368.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "wp-content/themes/theoryserum/scss/_blog.scss",
+					"file": "wp-content/themes/theoryserum/scss/_single.scss",
 					"settings":
 					{
-						"buffer_size": 138,
+						"buffer_size": 511,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								102,
-								102
+								412,
+								412
 							]
 						],
 						"settings":
@@ -767,44 +738,18 @@
 				},
 				{
 					"buffer": 3,
-					"file": "wp-content/themes/theoryserum/comments.php",
-					"settings":
-					{
-						"buffer_size": 3276,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								704,
-								704
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "wp-content/themes/theoryserum/scss/_articles.scss",
 					"settings":
 					{
-						"buffer_size": 2624,
+						"buffer_size": 2717,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								152,
-								152
+								849,
+								849
 							]
 						],
 						"settings":
@@ -813,25 +758,53 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 567.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "wp-content/themes/theoryserum/scss/style.scss",
+					"buffer": 4,
+					"file": "wp-content/themes/theoryserum/comments.php",
 					"settings":
 					{
-						"buffer_size": 558,
+						"buffer_size": 3776,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								499,
-								499
+								3361,
+								3361
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 637.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "wp-content/themes/theoryserum/scss/_comments.scss",
+					"settings":
+					{
+						"buffer_size": 1295,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1095,
+								1095
 							]
 						],
 						"settings":
@@ -839,30 +812,30 @@
 							"syntax": "Packages/SCSS/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 876.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "wp-content/themes/theoryserum/template_temp_books.php",
+					"file": "wp-content/themes/theoryserum/scss/style.scss",
 					"settings":
 					{
-						"buffer_size": 279,
+						"buffer_size": 576,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								279,
-								0
+								119,
+								119
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -872,44 +845,18 @@
 				},
 				{
 					"buffer": 7,
-					"file": "wp-content/themes/theoryserum/template_temp_games.php",
-					"settings":
-					{
-						"buffer_size": 276,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								107,
-								107
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
 					"file": "wp-content/themes/theoryserum/scss/_global.scss",
 					"settings":
 					{
-						"buffer_size": 497,
+						"buffer_size": 568,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								497,
-								497
+								526,
+								526
 							]
 						],
 						"settings":
@@ -918,166 +865,89 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 94.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "wp-content/themes/theoryserum/js/script.js",
+					"settings":
+					{
+						"buffer_size": 1998,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1987,
+								1987
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 502.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 9,
-					"file": "wp-content/themes/theoryserum/scss/_games.scss",
+					"file": "wp-content/themes/theoryserum/style.css",
 					"settings":
 					{
-						"buffer_size": 140,
+						"buffer_size": 16013,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13,
+								0,
 								0
 							]
 						],
 						"settings":
 						{
-							"auto_name": "",
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 4926.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 10,
-					"file": "wp-content/themes/theoryserum/scss/_books.scss",
+					"file": "wp-content/themes/theoryserum/scss/_masthead.scss",
 					"settings":
 					{
-						"buffer_size": 140,
+						"buffer_size": 4099,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								140
+								2708,
+								2708
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "wp-content/themes/theoryserum/scss/_short_stories.scss",
-					"settings":
-					{
-						"buffer_size": 144,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								144
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "wp-content/themes/theoryserum/single.php",
-					"settings":
-					{
-						"buffer_size": 883,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								509,
-								509
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "wp-content/themes/theoryserum/template-my-books.php",
-					"settings":
-					{
-						"buffer_size": 3266,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								79,
-								79
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "wp-content/themes/theoryserum/scss/_sidebar.scss",
-					"settings":
-					{
-						"buffer_size": 237,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8,
-								8
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2570.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1127,6 +997,50 @@
 		"selected_items":
 		[
 			[
+				"mast",
+				"wp-content/themes/theoryserum/scss/_masthead.scss"
+			],
+			[
+				"style",
+				"wp-content/themes/theoryserum/style.css"
+			],
+			[
+				"script",
+				"wp-content/themes/theoryserum/js/script.js"
+			],
+			[
+				"global",
+				"wp-content/themes/theoryserum/scss/_global.scss"
+			],
+			[
+				"sty",
+				"wp-content/themes/theoryserum/scss/style.scss"
+			],
+			[
+				"commentscss",
+				"wp-content/themes/theoryserum/scss/_comments.scss"
+			],
+			[
+				"comment",
+				"wp-content/themes/theoryserum/comments.php"
+			],
+			[
+				"article",
+				"wp-content/themes/theoryserum/scss/_articles.scss"
+			],
+			[
+				"index",
+				"wp-content/themes/theoryserum/index.php"
+			],
+			[
+				"singl",
+				"wp-content/themes/theoryserum/single.php"
+			],
+			[
+				"scrip",
+				"wp-content/themes/theoryserum/js/script.js"
+			],
+			[
 				"function",
 				"wp-content/themes/theoryserum/functions.php"
 			],
@@ -1159,16 +1073,8 @@
 				"wp-content/themes/theoryserum/scss/_reset.scss"
 			],
 			[
-				"global",
-				"wp-content/themes/theoryserum/scss/_global.scss"
-			],
-			[
 				"head",
 				"wp-content/themes/theoryserum/header.php"
-			],
-			[
-				"style",
-				"wp-content/themes/theoryserum/style.css"
 			],
 			[
 				"globa",
@@ -1213,10 +1119,6 @@
 			[
 				"scri",
 				"wp-content/themes/theoryserum/js/script.js"
-			],
-			[
-				"sty",
-				"wp-content/themes/theoryserum/scss/style.scss"
 			],
 			[
 				"glob",
@@ -1532,7 +1434,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 217.0,
 	"status_bar_visible": true
 }

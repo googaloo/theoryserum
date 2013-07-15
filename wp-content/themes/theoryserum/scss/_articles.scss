@@ -11,6 +11,10 @@ article {
 	width: 700px;
 }
 
+.featured-article-content p {
+	padding: 10px 0;
+}
+
 .featured-sidebar-container {	
 	float: left;
 	//margin: 55px 0 0 0;
@@ -55,6 +59,10 @@ article {
 .article-content {
 	display: inline;
 	clear: both;
+}
+
+.article-content p {
+	padding: 10px 0;
 }
 
 .article-img {
@@ -110,19 +118,6 @@ article {
 	padding: 2px 0;
 	margin: 20px 0 0 0;
 	float: left;
-}
-
-.read-more {
-	margin: 15px 0 0 0;
-	padding: 5px;
-	background: #85d1da;
-	float: right;
-	color: #cffcff;
-}
-
-.read-more:hover {
-	color: #FFFFFF;
-	background: #8ad9e2;
 }
 
 .divider {

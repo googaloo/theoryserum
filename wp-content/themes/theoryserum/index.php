@@ -29,7 +29,7 @@ while ($feat_query->have_posts() ) : $feat_query->the_post(); ?>
 			<p class="featured-post-date"><?php the_date(); ?></p><!-- end .post-date -->
 			<div class="featured-article-comment-number"> <a href="<?php comments_link(); ?>"><span class="comment-image"></span><?php comments_number('0','1','%'); ?></a></div><!-- end .article-comment-number -->
 
-		<article class="featured-article-content"><?php the_excerpt(); ?><a class="read-more" href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
+		<article class="featured-article-content"><?php the_excerpt(); ?><a class="ts-button" href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
 
 	</div><!-- end .featured-container -->
 
@@ -85,7 +85,7 @@ if( have_posts() ) :
 
 			</header>
 
-			<article class="article-content"><?php the_excerpt(); ?><a class="read-more" href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
+			<article class="article-content"><?php the_excerpt(); ?><a class="ts-button" href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
 
 		</div><!-- end .article-content-container -->
 

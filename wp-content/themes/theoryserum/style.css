@@ -171,6 +171,22 @@ a:hover {
   color: #CCCCCC;
   font-size: 3em; }
 
+.required {
+  color: #71a9db;
+  margin-left: 10px;
+  font-size: 0.8em; }
+
+.ts-button {
+  margin: 15px 0 0 0;
+  padding: 5px;
+  background: #85d1da;
+  float: right;
+  color: #cffcff; }
+
+.ts-button:hover {
+  color: #FFFFFF;
+  background: #8ad9e2; }
+
 /*************
 	MASTHEAD
 **************/
@@ -324,7 +340,7 @@ a:hover {
   position: absolute;
   left: 0;
   top: 199px;
-  width: 2560px; }
+  width: 100%; }
 
 .nav-box-no-hover {
   opacity: 0.5;
@@ -402,6 +418,9 @@ article {
   float: left;
   width: 700px; }
 
+.featured-article-content p {
+  padding: 10px 0; }
+
 .featured-sidebar-container {
   float: left; }
 
@@ -437,6 +456,9 @@ article {
 .article-content {
   display: inline;
   clear: both; }
+
+.article-content p {
+  padding: 10px 0; }
 
 .article-img {
   float: left;
@@ -482,17 +504,6 @@ article {
   padding: 2px 0;
   margin: 20px 0 0 0;
   float: left; }
-
-.read-more {
-  margin: 15px 0 0 0;
-  padding: 5px;
-  background: #85d1da;
-  float: right;
-  color: #cffcff; }
-
-.read-more:hover {
-  color: #FFFFFF;
-  background: #8ad9e2; }
 
 .divider {
   height: 1px;
@@ -541,9 +552,83 @@ article {
 /*******
 COMMENTS
 *******/
+#comments {
+  float: left; }
+
 .comments-item {
   margin: 15px 0 0 0;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #CCCCCC; }
+
+.comments-item:last-child {
+  border: none; }
+
+.comments-header-container {
+  width: 100%;
+  display: inline-block; }
+
+.avatar {
   float: left; }
+
+.comment-author, .comment-date {
+  float: left;
+  padding: 0 10px; }
+
+.comment-author {
+  font-size: 1.5em; }
+
+.comments-item p {
+  padding-bottom: 10px; }
+
+.edit-comment-link {
+  padding: 15px 0; }
+
+.unapproved-comment {
+  padding: 5px;
+  background: #6be1ed;
+  color: #FFFFFF;
+  margin-bottom: 15px; }
+
+.comment-date {
+  font-size: 0.8em;
+  margin: 5px 0 0 0;
+  display: inline-block; }
+
+.comment-text-container {
+  margin-top: 15px; }
+
+.single-comments-counter {
+  font-size: 1.3em;
+  padding-bottom: 10px;
+  color: #CCCCCC; }
+
+.add-comment-container {
+  padding: 20px;
+  background: #eaf6f7;
+  clear: both; }
+
+.add-comment-container label {
+  font-size: 1.2em;
+  font-family: bebasregular;
+  margin-left: 15px; }
+
+.add-comment-header {
+  padding-bottom: 15px;
+  border-bottom: 5px solid #FFFFFF; }
+
+.comment-input {
+  padding-top: 15px; }
+
+.comment-submit {
+  background: #71a9db;
+  padding: 8px;
+  border: none;
+  color: #FFFFFF;
+  margin-top: 15px; }
+
+.comment-submit:hover {
+  background: #78b3e8; }
 
 /******
 SIDEBAR
@@ -620,6 +705,40 @@ SIDEBAR
   width: 100%;
   padding: 45px 0 0 0; }
 
+/******
+SINGLE
+******/
+.single-container {
+  margin-top: 55px; }
+
+.single-header {
+  margin-top: 23px;
+  float: left; }
+
+.single-content {
+  float: left;
+  margin-top: 15px;
+  font-size: 1.35em;
+  line-height: 1.3; }
+
+.single-content p {
+  padding: 10px 0; }
+
+.single-pagination {
+  float: left;
+  width: 100%;
+  height: 30px;
+  font-size: 1.2em;
+  font-family: bebasregular;
+  position: relative;
+  padding: 25px 0; }
+
+.single-pagination-previous {
+  float: left; }
+
+.single-pagination-next {
+  float: right; }
+
 .blog-header {
   padding: 15px 15px 15px 80px;
   margin: 35px 0 0 0;
@@ -639,3 +758,28 @@ SIDEBAR
   padding: 15px 15px 15px 80px;
   margin: 35px 0 0 0;
   background: url("images/stories-icon-large.png") no-repeat left center; }
+
+.contact-header {
+  margin: 55px 0 0 0;
+  padding-bottom: 20px; }
+
+.wpcf7 p {
+  padding: 10px 0;
+  font-family: bebasregular; }
+
+.wpcf7-form-control {
+  margin: 5px 0; }
+
+.wpcf7-textarea {
+  width: 55%; }
+
+.wpcf7-submit {
+  padding: 5px 15px;
+  background: #85d1da;
+  float: left;
+  color: #cffcff;
+  border: none; }
+
+.wpcf7-submit:hover {
+  color: #FFFFFF;
+  background: #8ad9e2; }

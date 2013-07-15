@@ -49,3 +49,22 @@ a:hover {
 	color: #CCCCCC;
 	font-size: 3em;
 }
+
+.required {
+	color: #71a9db;
+	margin-left: 10px;
+	font-size: 0.8em;
+}
+
+.ts-button {
+	margin: 15px 0 0 0;
+	padding: 5px;
+	background: #85d1da;
+	float: right;
+	color: #cffcff;
+}
+
+.ts-button:hover {
+	color: #FFFFFF;
+	background: #8ad9e2;
+}

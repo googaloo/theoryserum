@@ -3,7 +3,101 @@
 COMMENTS
 *******/
 
+#comments {
+	float: left;
+}
+
 .comments-item {
 	margin: 15px 0 0 0;
 	float: left;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.comments-item:last-child {
+	border: none;
+}
+
+.comments-header-container {
+	width: 100%;
+	display: inline-block
+}
+
+.avatar {
+	float: left;
+}
+
+.comment-author, .comment-date {
+	float: left;
+	padding: 0 10px;
+}
+
+.comment-author {
+	font-size: 1.5em;
+}
+
+.comments-item p {
+	padding-bottom: 10px;
+}
+
+.edit-comment-link {
+	padding: 15px 0;
+}
+
+.unapproved-comment {
+	padding: 5px;
+	background: #6be1ed;
+	color: #FFFFFF;
+	margin-bottom: 15px;
+}
+
+.comment-date {
+	font-size: 0.8em;
+	margin: 5px 0 0 0;
+	display: inline-block;
+}
+
+.comment-text-container {
+	margin-top: 15px;
+}
+
+.single-comments-counter {
+	font-size: 1.3em;
+	padding-bottom: 10px;
+	color: #CCCCCC;
+}
+
+// ADD COMMENT
+
+.add-comment-container {
+	padding: 20px;
+	background: #eaf6f7;
+	clear: both;
+}
+
+.add-comment-container label {
+	font-size: 1.2em;
+	font-family: bebasregular;
+	margin-left: 15px;
+}
+
+.add-comment-header {
+	padding-bottom: 15px;
+	border-bottom: 5px solid #FFFFFF;
+}
+
+.comment-input {
+	padding-top: 15px;
+}
+
+.comment-submit {
+	background: #71a9db;
+	padding: 8px;
+	border: none;
+	color: #FFFFFF;
+	margin-top: 15px;
+}
+
+.comment-submit:hover {
+	background: #78b3e8;
 }
