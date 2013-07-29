@@ -12,6 +12,12 @@
 
 <h1 class="stories-header">Short Stories</h1>
 
+<div class="featured-sidebar-container">
+
+	<div class="featured-container">
+
+		<div class="article-img">
+
 <?php
 
 // Needs to run through all posts to grab latest top featured so 'posts_per_page' needs to be large enough to run through it
@@ -19,11 +25,7 @@ $short_stories_top_featured_query = new WP_Query( array( 'post_type' => 'my-shor
 
 while ($short_stories_top_featured_query->have_posts() ) : $short_stories_top_featured_query->the_post(); ?>
 
-<div class="featured-sidebar-container">
 
-	<div class="featured-container">
-
-		<div class="article-img">
 
 			<?php if ( get_post_meta( $post->ID, 'wpcf-top-featured-post', true ) === 'top-featured' ) :
 
@@ -33,11 +35,13 @@ while ($short_stories_top_featured_query->have_posts() ) : $short_stories_top_fe
 
 		</div><!-- end article-img -->
 
-			<h2 class="top-featured-article-header top-featured-header"><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
-			<p class="featured-post-date"><?php the_date(); ?></p><!-- end .post-date -->
-			<div class="featured-article-comment-number"> <a href="<?php comments_link(); ?>"><span class="comment-image"></span><?php comments_number('0','1','%'); ?></a></div><!-- end .article-comment-number -->
+		<h2 class="top-featured-article-header top-featured-header"><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
+		<p class="featured-post-date"><?php the_date(); ?></p><!-- end .post-date -->
+		<div class="featured-article-comment-number"> <a href="<?php comments_link(); ?>"><span class="comment-image"></span><?php comments_number('0','1','%'); ?></a></div><!-- end .article-comment-number -->
 
-		<article class="featured-article-content"><?php the_excerpt(); ?><a class="ts-button" href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
+		<article>
+		 <p class="featured-article-content"><?php echo get_the_excerpt(); ?><a class="ts-button" href="<?php echo get_permalink($post->ID); ?>">Read More</a></p>
+		</article>
 
 	</div><!-- end .featured-container -->
 
@@ -57,53 +61,53 @@ $short_stories_query = new WP_Query( array( 'post_type' => 'my-short-stories','p
 
 while ( $short_stories_query->have_posts() ) : $short_stories_query->the_post(); ?>
 
-	<?php if ( get_post_meta( $post->ID, 'wpcf-top-featured-post', true ) !== 'top-featured' ) : ?>
+<?php if ( get_post_meta( $post->ID, 'wpcf-top-featured-post', true ) !== 'top-featured' ) : ?>
 
-		<div class="article-container">
+	<div class="article-container">
 
-			<p class="divider"></p>
+		<p class="divider"></p>
 
-			<div class="article-img">
+		<div class="article-img">
 
-				<?php if ( has_post_thumbnail() ) {
+			<?php if ( has_post_thumbnail() ) {
 
-					if ( get_post_meta( $post->ID, 'wpcf-featured-post', true ) === 'featured' ) {
+				if ( get_post_meta( $post->ID, 'wpcf-featured-post', true ) === 'featured' ) {
 
-						the_post_thumbnail('full');
+					the_post_thumbnail('full');
 
-					} else {
+				} else {
 
-						the_post_thumbnail('ts-thumbnail');
+					the_post_thumbnail('ts-thumbnail');
 
-					}
+				}
 
-				} ?>
+			} ?>
 
-			</div><!-- end .article-img -->
+		</div><!-- end .article-img -->
 
-			<div class="article-content-container">
+		<div class="article-content-container">
 
-				<header>
+			<header>
 
-					<h2 class="article-header"><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
-					
-					<p class="post-date"><?php echo get_the_date(); ?></p><!-- end .post-date -->
+				<h2 class="article-header"><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
 
-					<div class="article-comment-number"> <a href="<?php comments_link(); ?>"><span class="comment-image"></span><?php comments_number('0','1','%'); ?></a></div><!-- end .article-comment-number -->
+				<p class="post-date"><?php echo get_the_date(); ?></p><!-- end .post-date -->
 
-				</header>
+				<div class="article-comment-number"> <a href="<?php comments_link(); ?>"><span class="comment-image"></span><?php comments_number('0','1','%'); ?></a></div><!-- end .article-comment-number -->
 
-				<article class="article-content"><?php the_excerpt(); ?><a class="ts-button" href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
+			</header>
 
-			</div><!-- end .article-content-container -->
+			<article class="article-content"><?php the_excerpt(); ?><a class="ts-button" href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
 
-		</div><!-- end .article-container -->
+		</div><!-- end .article-content-container -->
 
-		<?php
+	</div><!-- end .article-container -->
+
+	<?php
 
 	endif;
 
-endwhile; 
+	endwhile; 
 
 	// PAGINATION
 	if ( $prev_link = get_previous_posts_link() ) {

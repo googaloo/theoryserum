@@ -30,8 +30,8 @@ endif;
 
 <div class='single-pagination'>
 
-	<span class="single-pagination-previous"><?php previous_post_link(); ?></span>
-	<span class="single-pagination-next"><?php next_post_link(); ?></span>
+	<span class="single-pagination-previous"><?php previous_post_link('<span class="single-pagination-arrow">&laquo;</span> %link'); ?></span>
+	<span class="single-pagination-next"><?php next_post_link('%link <span class="single-pagination-arrow">&raquo;</span>'); ?></span>
 
 </div><!-- end .single-pagination -->
 

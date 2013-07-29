@@ -112,6 +112,7 @@ article {
 
 .post-categories li a:hover {
 	opacity: 0.75;
+	filter:alpha(opacity=75);
 }
 
 .top-featured-header {

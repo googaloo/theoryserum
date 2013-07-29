@@ -4,7 +4,11 @@
 	<meta charset="UTF-8">
 	<title><?php wp_title(); ?></title>
 
-	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
+	<!--[if IE 8]>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/ie8_styles.css" />
+	<![endif]-->
+
+	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.png" />
 
 	<?php wp_head(); ?>
 </head>
@@ -15,7 +19,7 @@
 
 		<div class="masthead">
 			
-			<div class="main-header-logo" style="background: url('<?php echo get_template_directory_uri() ?>/images/main_header_logo.jpg'), no-repeat;">
+			<div class="main-header-logo">
 
 				<div class="hexagon-box">
 

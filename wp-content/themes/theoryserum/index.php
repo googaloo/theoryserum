@@ -4,17 +4,18 @@
 
 if ( is_home() ) : ?>
 	<h1 class="blog-header">Blog</h1>
-<?php endif;
-
-$feat_query = new WP_Query( array( 'meta_value' => 'top-featured','posts_per_page' => -1 ) );
-
-while ($feat_query->have_posts() ) : $feat_query->the_post(); ?>
+<?php endif; ?>
 
 <div class="featured-sidebar-container">
 
 	<div class="featured-container">
 
 		<div class="article-img">
+
+<?php $feat_query = new WP_Query( array( 'meta_value' => 'top-featured','posts_per_page' => -1 ) );
+
+while ($feat_query->have_posts() ) : $feat_query->the_post(); ?>
+
 
 			<?php if ( get_post_meta( $post->ID, 'wpcf-top-featured-post', true ) === 'top-featured' ) :
 
@@ -29,7 +30,9 @@ while ($feat_query->have_posts() ) : $feat_query->the_post(); ?>
 			<p class="featured-post-date"><?php the_date(); ?></p><!-- end .post-date -->
 			<div class="featured-article-comment-number"> <a href="<?php comments_link(); ?>"><span class="comment-image"></span><?php comments_number('0','1','%'); ?></a></div><!-- end .article-comment-number -->
 
-		<article class="featured-article-content"><?php the_excerpt(); ?><a class="ts-button" href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
+		<article>
+			<p class="featured-article-content"><?php echo get_the_excerpt(); ?><a class="ts-button" href="<?php echo get_permalink($post->ID); ?>">Read More</a></p>
+		</article>
 
 	</div><!-- end .featured-container -->
 
