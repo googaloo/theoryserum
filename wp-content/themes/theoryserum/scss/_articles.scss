@@ -1,7 +1,7 @@
 
 article {
 	font-size: 1.35em;
-	line-height: 1.3;
+	line-height: 1.5;
 	display: inline-block;
 	margin-top: 15px;
 }
@@ -167,6 +167,10 @@ article {
 	width: 73px;
 	height: 37px;
 	padding: 0 20px 0 0px;
+}
+
+.top-featured-header, .article-header, .single-header, .single-pagination-previous {
+	word-spacing: 0.3em;
 }
 
 @-moz-document url-prefix() { 
