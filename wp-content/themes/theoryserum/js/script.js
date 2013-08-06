@@ -22,7 +22,7 @@ jQuery(function($) {
 				case 'Futurism' :
 					$(this).css('background-color', '#a1dae2');
 					break;
-				case 'Other Peoples Stuff' :
+				case 'Fun Interwebs Stuff' :
 					$(this).css('background-color', '#71a9db');
 					break;
 				case 'Reviews' :
