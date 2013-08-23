@@ -14,7 +14,7 @@
 			<ul class="social-icon-list">
 				<li><a href="https://www.facebook.com/TheorySerum" target="_blank"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" /><span class="social-text">Facebook</span></a></li>
 				<li><a href="https://twitter.com/theoryserum" target="_blank"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" /><span class="social-text">Twitter</span></a></li>
-				<li><a href="<?php bloginfo('rss2_url'); ?>" target="_blank"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/rss.png" /><span class="social-text">RSS</span></a></li>
+				<li><a href="http://feeds.feedburner.com/Theoryserum" target="_blank"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/rss.png" /><span class="social-text">RSS</span></a></li>
 			</ul>
 
 		</div> <!-- end .footer-about -->
