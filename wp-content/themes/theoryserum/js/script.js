@@ -34,6 +34,9 @@ jQuery(function($) {
 				case 'News' :
 					$(this).css('background-color', '#557EA4');
 					break;
+				case 'Fringe-Science' :
+					$(this).css('background-color', '#1B6F4F');
+					break;
 				default :
 					$(this).css('background-color', '#CCCCCC');
 					break;

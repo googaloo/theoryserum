@@ -45,6 +45,8 @@
 
 				</div> <!-- end .hexagon-box -->
 
+				<?php get_subheader(); ?>
+
 			</div>
 
 			<div class="tech-rotate-box" style="background: url('<?php echo get_template_directory_uri() ?>/images/rotator.png');"></div> <!-- end .tech-follow-box -->

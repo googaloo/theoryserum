@@ -90,7 +90,7 @@ function wpcf_cd_post_groups_filter( $groups, $post, $context ) {
                             $group['id'] );
                 }
                 $fields['evaluate'] = $evaluate;
-                $check = wpv_condition( $fields );
+                $check = wpv_condition( $fields, $post );
                 $passed = $check;
                 if ( !is_bool( $check ) ) {
                     $passed = false;
@@ -105,15 +105,25 @@ function wpcf_cd_post_groups_filter( $groups, $post, $context ) {
                 $passed_one = false;
                 foreach ( $group['conditional_display']['conditions'] as
                             $condition ) {
+                    foreach ( array('field', 'value', 'operation') as $_v) {
+                        if ( !isset( $condition[$_v] ) ) {
+                            $passed_all = false;
+                            continue;
+                        }
+                    }
                     // Load field
                     $field = wpcf_admin_fields_get_field( $condition['field'] );
+                    if ( empty( $field ) ) {
+                        $passed_all = false;
+                        continue;
+                    }
                     wpcf_fields_type_action( $field['type'] );
 
                     wpcf_cd_add_group_js( 'add', $condition['field'],
                             $condition['value'], $condition['operation'],
                             $group['id'] );
                     $value = get_post_meta( $post->ID,
-                            wpcf_types_get_meta_prefix( $condition['field'] ) . $condition['field'],
+                            wpcf_types_get_meta_prefix( $field ) . $condition['field'],
                             true );
                     $value = apply_filters( 'wpcf_conditional_display_compare_meta_value',
                             $value, $condition['field'],
@@ -331,24 +341,24 @@ function wpcf_cd_add_group_js_render( $conditions = array() ) {
         foreach ( $groups as $field => $data ) {
 
             ?>
-                            if (jQuery('[name="wpcf[<?php echo $field; ?>]"]').hasClass('radio')
-                                || jQuery('[name="wpcf[<?php echo $field; ?>]"]').hasClass('checkbox')) {
-                                jQuery('[name="wpcf[<?php echo $field; ?>]"]').bind('click', function(){
-                                    wpcfCdGroupVerify(jQuery(this), jQuery(this).attr('name'), jQuery(this).val(), <?php echo $data['group_id']; ?>);
-                                });
-                            } else if (jQuery('[name="wpcf[<?php echo $field; ?>]"]').hasClass('select')) {
-                                jQuery('[name="wpcf[<?php echo $field; ?>]"]').bind('change', function(){
-                                    wpcfCdGroupVerify(jQuery(this), jQuery(this).attr('name'), jQuery(this).val(), <?php echo $data['group_id']; ?>);
-                                });
-                            } else if (jQuery('[name="wpcf[<?php echo $field; ?>]"]').hasClass('wpcf-datepicker')) {
-                                jQuery('[name="wpcf[<?php echo $field; ?>]"]').bind('wpcfDateBlur', function(){
-                                    wpcfCdGroupVerify(jQuery(this), jQuery(this).attr('name'), jQuery(this).val(), <?php echo $data['group_id']; ?>);
-                                });
-                            } else {
-                                jQuery('[name="wpcf[<?php echo $field; ?>]"]').bind('blur', function(){
-                                    wpcfCdGroupVerify(jQuery(this), jQuery(this).attr('name'), jQuery(this).val(), <?php echo $data['group_id']; ?>);
-                                });
-                            }
+            if (jQuery('[name="wpcf[<?php echo $field; ?>]"]').hasClass('radio')
+                || jQuery('[name="wpcf[<?php echo $field; ?>]"]').hasClass('checkbox')) {
+                jQuery('[name="wpcf[<?php echo $field; ?>]"]').bind('click', function(){
+                    wpcfCdGroupVerify(jQuery(this), jQuery(this).attr('name'), jQuery(this).val(), <?php echo $data['group_id']; ?>);
+                });
+            } else if (jQuery('[name="wpcf[<?php echo $field; ?>]"]').hasClass('select')) {
+                jQuery('[name="wpcf[<?php echo $field; ?>]"]').bind('change', function(){
+                    wpcfCdGroupVerify(jQuery(this), jQuery(this).attr('name'), jQuery(this).val(), <?php echo $data['group_id']; ?>);
+                });
+            } else if (jQuery('[name="wpcf[<?php echo $field; ?>]"]').hasClass('wpcf-datepicker')) {
+                jQuery('[name="wpcf[<?php echo $field; ?>]"]').bind('wpcfDateBlur', function(){
+                    wpcfCdGroupVerify(jQuery(this), jQuery(this).attr('name'), jQuery(this).val(), <?php echo $data['group_id']; ?>);
+                });
+            } else {
+                jQuery('[name="wpcf[<?php echo $field; ?>]"]').bind('blur', function(){
+                    wpcfCdGroupVerify(jQuery(this), jQuery(this).attr('name'), jQuery(this).val(), <?php echo $data['group_id']; ?>);
+                });
+            }
             <?php
         }
     }
@@ -362,6 +372,8 @@ function wpcf_cd_add_group_js_render( $conditions = array() ) {
 
 /**
  * Passes $_POST values for AJAX call.
+ * 
+ * @todo still used by group.
  * 
  * @param type $null
  * @param type $object_id

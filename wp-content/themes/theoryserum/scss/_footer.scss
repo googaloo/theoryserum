@@ -46,13 +46,20 @@
 	padding-bottom: 5px;
 }
 
+.footer-pages ul {
+	list-style: none;
+	padding-left: 0;
+}
+
 .footer-pages ul li {
 	padding-top: 15px;
+	margin: 0;
 }
 
 .social-icon-list {
 	list-style: none;
 	margin-top: -15px;
+	padding: 0;
 }
 
 .social-icon-list li {

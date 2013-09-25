@@ -12,6 +12,14 @@
   background: url("images/main_header_logo.jpg") no-repeat;
 }
 
+.blinking-cursor {
+	background: #aed2ea;
+	margin-left: 5px;
+	animation: blinkingCursor 1s infinite linear;
+	-webkit-animation: blinkingCursor 1s infinite linear;
+	-moz-animation: blinkingCursor 1s infinite linear;
+}
+
 .tech-rotate-box {
 	width:190px; height:190px;
 	float: left;
@@ -70,6 +78,15 @@
 .hexagon:hover {
 	animation: scaleFade 0.5s 1;
 	-webkit-animation: scaleFade 0.5s 1; // Opera / Chrome
+}
+
+.masthead-subheader {
+	font-family: spaceman;
+	color: #aed2ea;
+	font-size: 16px;
+	float: right;
+	margin-top: 128px;
+	margin-right: 25px;
 }
 
 @keyframes scaleFade {
@@ -174,6 +191,51 @@
 	}
 }
 
+@keyframes blinkingCursor {
+	0% {
+		opacity: 1;
+	}
+	49% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes blinkingCursor {
+	0% {
+		opacity: 1;
+	}
+	49% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes blinkingCursor {
+	0% {
+		-moz-opacity: 1;
+	}
+	49% {
+		-moz-opacity: 1;
+	}
+	50% {
+		-moz-opacity: 0;
+	}
+	100% {
+		-moz-opacity: 0;
+	}
+}
+
 /* MENU */
 
 #nav-box {
@@ -216,6 +278,7 @@
 .main-menu ul li {
 	float: left;
 	padding: 10px 0 10px 35px;
+	margin-top: 0;
 	margin-left: 50px;
 }
 

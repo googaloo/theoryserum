@@ -63,7 +63,7 @@
             </p>  
             <p class="comment-input">
             	<input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" />  
-                <label for="email"><small>Mail (will not be published) <?php if($req) echo "<span class='required'>(required)</span>"; ?></small></label>
+                <label for="email"><small>Email (will not be published) <?php if($req) echo "<span class='required'>(required)</span>"; ?></small></label>
             </p>  
             <p class="comment-input">
             	<input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" />  

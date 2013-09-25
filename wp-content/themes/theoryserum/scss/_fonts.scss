@@ -113,3 +113,15 @@ FONTS
     font-style: italic;
 
 }
+
+@font-face {
+    font-family: 'spaceman';
+    src: url('fonts/spaceman-webfont.eot');
+    src: url('fonts/spaceman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/spaceman-webfont.woff') format('woff'),
+         url('fonts/spaceman-webfont.ttf') format('truetype'),
+         url('fonts/spaceman-webfont.svg#spacemanregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
