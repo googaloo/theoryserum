@@ -27,7 +27,7 @@
 	
 	<div id="page" class="hfeed site">
 
-		<div class="masthead">
+		<a href="<?php echo home_url(); ?>"><div class="masthead">
 			
 			<div class="main-header-logo">
 
@@ -52,7 +52,7 @@
 			<div class="tech-rotate-box" style="background: url('<?php echo get_template_directory_uri() ?>/images/rotator.png');"></div> <!-- end .tech-follow-box -->
 
 
-		</div><!-- end .masthead -->
+		</div><!-- end .masthead --></a>
 
 		<div id="nav-box" class="nav-box-no-hover"></div><!--end #nav-box -->
 		<nav>

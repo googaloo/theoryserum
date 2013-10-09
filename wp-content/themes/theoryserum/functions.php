@@ -72,7 +72,7 @@ function get_subheader() {
 			break;
 
 		case 6:
-			echo '<h2 class="masthead-subheader">Scratching that Existential Itch<span class="blinking-cursor">3</span></h2>';
+			echo '<h2 class="masthead-subheader">Scratching that Truth-Seeking Itch<span class="blinking-cursor">3</span></h2>';
 			break;
 
 	}

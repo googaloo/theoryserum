@@ -2,9 +2,13 @@
 SIDEBAR
 *******/
 .my-featured-stuff-container {
-	width: 300px;
+	width: 243px;
 	float: right;
-	margin-left: 15px;
+	margin-left: 57px;
+}
+
+.my-featured-stuff-title {
+	word-spacing: 3px;
 }
 
 .sidebar-post-header {
@@ -13,4 +17,8 @@ SIDEBAR
 	margin: 10px 0;
 	padding: 5px 0 5px 15px;
 	font-weight: normal;
+}
+
+.sidebar-thumb {
+	margin-top: 5px;
 }
