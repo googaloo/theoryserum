@@ -47,7 +47,7 @@ add_image_size('ts-books-thumb', 145, 225, true);
 // Random subheader
 function get_subheader() {
 
-	$randNum = rand(1,6);
+	$randNum = rand(1,8);
 
 	switch($randNum) {
 
@@ -73,6 +73,14 @@ function get_subheader() {
 
 		case 6:
 			echo '<h2 class="masthead-subheader">Scratching that Truth-Seeking Itch<span class="blinking-cursor">3</span></h2>';
+			break;
+
+		case 7:
+			echo '<h2 class="masthead-subheader">Science and Science Fiction for All!<span class="blinking-cursor">3</span></h2>';
+			break;
+
+		case 8:
+			echo '<h2 class="masthead-subheader">Things competing for my obsession<span class="blinking-cursor">3</span></h2>';
 			break;
 
 	}

@@ -4,6 +4,7 @@ GLOBAL
 
 html {
 	margin: 0;
+	background: url("images/bg_hexagons.png") fixed #FFF no-repeat bottom center;
 }
 
 body {
@@ -99,4 +100,10 @@ strong {
 
 .generic-index-box {
 	margin-top: 60px;
+}
+
+blockquote {
+	padding: 5px; 
+	background: #EEE;
+	margin: 15px 35px;
 }

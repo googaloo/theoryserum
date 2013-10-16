@@ -123,7 +123,7 @@
 			"file": "wp-content/themes/theoryserum/functions.php",
 			"settings":
 			{
-				"buffer_size": 2082,
+				"buffer_size": 2365,
 				"line_ending": "Unix"
 			}
 		},
@@ -179,7 +179,7 @@
 			"file": "wp-content/themes/theoryserum/scss/_global.scss",
 			"settings":
 			{
-				"buffer_size": 1053,
+				"buffer_size": 1203,
 				"line_ending": "Unix"
 			}
 		},
@@ -204,6 +204,22 @@
 			"settings":
 			{
 				"buffer_size": 2771,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/theoryserum/sidebar.php",
+			"settings":
+			{
+				"buffer_size": 667,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/theoryserum/scss/_sidebar.scss",
+			"settings":
+			{
+				"buffer_size": 325,
 				"line_ending": "Unix"
 			}
 		}
@@ -521,6 +537,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"backgroun",
 			"icomoon",
 			"line-heigh\n\n\n\nline-height",
 			"line-height",
@@ -647,8 +664,7 @@
 			"input type=\"text\"",
 			"survey",
 			"issue-background",
-			"divider",
-			"photo-wrapper"
+			"divider"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -666,7 +682,7 @@
 	"groups":
 	[
 		{
-			"selected": 12,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -934,15 +950,15 @@
 					"file": "wp-content/themes/theoryserum/functions.php",
 					"settings":
 					{
-						"buffer_size": 2082,
+						"buffer_size": 2365,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2015,
-								2015
+								1242,
+								1242
 							]
 						],
 						"settings":
@@ -1054,7 +1070,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 234.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1845,15 +1861,15 @@
 					"file": "wp-content/themes/theoryserum/scss/_global.scss",
 					"settings":
 					{
-						"buffer_size": 1053,
+						"buffer_size": 1203,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1047,
-								1047
+								121,
+								121
 							]
 						],
 						"settings":
@@ -1982,7 +1998,7 @@
 						"selection":
 						[
 							[
-								53,
+								0,
 								0
 							]
 						],
@@ -2112,8 +2128,8 @@
 						"selection":
 						[
 							[
-								0,
-								3654
+								311,
+								311
 							]
 						],
 						"settings":
@@ -2355,7 +2371,268 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 551.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "wp-content/themes/theoryserum/sidebar.php",
+					"settings":
+					{
+						"buffer_size": 667,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								358,
+								358
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "wp-content/themes/theoryserum/scss/_sidebar.scss",
+					"settings":
+					{
+						"buffer_size": 325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								152,
+								152
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -2405,6 +2682,22 @@
 		"selected_items":
 		[
 			[
+				"glob",
+				"wp-content/themes/theoryserum/scss/_global.scss"
+			],
+			[
+				"scss",
+				"wp-content/themes/theoryserum/scss/_global.scss"
+			],
+			[
+				"sidebarscs",
+				"wp-content/themes/theoryserum/scss/_sidebar.scss"
+			],
+			[
+				"sidebar",
+				"wp-content/themes/theoryserum/sidebar.php"
+			],
+			[
 				"home",
 				"wp-content/themes/theoryserum/home.php"
 			],
@@ -2419,10 +2712,6 @@
 			[
 				"commentscs",
 				"wp-content/themes/theoryserum/scss/_comments.scss"
-			],
-			[
-				"scss",
-				"wp-content/themes/theoryserum/scss/_global.scss"
 			],
 			[
 				"function",
@@ -2505,10 +2794,6 @@
 				"wp-content/themes/theoryserum/scss/_single.scss"
 			],
 			[
-				"glob",
-				"wp-content/themes/theoryserum/scss/_global.scss"
-			],
-			[
 				"contac",
 				"wp-content/themes/theoryserum/scss/_contact.scss"
 			],
@@ -2571,10 +2856,6 @@
 			[
 				"funct",
 				"wp-includes/functions.php"
-			],
-			[
-				"sidebar",
-				"wp-content/themes/theoryserum/scss/_sidebar.scss"
 			],
 			[
 				"stye",

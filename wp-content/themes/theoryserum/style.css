@@ -141,7 +141,8 @@ FONTS
 GLOBAL
 *******/
 html {
-  margin: 0; }
+  margin: 0;
+  background: url("images/bg_hexagons.png") fixed white no-repeat bottom center; }
 
 body {
   font-family: cabin;
@@ -218,6 +219,11 @@ strong {
 
 .generic-index-box {
   margin-top: 60px; }
+
+blockquote {
+  padding: 5px;
+  background: #EEE;
+  margin: 15px 35px; }
 
 /*************
 	MASTHEAD
