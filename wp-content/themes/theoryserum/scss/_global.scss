@@ -16,10 +16,16 @@ body {
 h1, h2, h3, h4 {
 	font-family: bebasregular;
 	font-weight: thin;
+	word-spacing: 0.3em;
 }
 
 h2 {
 	font-size: 1.8em;
+}
+
+h4 {
+	font-size: 0.8em;
+	padding-top: 15px;
 }
 
 ul {

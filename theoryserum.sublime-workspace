@@ -211,7 +211,7 @@
 			"file": "wp-content/themes/theoryserum/sidebar.php",
 			"settings":
 			{
-				"buffer_size": 667,
+				"buffer_size": 974,
 				"line_ending": "Unix"
 			}
 		},
@@ -682,7 +682,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 13,
 			"sheets":
 			[
 				{
@@ -2381,15 +2381,15 @@
 					"file": "wp-content/themes/theoryserum/sidebar.php",
 					"settings":
 					{
-						"buffer_size": 667,
+						"buffer_size": 974,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								358,
-								358
+								509,
+								509
 							]
 						],
 						"settings":
@@ -2500,7 +2500,7 @@
 							"sublime_auto_complete": true,
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
-						"translation.x": 0.0,
+						"translation.x": 137.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -2681,6 +2681,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"sideb",
+				"wp-content/themes/theoryserum/sidebar.php"
+			],
 			[
 				"glob",
 				"wp-content/themes/theoryserum/scss/_global.scss"
