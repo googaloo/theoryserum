@@ -68,51 +68,54 @@ class WPSEO_Admin_Pages {
 	 * Generates the sidebar for admin pages.
 	 */
 	function admin_sidebar() {
+
+		// Make the sidebar filterable
+		if ( false === apply_filters( 'wpseo_sidebar_banners', true ) ) {
+			return;
+		}
+
 		$banners = array(
-			array(
-				'url' => 'https://yoast.com/hire-us/website-review/#utm_source=wordpress-seo-config&utm_medium=banner&utm_campaign=website-review-banner',
-				'img' => 'banner-website-review.png',
-				'alt' => 'Website Review banner',
-			)
+				array(
+						'url' => 'https://yoast.com/hire-us/website-review/#utm_source=wordpress-seo-config&utm_medium=banner&utm_campaign=website-review-banner',
+						'img' => 'banner-website-review.png',
+						'alt' => 'Website Review banner',
+				),
+				array(
+						'url' => 'https://yoast.com/wordpress/seo-premium/#utm_source=wordpress-seo-config&utm_medium=banner&utm_campaign=premium-seo-banner',
+						'img' => 'banner-premium-seo.png',
+						'alt' => 'Banner WordPress SEO Premium',
+				),
 		);
-		if ( 'nl_NL' == get_locale() ) {
-			$rand = rand( 1, 2 );
-			switch ( $rand ) {
-				case 1:
-					$banners[] = array(
-						'url' => 'http://yoast.nl/seo-trainingen/wordpress-seo-training//#utm_source=wordpress-seo-config&utm_medium=banner&utm_campaign=wpseo-training-banner&utm_content=prijs',
-						'img' => 'banner-wpseo-training.png',
-						'alt' => 'WordPress SEO Training banner',
-					);
-					break;
-				case 2:
-					$banners[] = array(
-						'url' => 'http://yoast.nl/seo-trainingen/wordpress-seo-training//#utm_source=wordpress-seo-config&utm_medium=banner&utm_campaign=wpseo-training-banner&utm_content=klik-hier',
-						'img' => 'banner-wpseo-training-2.png',
-						'alt' => 'WordPress SEO Training banner',
-					);
-					break;
-			}
-		}
-		if ( !class_exists( 'wpseo_Video_Sitemap' ) ) {
+
+		if ( ! class_exists( 'wpseo_Video_Sitemap' ) ) {
 			$banners[] = array(
-				'url' => 'http://yoast.com/wordpress/video-seo/#utm_source=wordpress-seo-config&utm_medium=banner&utm_campaign=video-seo-banner',
-				'img' => 'banner-video-seo.png',
-				'alt' => 'Banner WordPress SEO Video SEO extension',
+					'url' => 'https://yoast.com/wordpress/video-seo/#utm_source=wordpress-seo-config&utm_medium=banner&utm_campaign=video-seo-banner',
+					'img' => 'banner-video-seo.png',
+					'alt' => 'Banner WordPress SEO Video SEO extension',
 			);
 		}
-		if ( !class_exists( 'wpseo_Video_Manual' ) ) {
+
+		if ( ! class_exists( 'wpseo_Video_Manual' ) ) {
 			$banners[] = array(
-				'url' => 'http://yoast.com/wordpress/video-manual-wordpress-seo/#utm_source=wordpress-seo-config&utm_medium=banner&utm_campaign=video-manual-banner',
-				'img' => 'banner-video-seo-manual.png',
-				'alt' => 'Banner WordPress SEO Video manual',
+					'url' => 'https://yoast.com/wordpress/video-manual-wordpress-seo/#utm_source=wordpress-seo-config&utm_medium=banner&utm_campaign=video-manual-banner',
+					'img' => 'banner-video-seo-manual.png',
+					'alt' => 'Banner WordPress SEO Video manual',
 			);
 		}
-		if ( !defined( 'WPSEO_LOCAL_VERSION' ) ) {
+
+		if ( class_exists( 'Woocommerce' ) ) {
 			$banners[] = array(
-				'url' => 'http://yoast.com/wordpress/local-seo/#utm_source=wordpress-seo-config&utm_medium=banner&utm_campaign=local-seo-banner',
-				'img' => 'banner-local-seo.png',
-				'alt' => 'Banner Local SEO plugin',
+					'url' => 'https://yoast.com/wordpress/yoast-woocommerce-seo/#utm_source=wordpress-seo-config&utm_medium=banner&utm_campaign=woocommerce-seo-banner',
+					'img' => 'banner-woocommerce-seo.png',
+					'alt' => 'Banner WooCommerce SEO plugin',
+			);
+		}
+
+		if ( ! defined( 'WPSEO_LOCAL_VERSION' ) ) {
+			$banners[] = array(
+					'url' => 'https://yoast.com/wordpress/local-seo/#utm_source=wordpress-seo-config&utm_medium=banner&utm_campaign=local-seo-banner',
+					'img' => 'banner-local-seo.png',
+					'alt' => 'Banner Local SEO plugin',
 			);
 		}
 		shuffle( $banners );
@@ -122,11 +125,9 @@ class WPSEO_Admin_Pages {
 				<?php
 				$i = 0;
 				foreach ( $banners as $banner ) {
-					if ( $i == 3 )
+					if ( $i == 2 )
 						break;
-					if ( $i != 0 )
-						echo '<hr style="border:none;border-top:dotted 1px #f48500;margin: 30px 0;">';
-					echo '<a target="_blank" href="' . $banner['url'] . '"><img src="' . WPSEO_URL . 'images/' . $banner['img'] . '" alt="' . $banner['alt'] . '"/></a>';
+					echo '<a target="_blank" href="' . esc_url( $banner['url'] ) . '"><img src="' . plugins_url( 'images/' . $banner['img'], WPSEO_FILE ) . '" alt="' . esc_attr( $banner['alt'] ) . '"/></a><br/><br/>';
 					$i++;
 				}
 				?>
@@ -139,36 +140,29 @@ class WPSEO_Admin_Pages {
 	/**
 	 * Generates the header for admin pages
 	 *
-	 * @param string $title          The title to show in the main heading.
 	 * @param bool   $form           Whether or not the form should be included.
 	 * @param string $option         The long name of the option to use for the current page.
 	 * @param string $optionshort    The short name of the option to use for the current page.
 	 * @param bool   $contains_files Whether the form should allow for file uploads.
 	 */
-	function admin_header( $title, $form = true, $option = 'yoast_wpseo_options', $optionshort = 'wpseo', $contains_files = false ) {
+	function admin_header( $form = true, $option = 'yoast_wpseo_options', $optionshort = 'wpseo', $contains_files = false ) {
 		?>
 		<div class="wrap">
 		<?php
-		if ( ( isset( $_GET['updated'] ) && $_GET['updated'] == 'true' ) || ( isset( $_GET['settings-updated'] ) && $_GET['settings-updated'] == 'true' ) ) {
-			$msg = __( 'Settings updated', 'wordpress-seo' );
-
-			echo '<div id="message" style="width:94%;" class="message updated"><p><strong>' . esc_html( $msg ) . '.</strong></p></div>';
-		}
+		/**
+		 * Display the updated/error messages
+		 * Only needed as our settings page is not under options, otherwise it will automatically be included
+		 * @see settings_errors()
+		 */
+		require_once( ABSPATH . 'wp-admin/options-head.php' );
 		?>
-		<a href="http://yoast.com/">
-			<div id="yoast-icon"
-				 style="background: url('<?php echo WPSEO_URL; ?>images/wordpress-SEO-32x32.png') no-repeat;"
-				 class="icon32">
-				<br/>
-			</div>
-		</a>
-		<h2 id="wpseo-title"><?php _e( "Yoast WordPress SEO: ", 'wordpress-seo' ); echo $title; ?></h2>
+		<h2 id="wpseo-title"><?php echo get_admin_page_title(); ?></h2>
 		<div id="wpseo_content_top" class="postbox-container" style="min-width:400px; max-width:600px; padding: 0 20px 0 0;">
 		<div class="metabox-holder">
 		<div class="meta-box-sortables">
 		<?php
 		if ( $form ) {
-			echo '<form action="' . admin_url( 'options.php' ) . '" method="post" id="wpseo-conf"' . ( $contains_files ? ' enctype="multipart/form-data"' : '' ) . '>';
+			echo '<form action="' . admin_url( 'options.php' ) . '" method="post" id="wpseo-conf"' . ( $contains_files ? ' enctype="multipart/form-data"' : '' ) . ' accept-charset="' . get_bloginfo( 'charset' ) . '">';
 			settings_fields( $option );
 			$this->currentoption = $optionshort;
 		}
@@ -182,10 +176,8 @@ class WPSEO_Admin_Pages {
 	 */
 	function admin_footer( $submit = true ) {
 		if ( $submit ) {
-			?>
-			<div class="submit"><input type="submit" class="button-primary" name="submit"
-									   value="<?php _e( "Save Settings", 'wordpress-seo' ); ?>"/></div>
-		<?php } ?>
+			submit_button();
+		} ?>
 		</form>
 		</div>
 		</div>
@@ -248,7 +240,7 @@ class WPSEO_Admin_Pages {
 
 		fclose( $handle );
 
-		require_once ( ABSPATH . 'wp-admin/includes/class-pclzip.php' );
+		require_once( ABSPATH . 'wp-admin/includes/class-pclzip.php' );
 
 		chdir( $dir['path'] );
 		$zip = new PclZip( './settings.zip' );
@@ -268,10 +260,10 @@ class WPSEO_Admin_Pages {
 			wp_enqueue_style( 'thickbox' );
 			wp_enqueue_style( 'global' );
 			wp_enqueue_style( 'wp-admin' );
-			wp_enqueue_style( 'yoast-admin-css', WPSEO_URL . 'css/yst_plugin_tools.css', array(), WPSEO_VERSION );
+			wp_enqueue_style( 'yoast-admin-css', plugins_url( 'css/yst_plugin_tools.css', dirname( __FILE__ ) ), array(), WPSEO_VERSION );
 
 			if ( is_rtl() )
-				wp_enqueue_style( 'wpseo-rtl', WPSEO_URL . 'css/wpseo-rtl.css', array(), WPSEO_VERSION );
+				wp_enqueue_style( 'wpseo-rtl', plugins_url( 'css/wpseo-rtl.css', dirname( __FILE__ ) ), array(), WPSEO_VERSION );
 		}
 	}
 
@@ -282,7 +274,7 @@ class WPSEO_Admin_Pages {
 		global $pagenow;
 		
 		if ( $pagenow == 'admin.php' && isset( $_GET['page'] ) && in_array( $_GET['page'], $this->adminpages ) ) {
-			wp_enqueue_script( 'wpseo-admin-script', WPSEO_URL . 'js/wp-seo-admin.js', array( 'jquery' ), WPSEO_VERSION, true );
+			wp_enqueue_script( 'wpseo-admin-script', plugins_url( 'js/wp-seo-admin.js', dirname( __FILE__ ) ), array( 'jquery' ), WPSEO_VERSION, true );
 			wp_enqueue_script( 'postbox' );
 			wp_enqueue_script( 'dashboard' );
 			wp_enqueue_script( 'thickbox' );

@@ -10,6 +10,7 @@ jQuery(document).ready(function() {
 
 	// General
 	cpac_pointer();
+	cpac_submit_form();
 
 	// Settings Page
 	cpac_clear_input_defaults();
@@ -27,6 +28,19 @@ jQuery(document).ready(function() {
 		jQuery(col).column_bind_remove();
 	});
 });
+
+/*
+ * Submit Form
+ *
+ * @since 2.0.2
+ */
+function cpac_submit_form() {
+	jQuery('.form-update a.submit-update').click( function(e){
+		e.preventDefault();
+
+		jQuery(this).closest('.columns-container').find('.cpac-columns form').submit();
+	});
+}
 
 /*
  * Column: bind toggle events
@@ -76,6 +90,7 @@ jQuery.fn.column_bind_events = function() {
 
 	var column		= jQuery(this);
 	var container	= column.closest('.columns-container');
+	var storage_model = container.attr('data-type');
 
 	/** select column type */
 	var default_value =  column.find('.column_type select option:selected').val();
@@ -106,11 +121,11 @@ jQuery.fn.column_bind_events = function() {
 			// open settings
 			clone.addClass('opened').find('.column-form').show();
 
+			// increment clone id
+			clone.cpac_update_clone_id( storage_model );
+
 			// add to DOM
 			column.replaceWith( clone );
-
-			// increment clone id
-			clone.cpac_update_clone_id();
 
 			// rebind toggle events
 			clone.column_bind_toggle();
@@ -201,18 +216,22 @@ jQuery.fn.column_remove = function() {
  *
  * @since 2.0.0
  */
-jQuery.fn.cpac_update_clone_id = function() {
+jQuery.fn.cpac_update_clone_id = function( storage_model ) {
 
 	var el = jQuery( this );
 
 	var type		= el.attr( 'data-type' );
+	var all_columns = jQuery( '.columns-container[data-type="' + storage_model + '"]').find( '.cpac-columns' );
+	var columns		= jQuery( all_columns ).find( '*[data-type="' + type + '"]' ).not( el );
+
+/*	var type		= el.attr( 'data-type' );
 	var all_columns	= el.closest( '.cpac-boxes' ).find( '.cpac-columns' );
-	var columns		= jQuery( all_columns ).find( '*[data-type="' + type + '"]' ).not(el);
+	var columns		= jQuery( all_columns ).find( '*[data-type="' + type + '"]' ).not( el );*/
 
 	// get clone ID
 	var ids	= jQuery.map( columns, function( e, i ) {
 		if ( jQuery(e).attr('data-clone') ){
-			return parseInt( jQuery( e ).attr( 'data-clone' ) );
+			return parseInt( jQuery( e ).attr( 'data-clone' ), 10 );
 		}
 		return 0;
 	});
@@ -267,13 +286,15 @@ function cpac_add_column() {
 
 		var clone = jQuery('.for-cloning-only .cpac-column', container ).first().clone();
 
+		var storage_model = container.attr('data-type');
+
 		if ( clone.length > 0 ) {
 
-			// add to DOM
-			jQuery('.cpac-columns', container).append( clone );
+			// increment clone id ( before adding to DOM, otherwise radio buttons will reset )
+			clone.cpac_update_clone_id( storage_model );
 
-			// increment clone id
-			clone.cpac_update_clone_id();
+			// add to DOM
+			jQuery('.cpac-columns form', container).append( clone );
 
 			// rebind toggle events
 			clone.column_bind_toggle();
@@ -303,32 +324,31 @@ function cpac_add_column() {
  * @since 1.5
  */
 function cpac_sidebar_scroll() {
-	var msie6 = jQuery.browser == 'msie' && jQuery.browser.version < 7;
 
-	if (!msie6 && jQuery('.columns-right-inside').length !== 0 ) {
+	if( jQuery('.columns-right-inside').length === 0 )
+		return;
 
-		if ( jQuery('.columns-right-inside:visible').offset() ) {
+	if ( jQuery('.columns-right-inside:visible').offset() ) {
 
-			// top position of the sidebar on loading
-			var top = jQuery('.columns-right-inside:visible').offset().top - parseFloat( jQuery('.columns-right-inside:visible').css('margin-top').replace(/auto/, 0) ) - 70;
+		// top position of the sidebar on loading
+		var top = jQuery('.columns-right-inside:visible').offset().top - parseFloat( jQuery('.columns-right-inside:visible').css('margin-top').replace(/auto/, 0) ) - 70;
 
-			jQuery(window).scroll(function (event) {
-				// y position of the scroll
-				var y = jQuery(this).scrollTop();
+		jQuery(window).scroll(function (event) {
+			// y position of the scroll
+			var y = jQuery(this).scrollTop();
 
-				// top position of div#cpac is calculated everytime incase of an opened help screen
-				var offset = jQuery('#cpac').offset().top - parseFloat( jQuery('#cpac').css('margin-top').replace(/auto/, 0) );
+			// top position of div#cpac is calculated everytime incase of an opened help screen
+			var offset = jQuery('#cpac').offset().top - parseFloat( jQuery('#cpac').css('margin-top').replace(/auto/, 0) );
 
-				// whether that's below
-				if (y >= top + offset ) {
-					// if so, ad the fixed class
-					jQuery('.columns-right-inside:visible').addClass('fixed');
-				} else {
-					// otherwise remove it
-					jQuery('.columns-right-inside:visible').removeClass('fixed');
-				}
-			});
-		}
+			// whether that's below
+			if (y >= top + offset ) {
+				// if so, ad the fixed class
+				jQuery('.columns-right-inside:visible').addClass('fixed');
+			} else {
+				// otherwise remove it
+				jQuery('.columns-right-inside:visible').removeClass('fixed');
+			}
+		});
 	}
 }
 
@@ -440,6 +460,7 @@ function cpac_pointer() {
  */
 function cpac_sortable() {
 	jQuery('div.cpac-columns').sortable({
+		items					: '.cpac-column',
 		revert					: 250,
 		handle					: 'td.column_sort',
 		placeholder				: 'cpac-placeholder',

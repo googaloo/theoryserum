@@ -123,14 +123,39 @@ function types_render_field( $field_id, $params, $content = null, $code = '' ) {
 
     //If Access plugin activated
     if ( function_exists( 'wpcf_access_register_caps' ) ) {
-        require_once WPCF_EMBEDDED_INC_ABSPATH . '/fields.php';
-        $field_groups = wpcf_admin_fields_get_groups_by_field( $field_id );
-        if ( !empty( $field_groups ) ) {
-            foreach ( $field_groups as $field_group ) {
-                if ( !current_user_can( 'view_fields_on_site_' . $field_group['slug'] ) ) {
-                    return;
-                }
-            }
+        $forbidden = false;
+        $cache_group = 'types_access_cache_forbidden';
+		$cache_key = md5( 'access::types_render_field' . $field_id );
+		$cached_object = wp_cache_get( $cache_key, $cache_group );
+		$current_user = wp_get_current_user();
+		if ( false === $cached_object ) {
+			require_once WPCF_EMBEDDED_INC_ABSPATH . '/fields.php';
+			$field_groups = wpcf_admin_fields_get_groups_by_field( $field_id );
+			$cache_data = array();
+			if ( !empty( $field_groups ) ) {
+				foreach ( $field_groups as $field_group ) {
+					if ( !current_user_can( 'view_fields_on_site_' . $field_group['slug'] ) ) {
+						$forbidden = true;
+					}
+				}
+			}
+			foreach ( $current_user->roles as $role ) {
+				if ( $forbidden ) {
+					$cache_data[$role] = 'disallow';
+				} else {
+					$cache_data[$role] = 'allow';
+				}
+			}
+			wp_cache_add( $cache_key, $cache_data, $cache_group );
+		} else {
+			foreach ( $current_user->roles as $role ) {
+				if ( is_array( $cached_object ) && isset( $cached_object[$role] ) && $cached_object[$role] == 'disallow' ) {
+					$forbidden = true;
+				}
+			}
+		}
+        if ( $forbidden ) {
+			return;
         }
     }
 
@@ -158,17 +183,10 @@ function types_render_field( $field_id, $params, $content = null, $code = '' ) {
         $meta = $_meta['custom_order'];
 
         // Sometimes if meta is empty - array(0 => '') is returned
-        if ( (count( $meta ) == 1 ) ) {
-            $meta_id = key( $meta );
-            $_temp = array_shift( $meta );
-            if ( strval( $_temp ) == '' ) {
-                return '';
-            } else {
-                $params['field_value'] = $_temp;
-                return types_render_field_single( $field, $params, $content,
-                                $code, $meta_id );
-            }
-        } else if ( !empty( $meta ) ) {
+        if ( count( $meta ) == 1 && reset( $meta ) == '' ) {
+            return '';
+        }
+        if ( !empty( $meta ) ) {
             $output = '';
 
             if ( isset( $params['index'] ) ) {
@@ -295,6 +313,8 @@ function types_render_field_single( $field, $params, $content = null,
         // Skype is array
         if ( $field['type'] == 'skype' && isset( $params['field_value']['skypename'] ) ) {
             $output = $params['field_value']['skypename'];
+        } else if ($field['type'] == 'checkboxes' && is_array( $params['field_value'] ) ) {
+            $output = implode( ', ', $params['field_value'] );
         } else {
             $output = $params['field_value'];
         }
@@ -316,12 +336,7 @@ function types_render_field_single( $field, $params, $content = null,
         } else if ( $output == '__wpcf_skip_empty' ) {
             $output = '';
         }
-        
-        // Compat with 'output' => 'html'
-        // TODO Remove If 'class' or 'style' parameters are set - force HTML output
-//        if ( ((isset( $params['class'] ) && !empty( $params['class'] )) || (isset( $params['style'] ) && !empty( $params['style'] ))) && $field['type'] != 'date' ) {
-//            $params['output'] = 'html';
-//        }
+
         if (isset($params['output']) && $params['output'] == 'html') {
             $output = wpcf_frontend_compat_html_output( $output, $field, $content, $params );
         } else {
