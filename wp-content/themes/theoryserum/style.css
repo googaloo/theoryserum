@@ -155,7 +155,7 @@ h1, h2, h3, h4 {
   word-spacing: 0.3em; }
 
 h2 {
-  font-size: 1.8em; }
+  font-size: 2em; }
 
 h4 {
   font-size: 0.8em;
@@ -507,7 +507,7 @@ FIREFOX
 CHROME
 ******/
 article {
-  font-size: 1.35em;
+  font-size: 1.5em;
   line-height: 1.5;
   display: inline-block;
   margin-top: 15px; }
@@ -540,7 +540,7 @@ article {
   margin-left: 10px; }
 
 .post-date {
-  padding-bottom: 8px;
+  padding-bottom: 1em;
   display: inline;
   width: 50px; }
 
@@ -556,7 +556,7 @@ article {
   clear: both; }
 
 .article-content p {
-  padding: 10px 0; }
+  padding: 0 0 1em; }
 
 .article-img {
   float: left;
@@ -565,18 +565,19 @@ article {
 .comment-image {
   background: url("images/comment-bubble.png") no-repeat;
   background-position: bottom left;
-  width: 18px;
-  height: 16px;
+  width: 16px;
+  height: 14px;
   display: inline-block;
   margin: 2px 0 0 5px; }
 
 .article-comment-number {
   clear: both;
   display: inline-block;
-  padding-bottom: 15px; }
+  padding-bottom: 1em;
+  height: 1em; }
 
 .article-comment-number img {
-  margin-top: 15px;
+  margin-top: 1em;
   display: inline-block; }
 
 .featured-container {

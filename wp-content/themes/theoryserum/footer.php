@@ -4,7 +4,8 @@
 		<div class="footer-about footer-piece">
 
 			<h3 class="subheader">About</h3>
-			<p>Moments of Awe. In the rare case that you haven't had any moments of Awe in your life, you'll soon experience them, and that's exactly what I seek to find through this site. Whether through futuristic advances, interesting theories about the nature of reality or through Science Fiction, the spark of future's tomorrow, we seek for those moments of Awe and I hope that is exactly what you find here.</p>
+			<p>I have a very attention demanding, truth-seeking itch just around the backside of my soul, completely out of reach. As soon as I feel like I can force my stretch enough to get at it, I fall short just a few inches, but it might as well be lightyears away.</p>
+			<p>I've had this itch as long as I can remember and it's manifested itself through religion, psychology, futurism, creativity, science, pseudo-science, and philosophy. I'm not sure I'll ever find my absolute truth but hey, the journey is rewarding enough!</p>
 
 		</div> <!-- end .footer-about -->
 

@@ -37,7 +37,7 @@ function start_scripts() {
 
 // Enable featured images
 add_theme_support( 'post-thumbnails' );
-add_image_size('ts-thumbnail', 245, 138, true);
+add_image_size('ts-thumbnail', 245, 140, true);
 add_image_size('ts-top-featured', 700, 395, true);
 add_image_size('ts-books', 290, 450, true);
 add_image_size('ts-books-thumb', 145, 225, true);
