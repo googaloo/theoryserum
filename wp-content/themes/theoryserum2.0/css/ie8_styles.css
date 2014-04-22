@@ -1,0 +1,28 @@
+
+h1, h2, h3, h4 {
+	line-height: 1.25;
+}
+
+.featured-sidebar-container {
+	margin-top: 25px;
+}
+
+.subheader {
+	/* line-height: 1.2; */
+}
+
+.hexagon-box {
+	display: none;
+}
+
+.post-categories {
+	margin: -27px 0 0 0;
+}
+
+.post-categories li a {
+	padding-top: 8px;
+}
+
+.article-content-container h2 {
+	line-height: 1.3;
+}

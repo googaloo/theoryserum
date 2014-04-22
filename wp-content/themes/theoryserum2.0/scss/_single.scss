@@ -1,0 +1,47 @@
+/******
+SINGLE
+******/
+
+.single-container {
+	margin-top: 55px;
+	//float: left;
+}
+
+.single-header {
+	margin-top: 23px;
+	float: left;
+}
+
+.single-content {
+	float: left;
+	margin-top: 15px;
+	font-size: 1.35em;
+	line-height: 1.5;
+}
+
+.single-content p {
+	padding: 10px 0;
+}
+
+.single-pagination {
+	float: left;
+	width: 100%;
+	height: 30px;
+	font-size: 1.2em;
+	font-family: bebasregular;
+	position: relative;
+	padding: 25px 0;
+}
+
+.single-pagination-previous {
+	float: left;
+}
+
+.single-pagination-next {
+	float: right;
+}
+
+.single-pagination-arrow {
+	font-size: 2em;
+	line-height: 0.5;
+}

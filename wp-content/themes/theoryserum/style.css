@@ -1,7 +1,7 @@
 /*!
-Theme Name: TheorySerum
+Theme Name: TheorySerum 1.0
 Theme URI: http://www.theoryserum.com/
-Description: TheorySerum Theme
+Description: TheorySerum Theme 1.0
 Author: Rustin L Odom
 Author URI: http://www.rustinlodom.com
 Version: 1.0
@@ -653,7 +653,7 @@ article {
   word-spacing: 0.3em; }
 
 @-moz-document url-prefix() {
-  margin: 20px 0 0 0; }
+  margin-top: 20px; }
 
 /*******
 COMMENTS

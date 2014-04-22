@@ -9,7 +9,7 @@ function start_scripts() {
 
 	wp_enqueue_script('jquery');
 
-	wp_register_style('normalize', get_template_directory_uri().'/normalize.css');
+	wp_register_style('normalize', get_template_directory_uri().'/css/normalize.css');
 	wp_enqueue_style('normalize');
 
 	wp_register_style('main-style', get_stylesheet_uri());
@@ -18,7 +18,7 @@ function start_scripts() {
 	global $is_IE;
 	if ( $is_IE ) {
 
-		wp_register_style('ie8-style', get_template_directory_uri().'/ie8_style.css');
+		wp_register_style('ie8-style', get_template_directory_uri().'css/ie8_style.css');
 		wp_enqueue_style('ie8-style');		
 
 		// script to help with IE

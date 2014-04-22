@@ -1,0 +1,44 @@
+/******
+GLOBAL
+*******/
+
+html {
+	background: url("images/bg_hexagons.png") fixed #FFF no-repeat bottom center;
+}
+
+body {
+	font-family: cabin;
+	font-size: 14px;
+	color: $gray;
+}
+
+h1, h2, h3, h4 {
+	font-family: bebasregular;
+	font-weight: thin;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.7857em;
+}
+
+h3 {
+	font-size: 1.2857em;
+	color: $gray;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+a {
+	color: $aqua;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $aquaLight;
+}
