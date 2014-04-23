@@ -7,11 +7,17 @@
 
 		<div class="article-img">
 
+			<a href="<?php echo get_permalink($post->ID); ?>">
+
 	<?php
 
 	if ( has_post_thumbnail() ) {
 		the_post_thumbnail('ts-top-featured');
-	} ?>
+	} 
+
+	?>
+
+			</a>
 
 		</div><!-- end article-img -->
 		<div class="post-cat-box"><?php echo get_the_category_list(); ?></div><!-- end .post-cat-box -->
@@ -34,15 +40,19 @@
 <?php else: ?>
 
 
-<div class="row">
+<div class="row" style="border-top: 1px solid lightgray;">
 
-	<article class="large-9 columns" style="background: #CCC;">
-
-		<p class="divider"></p>
+	<?php if ( get_post_type( get_the_ID() ) === 'post' ) : ?>	
+	<article class="large-9 columns">
+	<?php else: ?>
+	<article class="large-12 columns">
+	<?php endif; ?>
 
 		<div class="article-img">
 
-			<?php if ( has_post_thumbnail() ) {																	//// OPPORTUNITY FOR CUSTOM POST FORMAT ////
+			<a href="<?php echo get_permalink($post->ID); ?>">
+
+			<?php if ( has_post_thumbnail() ) {
 
 				if ( get_post_meta( $post->ID, 'wpcf-featured-post', true ) === 'featured' ) {
 
@@ -55,6 +65,8 @@
 				}
 
 			} ?>
+
+			</a>
 
 		</div><!-- end .article-img -->
 		<div class="post-cat-box"><?php echo get_the_category_list(); ?></div><!-- end .post-cat-box -->
@@ -76,47 +88,50 @@
 		</div><!-- end .article-content-container -->
 
 	</article><!-- end .article-container -->
-	<div class="large-3 columns">
 
-<?php // All for Related Posts ?>
-<?php
-// Get the category ID
-$post_cat_ID;
-foreach((get_the_category()) as $category) { 
-    $post_cat_ID = $category->cat_ID;
-} 
+	<?php // Related Posts ?>
+	<?php if ( get_post_type( get_the_ID() ) === 'post' ) : ?>
 
-// Get post ID to avoid duplication
-$main_ID = get_the_ID();
+		<div class="large-3 columns">
 
-// Show related
-$my_args = array( 'numberposts' => 3, 'order'=> 'ASC', 'orderby' => 'title', 'category' => $post_cat_ID );
-          $feature_posts = get_posts($my_args); ?>
+		<h1><?php get_post_type( get_the_ID() ); ?></h1>
 
-          <h3>Related Posts</h3>
-          <ul class="recent-posts-list">
+		<?php
+		// Get the category ID
+		$post_cat_ID;
+		foreach((get_the_category()) as $category) { 
+		    $post_cat_ID = $category->cat_ID;
+		} 
 
-          <?php foreach($feature_posts as $post) : //setup_postdata($post);
-          	
-          	// avoid showing current post
-          	if ( $post->ID !== $main_ID ) {
-				echo '<li><a href="' . home_url() . '/' . $post->post_name . '">' . $post->post_title . '</a></li>';
-			}
-		
-          endforeach;
+		// Get post ID to avoid duplication
+		$main_ID = get_the_ID();
 
-          echo '</ul>';
-?>
+		// Show related
+		$my_args = array( 'numberposts' => 3, 'order'=> 'ASC', 'orderby' => 'title', 'category' => $post_cat_ID );
+		$feature_posts = get_posts($my_args); ?>
+
+		          <h3>Related Posts</h3>
+		          <ul class="recent-posts-list">
+
+		          <?php foreach($feature_posts as $post) : //setup_postdata($post);
+		          	
+		          	// avoid showing current post
+		          	if ( $post->ID !== $main_ID ) {
+						echo '<li><a href="' . home_url() . '/' . $post->post_name . '">' . $post->post_title . '</a></li>';
+					}
+				
+		          endforeach;
+
+		          echo '</ul>';
+		?>
+
+	<?php endif; // end if post type is "post" to display "Related Posts" only on posts ?>
 
 	</div>
 
 </div>
 
 <?php endif; ?>
-
-
-
-
 
 
 

@@ -1,4 +1,3 @@
-
 <div>
 	<h1>
 		<?php the_content(); ?>

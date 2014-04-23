@@ -1,22 +1,9 @@
 
 		<div class="footer">
 
-			<div class="footer-about footer-piece">
+			<?php get_sidebar('about'); ?>
 
-				<?php dynamic_sidebar('about'); ?>
-
-			</div> <!-- end .footer-about -->
-
-			<div class="footer-follow footer-piece">
-
-				<h3 class="subheader">Follow</h3>
-				<ul class="social-icon-list">
-					<li><a href="https://www.facebook.com/TheorySerum" target="_blank"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" /><span class="social-text">Facebook</span></a></li>
-					<li><a href="https://twitter.com/theoryserum" target="_blank"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" /><span class="social-text">Twitter</span></a></li>
-					<li><a href="http://feeds.feedburner.com/Theoryserum" target="_blank"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/rss.png" /><span class="social-text">RSS</span></a></li>
-				</ul>
-
-			</div> <!-- end .footer-about -->
+			<?php get_sidebar('follow'); ?>
 
 			<div class="footer-categories footer-piece">
 
