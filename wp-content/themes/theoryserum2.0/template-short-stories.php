@@ -1,4 +1,12 @@
-<?php /* * *  Template Name: Short Stories * */ ?>
+<?php
+
+/*
+ * 
+ *  Template Name: Short Stories
+ * 
+ */
+
+?>
 
 <?php get_header(); ?>
 

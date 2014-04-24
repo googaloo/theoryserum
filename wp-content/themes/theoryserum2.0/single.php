@@ -5,22 +5,47 @@
 if ( have_posts() ) : 
 	while ( have_posts() ) : the_post(); ?>
 	
-	<div class="single-container">
-		<div class="article-img">
+	<div class="row">
+		<div class="large-12 columns">
 
-		<?php if ( has_post_thumbnail() ) {
-			the_post_thumbnail('full');
-		} ?>
+			<div class="row">
+				
+				<div class="large-12 columns">
 
-	</div><!-- end .article-img -->
-	<div class="post-cat-box"><?php echo get_the_category_list(); ?></div><!-- end .post-cat-box -->
+					<?php if ( has_post_thumbnail() ) {
+						the_post_thumbnail('full');
+					} ?>
 
-		<header class="single-header">
-			<h2><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
-			<p class="featured-post-date"><?php the_date(); ?></p><!-- end .post-date -->
-		</header>
-		<div class="single-content"><?php the_content(); ?></div><!-- .single-content -->
-</div><!-- end .single-container -->
+					<div class="post-cat-box"><?php echo get_the_category_list(); ?></div><!-- end .post-cat-box -->
+
+				</div>
+
+			</div>
+
+			<header class="row">
+
+				<div class="large-12 columns">
+
+					<h2><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
+					<p class="featured-post-date"><?php the_date(); ?></p><!-- end .post-date -->
+
+				</div>
+
+			</header>
+
+			<div class-"row">
+
+				<div class="large-12 columns">
+
+					<?php the_content(); ?>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
 
 <?php
 	endwhile;
@@ -28,12 +53,21 @@ endif;
 
 ?>
 
-<div class='single-pagination'>
+<div class="row">
 
-	<span class="single-pagination-previous"><?php previous_post_link('<span class="single-pagination-arrow">&laquo;</span> %link'); ?></span>
-	<span class="single-pagination-next"><?php next_post_link('%link <span class="single-pagination-arrow">&raquo;</span>'); ?></span>
+	<div class="large-4 columns left">
 
-</div><!-- end .single-pagination -->
+		<span class="single-pagination-previous"><?php previous_post_link('<span class="single-pagination-arrow">&laquo;</span> %link'); ?></span>
+
+	</div>
+
+	<div class="large-4 columns right">
+
+		<span class="single-pagination-next"><?php next_post_link('%link <span class="single-pagination-arrow">&raquo;</span>'); ?></span>
+
+	</div>
+
+</div>
 
 <?php comments_template(); ?>
 
