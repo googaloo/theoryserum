@@ -1,45 +1,47 @@
 <?php get_header(); ?>
 
-<?php
-
-if ( have_posts() ) : 
-	while ( have_posts() ) : the_post(); ?>
+<?php if ( have_posts() ) : ?>
+	<?php while ( have_posts() ) : the_post(); ?>
 	
-	<div class="row">
-		<div class="large-12 columns">
+<div class="row">
+	<div class="large-12 columns">
 
-			<div class="row">
-				
-				<div class="large-12 columns">
+		<div class="row">
+			
+			<div class="large-12 columns">
 
-					<?php if ( has_post_thumbnail() ) {
-						the_post_thumbnail('full');
-					} ?>
+				<?php if ( has_post_thumbnail() ) {
+					the_post_thumbnail('full');
+				} ?>
 
-					<div class="post-cat-box"><?php echo get_the_category_list(); ?></div><!-- end .post-cat-box -->
-
-				</div>
+				<div class="post-cat-box"><?php echo get_the_category_list(); ?></div><!-- end .post-cat-box -->
 
 			</div>
 
-			<header class="row">
+		</div>
 
-				<div class="large-12 columns">
+		<header class="row">
 
-					<h2><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
-					<p class="featured-post-date"><?php the_date(); ?></p><!-- end .post-date -->
+			<div class="large-12 columns">
 
-				</div>
+				<h2><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
+				<p class="featured-post-date"><?php the_date(); ?></p><!-- end .post-date -->
+				
+				<h3>Share: </h3>
+				<i class="icon-googleplus"></i>
+				<i class="icon-facebook"></i>
+				<i class="icon-twitter"></i>
+				<i class="icon-reddit"></i>
 
-			</header>
+			</div>
 
-			<div class-"row">
+		</header>
 
-				<div class="large-12 columns">
+		<div class-"row">
 
-					<?php the_content(); ?>
+			<div class="large-12 columns">
 
-				</div>
+				<?php the_content(); ?>
 
 			</div>
 
@@ -47,11 +49,10 @@ if ( have_posts() ) :
 
 	</div>
 
-<?php
-	endwhile;
-endif;
+</div>
 
-?>
+	<?php endwhile; ?>
+<?php endif; ?>
 
 <div class="row">
 

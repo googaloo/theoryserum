@@ -1,0 +1,3 @@
+<?php 
+
+$postcount = 1;

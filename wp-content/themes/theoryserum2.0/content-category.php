@@ -48,11 +48,7 @@
 
 		<div class="row" style="border-top: 1px solid lightgray;">
 
-			<?php if ( get_post_type( get_the_ID() ) === 'post' ) : ?>	
-			<article class="large-9 columns">
-			<?php else: ?>
 			<article class="large-12 columns">
-			<?php endif; ?>
 
 				<div class="article-img">
 
@@ -94,46 +90,6 @@
 				</div><!-- end .article-content-container -->
 
 			</article><!-- end .article-container -->
-
-			<?php // Related Posts ?>
-			<?php if ( get_post_type( get_the_ID() ) === 'post' ) : ?>
-
-				<div class="large-3 columns">
-
-				<h1><?php get_post_type( get_the_ID() ); ?></h1>
-
-				<?php
-				// Get the category ID
-				$post_cat_ID;
-				foreach((get_the_category()) as $category) { 
-				    $post_cat_ID = $category->cat_ID;
-				} 
-
-				// Get post ID to avoid duplication
-				$main_ID = get_the_ID();
-
-				// Show related
-				$my_args = array( 'numberposts' => 3, 'order'=> 'ASC', 'orderby' => 'title', 'category' => $post_cat_ID );
-				$feature_posts = get_posts($my_args); ?>
-
-				          <h3>Related Posts</h3>
-				          <ul class="recent-posts-list">
-
-				          <?php foreach($feature_posts as $post) : //setup_postdata($post);
-				          	
-				          	// avoid showing current post
-				          	if ( $post->ID !== $main_ID ) {
-								echo '<li><a href="' . home_url() . '/' . $post->post_name . '">' . $post->post_title . '</a></li>';
-							}
-						
-				          endforeach;
-
-				          echo '</ul>';
-				?>
-
-			<?php endif; // end if post type is "post" to display "Related Posts" only on posts ?>
-
-			</div>
 
 		</div>
 
