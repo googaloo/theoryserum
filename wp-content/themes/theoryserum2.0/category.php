@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-		<?php get_template_part( 'content-category', get_post_format() ); ?>
+<h1 class="blog-header"><?php single_cat_title(); ?></h1>
+
+		<?php get_template_part( 'content', 'category' ); ?>
 
 	<?php
 

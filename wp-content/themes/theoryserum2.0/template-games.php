@@ -10,7 +10,7 @@
 
 <?php get_header(); ?>
 
-<h1 class="stories-header">My Games</h1>
+<h1 class="games-header">My Games</h1>
 
 <?php $games_top_featured_query = new WP_Query( array( 'post_type' => 'my-games','posts_per_page' => 10 ) ); ?>
 

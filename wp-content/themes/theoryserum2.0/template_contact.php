@@ -10,15 +10,12 @@
 
 <?php get_header(); ?>
 
-<h1 class="contact-header">Contact Me</h1>
+<div class="row"><div class="large-12 columns"><h1 class="contact-header">Contact Me</h1></div></div>
 
 <?php if ( have_posts() ) : ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 
 	<?php the_content(); ?>
-
-	<div style="background: #eaf6f7; width:100%; height: 4px; margin-top: 25px;"></div>
-
 
 	<?php endwhile;
 

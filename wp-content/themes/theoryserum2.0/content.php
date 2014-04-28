@@ -1,145 +1,90 @@
-<?php if ( have_posts() ) : $postcount = 1; ?>
+<div class="row" style="border-top: 1px solid lightgray;">
 
-	<?php while ( have_posts() ) : the_post(); ?>
+	<?php if ( get_post_type( get_the_ID() ) === 'post' ) : ?>	
+	<article class="large-9 columns">
+	<?php else: ?>
+	<article class="large-12 columns">
+	<?php endif; ?>
 
-		<?php // Check if post is sticky or first post ?>
-		<?php if ( is_sticky() || $postcount == 1 ) : ?>
+		<div class="article-img">
 
-		<?php // add to post count to get out of sticky / first post ?>
-		<?php $postcount++; ?>
+			<a href="<?php echo get_permalink($post->ID); ?>">
 
-		<section class="row">
+			<?php if ( has_post_thumbnail() ) {
 
-			<article class="large-7 columns featured-article">
+				if ( get_post_meta( $post->ID, 'wpcf-featured-post', true ) === 'featured' ) {
 
-				<div class="article-img">
+					the_post_thumbnail('full');
 
-					<a href="<?php echo get_permalink($post->ID); ?>">
+				} else {
 
-			<?php
+					the_post_thumbnail('ts-thumbnail');
 
-			if ( has_post_thumbnail() ) {
-				the_post_thumbnail('ts-top-featured');
-			} 
+				}
 
-			?>
+			} ?>
 
-					</a>
+			</a>
 
-				</div><!-- end article-img -->
-				<div class="post-cat-box"><?php echo get_the_category_list(); ?></div><!-- end .post-cat-box -->
+		</div><!-- end .article-img -->
+		<div class="post-cat-box"><?php echo get_the_category_list(); ?></div><!-- end .post-cat-box -->
 
-					<h2 class="top-featured-article-header top-featured-header"><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
-					<p class="featured-post-date"><?php the_date(); ?></p><!-- end .post-date -->
-					<div class="featured-article-comment-number"> <a href="<?php comments_link(); ?>"><span class="comment-image"></span><?php comments_number('0','1','%'); ?></a></div><!-- end .article-comment-number -->
+		<div class="article-content-container">
 
-				<div>
-					<p class="featured-article-content"><?php echo get_the_excerpt(); ?><a class="ts-button" href="<?php echo get_permalink($post->ID); ?>">Read More</a></p>
-				</div>
+			<header>
 
-			</article><!-- end .featured-container -->
+				<h2 class="article-header"><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
+				
+				<p class="post-date"><?php echo get_the_date(); ?></p><!-- end .post-date -->
 
-			<?php get_sidebar(); ?>
+				<div class="article-comment-number"> <a href="<?php comments_link(); ?>"><span class="comment-image"></span><?php comments_number('0','1','%'); ?></a></div><!-- end .article-comment-number -->
 
-		</section><!-- end .featured-sidebar-container -->
+			</header>
 
-		<?php // It's not sticky, but regular post ?>
-		<?php else: ?>
+			<article class="article-content"><?php the_excerpt(); ?><a class="ts-button" href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
 
-		<div class="row" style="border-top: 1px solid lightgray;">
+		</div><!-- end .article-content-container -->
 
-			<?php if ( get_post_type( get_the_ID() ) === 'post' ) : ?>	
-			<article class="large-9 columns">
-			<?php else: ?>
-			<article class="large-12 columns">
-			<?php endif; ?>
+	</article><!-- end .article-container -->
 
-				<div class="article-img">
+	<?php // Related Posts ?>
+	<?php if ( get_post_type( get_the_ID() ) === 'post' ) : ?>
 
-					<a href="<?php echo get_permalink($post->ID); ?>">
+		<div class="large-3 columns">
 
-					<?php if ( has_post_thumbnail() ) {
+		<h1><?php get_post_type( get_the_ID() ); ?></h1>
 
-						if ( get_post_meta( $post->ID, 'wpcf-featured-post', true ) === 'featured' ) {
+		<?php
+		// Get the category ID
+		$post_cat_ID;
+		foreach((get_the_category()) as $category) { 
+		    $post_cat_ID = $category->cat_ID;
+		} 
 
-							the_post_thumbnail('full');
+		// Get post ID to avoid duplication
+		$main_ID = get_the_ID();
 
-						} else {
+		// Show related
+		$my_args = array( 'numberposts' => 3, 'order'=> 'ASC', 'orderby' => 'title', 'category' => $post_cat_ID );
+		$feature_posts = get_posts($my_args); ?>
 
-							the_post_thumbnail('ts-thumbnail');
+		          <h3>Related Posts</h3>
+		          <ul class="recent-posts-list">
 
-						}
+		          <?php foreach($feature_posts as $post) : //setup_postdata($post);
+		          	
+		          	// avoid showing current post
+		          	if ( $post->ID !== $main_ID ) {
+						echo '<li><a href="' . home_url() . '/' . $post->post_name . '">' . $post->post_title . '</a></li>';
+					}
+				
+		          endforeach;
 
-					} ?>
+		          echo '</ul>';
+		?>
 
-					</a>
+	<?php endif; // end if post type is "post" to display "Related Posts" only on posts ?>
 
-				</div><!-- end .article-img -->
-				<div class="post-cat-box"><?php echo get_the_category_list(); ?></div><!-- end .post-cat-box -->
+	</div>
 
-				<div class="article-content-container">
-
-					<header>
-
-						<h2 class="article-header"><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
-						
-						<p class="post-date"><?php echo get_the_date(); ?></p><!-- end .post-date -->
-
-						<div class="article-comment-number"> <a href="<?php comments_link(); ?>"><span class="comment-image"></span><?php comments_number('0','1','%'); ?></a></div><!-- end .article-comment-number -->
-
-					</header>
-
-					<article class="article-content"><?php the_excerpt(); ?><a class="ts-button" href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
-
-				</div><!-- end .article-content-container -->
-
-			</article><!-- end .article-container -->
-
-			<?php // Related Posts ?>
-			<?php if ( get_post_type( get_the_ID() ) === 'post' ) : ?>
-
-				<div class="large-3 columns">
-
-				<h1><?php get_post_type( get_the_ID() ); ?></h1>
-
-				<?php
-				// Get the category ID
-				$post_cat_ID;
-				foreach((get_the_category()) as $category) { 
-				    $post_cat_ID = $category->cat_ID;
-				} 
-
-				// Get post ID to avoid duplication
-				$main_ID = get_the_ID();
-
-				// Show related
-				$my_args = array( 'numberposts' => 3, 'order'=> 'ASC', 'orderby' => 'title', 'category' => $post_cat_ID );
-				$feature_posts = get_posts($my_args); ?>
-
-				          <h3>Related Posts</h3>
-				          <ul class="recent-posts-list">
-
-				          <?php foreach($feature_posts as $post) : //setup_postdata($post);
-				          	
-				          	// avoid showing current post
-				          	if ( $post->ID !== $main_ID ) {
-								echo '<li><a href="' . home_url() . '/' . $post->post_name . '">' . $post->post_title . '</a></li>';
-							}
-						
-				          endforeach;
-
-				          echo '</ul>';
-				?>
-
-			<?php endif; // end if post type is "post" to display "Related Posts" only on posts ?>
-
-			</div>
-
-		</div>
-
-		<?php endif; ?>
-
-
-	<?php endwhile; ?>
-
-<?php endif; ?>
+</div>

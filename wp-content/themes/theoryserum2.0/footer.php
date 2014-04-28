@@ -11,6 +11,9 @@
 
 				<?php get_sidebar('follow'); ?>
 
+				<h3 class="subheader">Search</h3>
+				<?php get_search_form(); ?>
+
 			</div>
 
 			<div class="footer-categories large-2 columns">

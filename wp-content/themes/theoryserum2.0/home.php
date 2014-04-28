@@ -1,22 +1,31 @@
 <?php get_header(); ?>
 
-<?php
+<h1 class="blog-header">Blog</h1>
 
-if ( is_home() ) : ?>
-	<h1 class="blog-header">Blog</h1>
+<?php if ( have_posts() ) : $postcount = 1; ?>
+
+	<?php while ( have_posts() ) : the_post(); ?>
+
+		<?php // Check if post is sticky or first post ?>
+		<?php if ( is_sticky() || $postcount == 1 ) : ?>
+
+			<?php get_template_part( 'content', 'first' ); ?>
+			<?php $postcount++; ?>
+
+		<?php // It's not sticky, but regular post ?>
+		<?php else : ?>
+
+			<?php get_template_part( 'content', get_post_format() ); ?>			
+
+		<?php endif; ?>
+
+	<?php endwhile; ?>
+
 <?php endif; ?>
 
 
-
-
-			<?php get_template_part( 'content', get_post_format() ); ?>
-
-	
-
-
+<?php // PAGINATION ?>
 <?php
-
-// PAGINATION
 if ( $prev_link = get_previous_posts_link() ) {
 	$explode_prev_link = explode('"', get_previous_posts_link());
 	$print_prev_link = '<a href="'.$explode_prev_link[1].'">Prev</a>'; 

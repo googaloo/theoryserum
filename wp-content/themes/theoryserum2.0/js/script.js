@@ -84,3 +84,8 @@ jQuery(function($) {
 	});
 
 });
+
+// For social popups
+function myPopup(url) {
+	window.open( url, "myWindow", "status = 1, height = 400, width = 600, resizable = 0" )
+}

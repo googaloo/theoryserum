@@ -26,18 +26,18 @@
 
 				<h2><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
 				<p class="featured-post-date"><?php the_date(); ?></p><!-- end .post-date -->
-				
+
 				<h3>Share: </h3>
-				<i class="icon-googleplus"></i>
-				<i class="icon-facebook"></i>
-				<i class="icon-twitter"></i>
-				<i class="icon-reddit"></i>
+				<a target="_blank" href="javascript:myPopup('https://www.facebook.com/sharer.php?s=100&amp;p[title]=<?php the_title(); ?>&amp;p[summary]=yuuuuuup up')"><i class="icon-facebook"></i></a>
+				<a target="_blank" href="javascript:myPopup('https://twitter.com/home?status=<?php the_permalink(); ?>')"><i class="icon-twitter"></i></a>
+				<a target="_blank" href="javascript:myPopup('https://plus.google.com/share?url=<?php the_permalink(); ?>')"><i class="icon-googleplus"></i></a>
+				<a target="_blank" href="javascript:myPopup('http://reddit.com/submit?url=<?php the_permalink(); ?>')"><i class="icon-reddit"></i></a>
 
 			</div>
 
 		</header>
 
-		<div class-"row">
+		<div class="row">
 
 			<div class="large-12 columns">
 

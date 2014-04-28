@@ -1,4 +1,6 @@
-<div id="comments">
+<div class="row" id="comments">
+
+    <div class="large-12 columns">
 
 <?php
 
@@ -83,5 +85,7 @@
 <?php else : ?>  
 	<!-- Comments must be closed... :( -->
 <?php endif; ?>  
+
+    </div>
 
 </div><!-- end #comments -->
