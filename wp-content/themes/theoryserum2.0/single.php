@@ -1,3 +1,4 @@
+<i class="icon-short-stories" style="color: black; font-size: 30px; padding-top: 50px;"></i>
 <?php get_header(); ?>
 
 <?php if ( have_posts() ) : ?>

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<h1 class="blog-header">Blog</h1>
+<h1 class="blog-header"><i class="icon-blog page-title-icon"></i> Blog</h1>
 
 <?php if ( have_posts() ) : $postcount = 1; ?>
 

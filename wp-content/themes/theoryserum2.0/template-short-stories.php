@@ -10,7 +10,7 @@
 
 <?php get_header(); ?>
 
-<h1 class="stories-header">Short Stories</h1>
+<h1 class="stories-header"><i class="icon-short-stories page-title-icon"></i> Short Stories</h1>
 
 <?php $short_stories_query = new WP_Query( array( 'post_type' => 'my-short-stories','posts_per_page' => 10 ) ); ?>
 

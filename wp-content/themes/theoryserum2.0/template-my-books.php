@@ -10,7 +10,7 @@
 
 <?php get_header(); ?>
 
-<h1 class="books-header">My Books</h1>
+<h1 class="books-header"><i class="icon-books page-title-icon"></i> My Books</h1>
 
 <?php $books_featured_query = new WP_Query( array( 'post_type' => 'books','posts_per_page' => 10 ) ); ?>
 

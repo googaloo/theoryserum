@@ -83,6 +83,12 @@ jQuery(function($) {
 
 	});
 
+	// Add icon images to nav-box
+	$('.main-menu ul li:nth-child(1) a').before('<i class="icon-blog"></i>');
+	$('.main-menu ul li:nth-child(2) a').before('<i class="icon-books"></i>');
+	$('.main-menu ul li:nth-child(3) a').before('<i class="icon-short-stories"></i>');
+	$('.main-menu ul li:nth-child(4) a').before('<i class="icon-games"></i>');
+
 });
 
 // For social popups
