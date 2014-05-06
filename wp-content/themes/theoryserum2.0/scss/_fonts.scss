@@ -129,11 +129,11 @@ FONTS
 // TheorySerum icon set
 @font-face {
     font-family: 'theoryserum';
-    src:url('fonts/theoryserum.eot?-whvpb');
-    src:url('fonts/theoryserum.eot?#iefix-whvpb') format('embedded-opentype'),
-        url('fonts/theoryserum.woff?-whvpb') format('woff'),
-        url('fonts/theoryserum.ttf?-whvpb') format('truetype'),
-        url('fonts/theoryserum.svg?-whvpb#theoryserum') format('svg');
+    src:url('fonts/theoryserum.eot?-cyr3ql');
+    src:url('fonts/theoryserum.eot?#iefix-cyr3ql') format('embedded-opentype'),
+        url('fonts/theoryserum.woff?-cyr3ql') format('woff'),
+        url('fonts/theoryserum.ttf?-cyr3ql') format('truetype'),
+        url('fonts/theoryserum.svg?-cyr3ql#theoryserum') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -163,6 +163,9 @@ FONTS
 }
 .icon-blog:before {
     content: "\192";
+}
+.icon-menu:before {
+    content: "\54";
 }
 .icon-googleplus:before {
     content: "\153";

@@ -47,10 +47,10 @@ jQuery(function($) {
 		$(window).scroll(function(e) {
 			if( $(window).scrollTop() >= 200 ) {
 				$('#nav-box').css('position', 'fixed').css('top', '0');
-				$('.main-menu').css('position', 'fixed').css('top', '3px');
+				$('.main-menu').css('position', 'fixed').css('top', '6px');
 			} else {
 				$('#nav-box').css('position', 'absolute').css('top', '199px');
-				$('.main-menu').css('position', 'absolute').css('top', '202px');
+				$('.main-menu').css('position', 'relative').css('top', '2px');
 			}
 
 		});
@@ -89,9 +89,18 @@ jQuery(function($) {
 	$('.main-menu ul li:nth-child(3) a').before('<i class="icon-short-stories"></i>');
 	$('.main-menu ul li:nth-child(4) a').before('<i class="icon-games"></i>');
 
+
+	$('.toggle-menu').on('click.theoryserum', function() {
+
+		$('.main-menu').toggle();
+
+	});
+
 });
 
 // For social popups
 function myPopup(url) {
 	window.open( url, "myWindow", "status = 1, height = 400, width = 600, resizable = 0" )
 }
+
+// Toggle Main menu medium down

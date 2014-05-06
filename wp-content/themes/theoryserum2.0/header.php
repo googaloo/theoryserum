@@ -31,7 +31,8 @@
 
 			<div class="row">
 			
-				<div class="large-12 medium-12 columns left masthead-logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() . '/images/main_header_logo.jpg'; ?>" alt="" /></a></div>
+				<div class="large-12 hide-for-medium-down columns left masthead-logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() . '/images/main_header_logo.jpg'; ?>" alt="" /></a></div>
+				<div class="medium-8 medium-centered show-for-medium-down columns masthead-logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() . '/images/main_header_logo_medium.jpg'; ?>" alt="" /></a></div>
 
 				<?php get_subheader(); ?>
 
@@ -51,48 +52,70 @@
 
 			<!-- <div class="tech-rotate-box" style="background: url('<?php echo get_template_directory_uri() ?>/images/rotator.png');"></div> end .tech-follow-box -->
 
-			</div>
+			</div>	
 
-			
+		</div>
 
-			<div id="nav-box" class="nav-box-no-hover"></div><!--end #nav-box -->
-			<nav>
+	</div>
 
-				<?php //wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>			
-				<?php $nav_args = array(
+	<div id="nav-box" class="nav-box-no-hover hide-for-medium-down"></div><!--end #nav-box -->
 
-					'depth'       => 0,
-					'sort_column' => 'menu_order, post_title',
-					'menu_class'  => 'main-menu',
-					'include'     => '',
-					'exclude'     => '93',
-					'echo'        => true,
-					'show_home'   => 'Blog',
-					'link_before' => '',
-					'link_after'  => '' 
+	<!-- Menu Toggle -->
+	<div class="row show-for-medium-down">
 
-					);
-					?>
-					<?php wp_page_menu( $nav_args ); ?>
+		<div class="medium-2 medium-centered columns toggle-menu">
 
-					<!-- Handle CSS3 navigation animations on hover -->
+			<i class="icon-menu"></i>
 
-					<?php if ( is_home() ) : ?>
+		</div>
 
-						<script type="text/javascript">
-							jQuery(function($) {
-								$(".main-menu ul li:first").addClass("current_page_item");
-							});
-						</script>
+	</div>
 
-					<?php else : ?>
+	<div class="row">
 
-						<script type="text/javascript">
-							jQuery(function($) {
-								$(".main-menu ul li:first").addClass("page_item");
-							});
-						</script>
+		<div class="large-8 large-centered columns">
 
-					<?php endif; ?>
+		<?php //wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>			
+		<?php $nav_args = array(
 
-			</nav>
+			'depth'       => 0,
+			'sort_column' => 'menu_order, post_title',
+			'menu_class'  => 'main-menu',
+			'include'     => '',
+			'exclude'     => '93',
+			'echo'        => true,
+			'show_home'   => 'Blog',
+			'link_before' => '',
+			'link_after'  => '' 
+
+			);
+			?>
+			<?php wp_page_menu( $nav_args ); ?>
+
+			<!-- Handle CSS3 navigation animations on hover -->
+
+			<?php if ( is_home() ) : ?>
+
+				<script type="text/javascript">
+					jQuery(function($) {
+						$(".main-menu ul li:first").addClass("current_page_item");
+					});
+				</script>
+
+			<?php else : ?>
+
+				<script type="text/javascript">
+					jQuery(function($) {
+						$(".main-menu ul li:first").addClass("page_item");
+					});
+				</script>
+
+			<?php endif; ?>
+
+		</div>
+
+	</div>
+
+	<div class="row">
+
+		<div class="large-12 large-centered columns">
