@@ -32,7 +32,7 @@
 			<div class="row">
 			
 				<div class="large-12 hide-for-medium-down columns left masthead-logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() . '/images/main_header_logo.jpg'; ?>" alt="" /></a></div>
-				<div class="medium-8 medium-centered show-for-medium-down columns masthead-logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() . '/images/main_header_logo_medium.jpg'; ?>" alt="" /></a></div>
+				<div class="medium-10 medium-centered show-for-medium-down columns masthead-logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() . '/images/main_header_logo_medium.jpg'; ?>" alt="" /></a></div>
 
 				<?php get_subheader(); ?>
 
@@ -63,7 +63,7 @@
 	<!-- Menu Toggle -->
 	<div class="row show-for-medium-down">
 
-		<div class="medium-2 medium-centered columns toggle-menu">
+		<div class="medium-2 medium-centered small-1 small-centered columns toggle-menu">
 
 			<i class="icon-menu"></i>
 

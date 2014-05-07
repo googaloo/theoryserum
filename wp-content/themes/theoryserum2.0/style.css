@@ -200,25 +200,32 @@ html {
 
 body {
   font-family: cabin;
-  font-size: 14px;
+  font-size: 15px;
+  line-height: 1.5em;
   color: #6b6b6b; }
 
 h1, h2, h3, h4 {
   font-family: bebasregular;
-  font-weight: thin; }
+  font-weight: thin;
+  word-spacing: 0.3em; }
 
 h1 {
-  font-size: 2em; }
+  font-size: 2em;
+  line-height: 1.5em; }
 
 h2 {
-  font-size: 1.7857em; }
+  font-size: 1.7857em;
+  /* 25 */
+  line-height: 1.5em; }
 
 h3 {
   font-size: 1.2857em;
+  line-height: 1.5em;
   color: #6b6b6b; }
 
 h4 {
-  font-size: 1em; }
+  font-size: 1em;
+  line-height: 1.5em; }
 
 a {
   color: #7bc1c7;
@@ -226,6 +233,18 @@ a {
 
 a:hover {
   color: #85d1d7; }
+
+p {
+  margin: 1em 0; }
+
+.blog-header {
+  padding: 0.3125em 0;
+  /* 10px */
+  font-size: 2.2857em;
+  /* 32px */
+  line-height: 1.5em;
+  /* 48 */
+  color: #70a8da; }
 
 /*************
 	MASTHEAD
@@ -396,8 +415,7 @@ a:hover {
   display: block; }
 
 .main-menu ul {
-  list-style: none;
-  margin-top: 6px; }
+  list-style: none; }
 
 .main-menu ul li {
   margin-top: 0;
@@ -408,9 +426,7 @@ a:hover {
   -webkit-transition: opacity 0.15s linear; }
 
 .main-menu ul li:hover {
-  opacity: 1;
-  transition: opacity 0.15s linear;
-  -webkit-transition: opacity 0.15s linear; }
+  opacity: 1; }
 
 .main-menu ul li a {
   color: #6aa6ab; }
@@ -422,9 +438,6 @@ a:hover {
 .main-menu ul li i {
   color: #6aa6ab;
   padding-right: 0.5em; }
-
-.current_page_item {
-  opacity: 1; }
 
 .main-sidebar {
   background: url("images/bg_hexagons.png"); }
@@ -438,13 +451,47 @@ a:hover {
   padding: 0 3px;
   color: silver; }
 
+.main-menu ul li.current_page_item {
+  opacity: 1;
+  font-weight: bold; }
+
 @media only screen and (max-width: 64.063em) {
   .main-menu {
     display: none;
     font-size: 1.5em;
-    padding: 0.5em;
-    background: #EEE; }
+    padding: 0.5em; }
 
   .main-menu ul li, .main-menu ul li:first-child {
     float: none;
-    margin: 0.5em 2em 0 0; } }
+    margin: 0.5em 2em 0 0;
+    padding: 5px; }
+
+  .main-menu ul li:nth-child(2n-1) {
+    background: #EEE; } }
+@media only screen and (max-width: 40em) {
+  .toggle-menu {
+    font-size: 2em; } }
+/******
+SIDEBAR
+*******/
+.sidebar-header {
+  color: #6b6b6b;
+  font-size: 3em;
+  line-height: 0.8em; }
+
+.sidebar-subheader {
+  color: #6b6b6b;
+  border-bottom: 1px solid silver;
+  margin: 14px 0;
+  font-weight: normal; }
+
+.sidebar-thumb {
+  margin-top: 5px; }
+
+.sidebar-icons {
+  padding-right: 10px;
+  color: silver; }
+
+.about-image {
+  float: left;
+  clear: both; }

@@ -8,30 +8,36 @@ html {
 
 body {
 	font-family: cabin;
-	font-size: 14px;
+	font-size: 15px;
+	line-height: 1.5em;
 	color: $gray;
 }
 
 h1, h2, h3, h4 {
 	font-family: bebasregular;
 	font-weight: thin;
+	word-spacing: 0.3em;
 }
 
 h1 {
 	font-size: 2em;
+	line-height: 1.5em;
 }
 
 h2 {
-	font-size: 1.7857em;
+	font-size: 1.7857em; /* 25 */
+	line-height: 1.5em;
 }
 
 h3 {
 	font-size: 1.2857em;
+	line-height: 1.5em;
 	color: $gray;
 }
 
 h4 {
 	font-size: 1em;
+	line-height: 1.5em;
 }
 
 a {
@@ -43,4 +49,19 @@ a:hover {
 	color: $aquaLight;
 }
 
+p {
+	margin: 1em 0;
+}
+
 button, input[type="text"] {}
+
+////////////////////
+// GLOBAL CLASSES //
+////////////////////
+
+.blog-header {
+	padding: 0.3125em 0; /* 10px */
+	font-size: 2.2857em; /* 32px */
+	line-height: 1.5em; /* 48 */
+	color: $blue;
+}
