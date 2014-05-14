@@ -10,7 +10,7 @@ jQuery(function($) {
 
 		});
 
-		$('.post-categories li a').each(function(e) {
+		$('.post-cat-box a').each(function(e) {
 			$categoryName = $(this).html();
 			switch ( $categoryName ) {
 				case 'My Stuff' :
@@ -46,11 +46,13 @@ jQuery(function($) {
 		//$('#nav-box').css('width', screen.width);
 		$(window).scroll(function(e) {
 			if( $(window).scrollTop() >= 200 ) {
-				$('#nav-box').css('position', 'fixed').css('top', '0');
-				$('.main-menu').css('position', 'fixed').css('top', '8px');
+				$('.nav-box').css('position', 'fixed').css('top', '0');
+				$('.main-menu').css('position', 'fixed').css('top', '7px');
+				$('.nav-logo-icon').show();
 			} else {
-				$('#nav-box').css('position', 'absolute').css('top', '199px');
+				$('.nav-box').css('position', 'absolute').css('top', '199px');
 				$('.main-menu').css('position', 'relative').css('top', '0');
+				$('.nav-logo-icon').hide();
 			}
 
 		});

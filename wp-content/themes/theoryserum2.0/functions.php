@@ -67,10 +67,10 @@ function theoryserum_widgets_init() {
 	    'name'         => __( 'About', 'theoryserum2.0' ),
 	    'id'           => 'about',
 	    'description'  => __( 'Sidebar for About', 'theoryserum2.0' ),
-	    'before_title' => '<h2 class="sidebar-header">',
-	    'after_title'  => '</h2><img src="' . get_template_directory_uri() . '/images/rustin-odom-8bit.png" alt="Rustin Odom 8bit" class="about-image" />',
-	    'before_widget' => '',
-	    'after_widget' => ''
+	    'before_title' => '<h3>',
+	    'after_title'  => '</h3><img src="' . get_template_directory_uri() . '/images/rustin-odom-8bit.png" alt="Rustin Odom 8bit" class="about-image" />',
+	    'before_widget' => '<div class="about-widget">',
+	    'after_widget' => '</div>'
 	) );
 
 	register_sidebar( array(

@@ -152,39 +152,42 @@ FONTS
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-short-stories:before {
-    content: "\e5";
-}
-.icon-games:before {
-    content: "\df";
-}
-.icon-books:before {
-    content: "\2202";
-}
-.icon-blog:before {
-    content: "\192";
-}
 .icon-menu:before {
     content: "\54";
-}
-.icon-googleplus:before {
-    content: "\153";
-}
-.icon-facebook:before {
-    content: "\2211";
-}
-.icon-twitter:before {
-    content: "\b4";
-}
-.icon-feed:before {
-    content: "\ae";
-}
-.icon-youtube:before {
-    content: "\2020";
 }
 .icon-reddit:before {
     content: "\a5";
 }
 .icon-stumbleupon:before {
     content: "\a8";
+}
+.icon-feed:before {
+    content: "\ae";
+}
+.icon-twitter:before {
+    content: "\b4";
+}
+.icon-games:before {
+    content: "\df";
+}
+.icon-short-stories:before {
+    content: "\e5";
+}
+.icon-googleplus:before {
+    content: "\153";
+}
+.icon-blog:before {
+    content: "\192";
+}
+.icon-youtube:before {
+    content: "\2020";
+}
+.icon-books:before {
+    content: "\2202";
+}
+.icon-facebook:before {
+    content: "\2211";
+}
+.icon-bubble:before {
+    content: "\a9";
 }

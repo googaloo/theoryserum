@@ -18,15 +18,19 @@
 			</a>
 
 		</div><!-- end article-img -->
-		<div class="post-cat-box"><?php echo get_the_category_list(); ?></div><!-- end .post-cat-box -->
+		<div class="post-cat-container"><div class="post-cat-box"><?php echo get_the_category_list(); ?></div></div><!-- end .post-cat-box -->
 
-			<h2 class="top-featured-article-header top-featured-header"><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
-			<p class="featured-post-date"><?php the_date(); ?></p><!-- end .post-date -->
-			<div class="featured-article-comment-number"> <a href="<?php comments_link(); ?>"><span class="comment-image"></span><?php comments_number('0','1','%'); ?></a></div><!-- end .article-comment-number -->
+		<header class="article-header">
+			<p class="post-date"><?php the_date(); ?></p><!-- end .post-date -->
+			<h2 class="article-title featured-title"><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
+			<p class="article-comment-count"><i class="icon-bubble"></i><a href="<?php comments_link(); ?>"><?php comments_number('0','1','%'); ?></a></p><!-- end .article-comment-number -->
 
-		<div>
-			<p class="featured-article-content"><?php echo get_the_excerpt(); ?><a class="ts-button" href="<?php echo get_permalink($post->ID); ?>">Read More</a></p>
-		</div>
+		</header>
+
+		<article class="article-content">
+			<?php the_excerpt(); ?>
+			<a class="right" href="<?php echo get_permalink($post->ID); ?>">Read More</a>
+		</article>
 
 	</article><!-- end .featured-container -->
 

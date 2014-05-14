@@ -1,51 +1,76 @@
-<div class="row" style="border-top: 1px solid lightgray;">
+<div class="row article-container">
 
-	<?php if ( get_post_type( get_the_ID() ) === 'post' ) : ?>	
 	<article class="large-9 columns">
-	<?php else: ?>
-	<article class="large-12 columns">
-	<?php endif; ?>
+
+		<div class="row">
+
+<?php if ( get_post_meta( $post->ID, 'wpcf-featured-post', true ) === 'featured' ): ?>
+
+			<div class="large-12 columns">
+
+				<a href="<?php echo get_permalink($post->ID); ?>"><?php the_post_thumbnail('full'); ?></a>
+
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="large-12 columns">
+
+<?php else : ?>
+
+				<div class="large-3 columns">
+
+					<a href="<?php echo get_permalink($post->ID); ?>"><?php the_post_thumbnail('ts-thumbnail'); ?></a>
+					<div class="post-cat-container"><div class="post-cat-box"><?php echo get_the_category_list(); ?></div></div><!-- end .post-cat-box -->
+
+				</div>
+
+				<div class="large-9 left columns">
+
+<?php endif; ?>
 
 		<div class="article-img">
 
 			<a href="<?php echo get_permalink($post->ID); ?>">
 
-			<?php if ( has_post_thumbnail() ) {
-
-				if ( get_post_meta( $post->ID, 'wpcf-featured-post', true ) === 'featured' ) {
-
-					the_post_thumbnail('full');
-
-				} else {
-
-					the_post_thumbnail('ts-thumbnail');
-
-				}
-
-			} ?>
-
 			</a>
 
 		</div><!-- end .article-img -->
-		<div class="post-cat-box"><?php echo get_the_category_list(); ?></div><!-- end .post-cat-box -->
+<?php if ( get_post_meta( $post->ID, 'wpcf-featured-post', true ) === 'featured' ): ?>
+		<div class="post-cat-container"><div class="post-cat-box"><?php echo get_the_category_list(); ?></div></div><!-- end .post-cat-box -->
+<?php endif; ?>
 
 		<div class="article-content-container">
 
+<?php if ( get_post_meta( $post->ID, 'wpcf-featured-post', true ) === 'featured' ): ?>
+			<header class="article-header">
+	<?php else : ?>
 			<header>
+<?php endif; ?>
 
-				<h2 class="article-header"><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
-				
-				<p class="post-date"><?php echo get_the_date(); ?></p><!-- end .post-date -->
-
-				<div class="article-comment-number"> <a href="<?php comments_link(); ?>"><span class="comment-image"></span><?php comments_number('0','1','%'); ?></a></div><!-- end .article-comment-number -->
+				<p class="post-date"><?php the_date(); ?></p><!-- end .post-date -->
+				<h2 class="article-title"><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
+				<p class="article-comment-count"><i class="icon-bubble"></i><a href="<?php comments_link(); ?>"><?php comments_number('0','1','%'); ?></a></p><!-- end .article-comment-number -->
 
 			</header>
 
-			<article class="article-content"><?php the_excerpt(); ?><a class="ts-button" href="<?php echo get_permalink($post->ID); ?>">Read More</a></article>
+			<article class="article-content">
+				<?php the_excerpt(); ?>
+				<a class="right" href="<?php echo get_permalink($post->ID); ?>">Read More</a>
+			</article>
 
 		</div><!-- end .article-content-container -->
 
+	</div>
+
 	</article><!-- end .article-container -->
+
+
+
+
+
 
 	<?php // Related Posts ?>
 	<?php if ( get_post_type( get_the_ID() ) === 'post' ) : ?>

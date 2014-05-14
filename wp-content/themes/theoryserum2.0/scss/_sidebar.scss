@@ -3,20 +3,23 @@ SIDEBAR
 *******/
 
 .sidebar-header {
-	color: $gray;
-	font-size: 3em;
-	line-height: 0.8em;
-}
+  color: #6b6b6b;
+  font-size: 2em;
+  line-height: 0.8em; 
+  padding-bottom: .5em;
+  }
 
 .sidebar-subheader {
-	color: $gray;
+	color: $lighterGray;
 	border-bottom: 1px solid $lighterGray;
 	margin: 14px 0;
 	font-weight: normal;
 }
 
-.sidebar-thumb {
-	margin-top: 5px;
+.sidebar-book-thumb {
+}
+
+.sidebar-stories-thumb {
 }
 
 .sidebar-icons {
@@ -27,4 +30,33 @@ SIDEBAR
 .about-image {
 	float: left;
 	clear: both;
+}
+
+.sidebar-elements-container {
+	text-align: center;
+}
+
+.sidebar-elements-link {
+	font-size: 1em;
+	font-family: bebasregular;
+	display: block;
+	word-spacing: $wordSpacing;
+}
+
+.stuff-header {
+	margin-top: 0.6667em;
+}
+
+.sidebar-cat-item:hover {
+	opacity: 1;
+}
+
+.sidebar-cat-item {
+	opacity: 0.6;
+}
+
+.sidebar-cat-item a {
+	line-height: 2.5em;
+	padding: 0.4em 0.5em;
+	color: #FFF;
 }

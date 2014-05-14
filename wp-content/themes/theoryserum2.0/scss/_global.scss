@@ -8,36 +8,31 @@ html {
 
 body {
 	font-family: cabin;
-	font-size: 15px;
-	line-height: 1.5em;
+	font-size: 16px;
+	line-height: 1.5em; /* Baseline 24px */
 	color: $gray;
 }
 
 h1, h2, h3, h4 {
 	font-family: bebasregular;
 	font-weight: thin;
-	word-spacing: 0.3em;
+	word-spacing: $wordSpacing;
 }
 
 h1 {
-	font-size: 2em;
-	line-height: 1.5em;
+	font-size: 2.5em; /* 40px */
+	line-height: 1.666667em;
 }
 
 h2 {
-	font-size: 1.7857em; /* 25 */
-	line-height: 1.5em;
-}
-
-h3 {
-	font-size: 1.2857em;
+	font-size: 1.5em; /* 24px */
 	line-height: 1.5em;
 	color: $gray;
 }
 
-h4 {
+h3, h4 {
 	font-size: 1em;
-	line-height: 1.5em;
+	line-height: 0.66667em;
 }
 
 a {
@@ -50,7 +45,9 @@ a:hover {
 }
 
 p {
-	margin: 1em 0;
+	margin:0 0 1.3333em;
+	word-spacing: $wordSpacingP;
+	line-height: 1.5em;
 }
 
 button, input[type="text"] {}
@@ -63,5 +60,9 @@ button, input[type="text"] {}
 	padding: 0.3125em 0; /* 10px */
 	font-size: 2.2857em; /* 32px */
 	line-height: 1.5em; /* 48 */
-	color: $blue;
+	color: $aquaLighter;
+}
+
+.blog-header i {
+	color: $aquaLighter;
 }

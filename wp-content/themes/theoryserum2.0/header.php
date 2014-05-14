@@ -31,7 +31,7 @@
 
 			<div class="row">
 			
-				<div class="large-12 hide-for-medium-down columns left masthead-logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() . '/images/main_header_logo.jpg'; ?>" alt="" /></a></div>
+				<div class="large-9 large-centered hide-for-medium-down columns masthead-logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() . '/images/main_header_logo.jpg'; ?>" alt="TheorySerum" /></a></div>
 				<div class="medium-10 medium-centered show-for-medium-down columns masthead-logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() . '/images/main_header_logo_medium.jpg'; ?>" alt="" /></a></div>
 
 				<?php get_subheader(); ?>
@@ -58,7 +58,7 @@
 
 	</div>
 
-	<div id="nav-box" class="nav-box-no-hover hide-for-medium-down"></div><!--end #nav-box -->
+	<div class="nav-box hide-for-medium-down"></div><!--end #nav-box -->
 
 	<!-- Menu Toggle -->
 	<div class="row show-for-medium-down">
@@ -72,8 +72,12 @@
 	</div>
 
 	<div class="row">
+		<div class="large-1 left hide-for-medium-down columns"><div class="nav-logo-icon"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/nav-logo-icon.png" width="56" height="56"/></a></div></div>
+	</div>
 
-		<div class="large-8 large-centered columns">
+	<div class="row">
+
+		<div class="large-9 large-centered columns">
 
 		<?php //wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>			
 		<?php $nav_args = array(
