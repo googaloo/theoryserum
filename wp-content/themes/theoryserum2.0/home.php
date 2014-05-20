@@ -44,11 +44,11 @@ if ( $next_link = get_next_posts_link() ) {
 
 <div class="ts-pagination row">
 
-	<div class="large-1 medium-2 small-2 columns"><?php echo $print_prev_link; ?></div>
-	<div class="large-1 medium-2 small-2 small-offset-3 medium-offset-3 large-offset-4 columns"><a href="<?php echo site_url(); ?>">Home</a></div>
+	<div class="large-1 large-offset-9 medium-2 medium-offset-6 small-2 small-offset-6 columns"><?php echo $print_prev_link; ?></div>
+	<div class="large-1 medium-2 small-2 columns"><a href="<?php echo site_url(); ?>">Home</a></div>
 	<div class="large-1 medium-2 small-2 columns"><?php echo $print_next_link; ?></div>
 
 </div><!-- end .ts-pagination-list -->
 
 
-	<?php get_footer(); 
+<?php get_footer(); 
