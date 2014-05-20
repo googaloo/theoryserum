@@ -23,6 +23,11 @@
 
 <?php endif; ?>
 
+	<!-- break global foundation grid -->
+	</div>
+
+</div>
+
 
 <?php // PAGINATION ?>
 <?php
@@ -42,13 +47,21 @@ if ( $next_link = get_next_posts_link() ) {
 
 ?>
 
-<div class="ts-pagination row">
+<div class="ts-pagination">
 
-	<div class="large-1 large-offset-9 medium-2 medium-offset-6 small-2 small-offset-6 columns"><?php echo $print_prev_link; ?></div>
-	<div class="large-1 medium-2 small-2 columns"><a href="<?php echo site_url(); ?>">Home</a></div>
-	<div class="large-1 medium-2 small-2 columns"><?php echo $print_next_link; ?></div>
+	<div class="row">
 
-</div><!-- end .ts-pagination-list -->
+		<div class="large-1 large-offset-9 medium-2 medium-offset-6 small-2 small-offset-6 columns"><?php echo $print_prev_link; ?></div>
+		<div class="large-1 medium-2 small-2 columns"><a href="<?php echo site_url(); ?>">Home</a></div>
+		<div class="large-1 medium-2 small-2 columns"><?php echo $print_next_link; ?></div>
 
+	</div>
+
+</div><!-- end .ts-pagination -->
+	
+	<!-- resume global foundation grid -->
+	<div class="row">
+
+		<div class="large-12 large-centered columns">
 
 <?php get_footer(); 
