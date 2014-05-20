@@ -28,34 +28,27 @@
 <?php
 if ( $prev_link = get_previous_posts_link() ) {
 	$explode_prev_link = explode('"', get_previous_posts_link());
-	$print_prev_link = '<a href="'.$explode_prev_link[1].'">Prev</a>'; 
+	$print_prev_link = '<i class="icon-arrow-left"></i><a href="'.$explode_prev_link[1].'">Prev</a>'; 
 } else {
-	$print_prev_link = "Prev";
+	$print_prev_link = "<i class='icon-arrow-left'></i>Prev";
 }
 
 if ( $next_link = get_next_posts_link() ) {
 	$explode_next_link = explode('"', get_next_posts_link());
-	$print_next_link = '<a class="ts-pagination-next" href="'.$explode_next_link[1].'">Next</a>'; 
+	$print_next_link = '<a class="ts-pagination-next" href="'.$explode_next_link[1].'">Next<i class="icon-arrow-right"></i></a>'; 
 } else {
-	$print_next_link = "Next";
+	$print_next_link = "Next<i class='icon-arrow-right'></i>";
 }
 
 ?>
 
-	<nav class="row">
+<div class="ts-pagination row">
 
-		<div class=" large-12 large-centered columns ts-pagination-container">
+	<div class="large-1 medium-2 small-2 columns"><?php echo $print_prev_link; ?></div>
+	<div class="large-1 medium-2 small-2 small-offset-3 medium-offset-3 large-offset-4 columns"><a href="<?php echo site_url(); ?>">Home</a></div>
+	<div class="large-1 medium-2 small-2 columns"><?php echo $print_next_link; ?></div>
 
-			<ul class="ts-pagination-list">
+</div><!-- end .ts-pagination-list -->
 
-				<li><?php echo $print_prev_link; ?></li>
-				<li><a href="<?php echo site_url(); ?>">Home</a></li>
-				<li><?php echo $print_next_link; ?></li>
-
-			</ul><!-- end .ts-pagination-list -->
-
-		</div><!-- end .ts-pagination-container -->
-
-	</nav>
 
 	<?php get_footer(); 

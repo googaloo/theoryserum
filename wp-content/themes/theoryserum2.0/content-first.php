@@ -1,5 +1,5 @@
 <?php // Content section for sticky and first post in order to have a sidebar ?>
-<section class="row">
+<section class="row feature-article-container">
 
 	<article class="large-7 columns featured-article">
 
@@ -29,7 +29,6 @@
 
 		<article class="article-content">
 			<?php the_excerpt(); ?>
-			<a class="right" href="<?php echo get_permalink($post->ID); ?>">Read More</a>
 		</article>
 
 	</article><!-- end .featured-container -->

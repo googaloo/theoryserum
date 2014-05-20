@@ -165,6 +165,9 @@ FONTS
 .icon-stumbleupon:before {
   content: "\a8"; }
 
+.icon-bubble:before {
+  content: "\a9"; }
+
 .icon-feed:before {
   content: "\ae"; }
 
@@ -192,8 +195,17 @@ FONTS
 .icon-facebook:before {
   content: "\2211"; }
 
-.icon-bubble:before {
-  content: "\a9"; }
+.icon-arrow-left:before {
+  content: "\e600"; }
+
+.icon-arrow-down:before {
+  content: "\e601"; }
+
+.icon-arrow-up:before {
+  content: "\e602"; }
+
+.icon-arrow-right:before {
+  content: "\e603"; }
 
 /******
 GLOBAL
@@ -236,9 +248,12 @@ a:hover {
   color: #85d1d7; }
 
 p {
-  margin: 0 0 1.3333em;
+  margin: 0 0 1em;
   word-spacing: 0.15em;
   line-height: 1.5em; }
+
+p:last-child {
+  margin: 0; }
 
 .blog-header {
   padding: 0.3125em 0;
@@ -479,8 +494,13 @@ p {
   .toggle-menu {
     font-size: 2em; } }
 .article-container {
-  border-top: 1px solid silver;
-  padding: 2em 0; }
+  border-top: 1px solid silver; }
+
+.article-container {
+  padding: 3em 0; }
+
+.feature-article-container {
+  padding: 0 0 2em; }
 
 .post-cat-container .post-cat-box a {
   padding: 5px;
@@ -512,6 +532,22 @@ p {
 
 .article-comment-count a {
   margin-left: 0.5em; }
+
+.recent-posts-list li {
+  padding: 0.5em 0;
+  border-bottom: 1px solid #a1dae2; }
+
+.recent-posts-list li:last-child {
+  border: none; }
+
+.ts-pagination {
+  font-size: 1em;
+  padding: 0.1em 0;
+  border-top: 1px solid #a1dae2;
+  border-bottom: 1px solid #a1dae2; }
+
+.ts-pagination i {
+  font-size: 0.75em; }
 
 /******
 SIDEBAR
@@ -558,3 +594,6 @@ SIDEBAR
   line-height: 2.5em;
   padding: 0.4em 0.5em;
   color: #FFF; }
+
+.footer {
+  margin-top: 3em; }

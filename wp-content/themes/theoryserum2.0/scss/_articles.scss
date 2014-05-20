@@ -183,7 +183,14 @@
 
 .article-container {
 	border-top: 1px solid $lighterGray; 
-	padding: 2em 0;
+}
+
+.article-container {
+	padding: 3em 0;
+}
+
+.feature-article-container {
+	padding: 0 0 2em;
 }
 
 .post-cat-container .post-cat-box a {
@@ -219,7 +226,6 @@
 	color: $lighterGray;
 	margin: 0;
 	font-size: 0.875em; /* 14px */
-	//line-height: 1.71429em;
 	line-height: 1em;
 	margin-bottom: 0.41667em;
 }
@@ -230,4 +236,24 @@
 
 .article-comment-count a {
 	margin-left: 0.5em;
+}
+
+.recent-posts-list li {
+	padding: 0.5em 0;
+	border-bottom: 1px solid $aquaLighter;
+}
+
+.recent-posts-list li:last-child {
+	border: none;
+}
+
+.ts-pagination {
+	font-size: 1em;
+	padding: 0.1em 0;
+	border-top: 1px solid $aquaLighter;
+	border-bottom: 1px solid $aquaLighter;
+}
+
+.ts-pagination i {
+	font-size: 0.75em;
 }

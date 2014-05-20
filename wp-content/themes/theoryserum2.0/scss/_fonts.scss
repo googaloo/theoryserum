@@ -161,6 +161,9 @@ FONTS
 .icon-stumbleupon:before {
     content: "\a8";
 }
+.icon-bubble:before {
+    content: "\a9";
+}
 .icon-feed:before {
     content: "\ae";
 }
@@ -188,6 +191,15 @@ FONTS
 .icon-facebook:before {
     content: "\2211";
 }
-.icon-bubble:before {
-    content: "\a9";
+.icon-arrow-left:before {
+    content: "\e600";
+}
+.icon-arrow-down:before {
+    content: "\e601";
+}
+.icon-arrow-up:before {
+    content: "\e602";
+}
+.icon-arrow-right:before {
+    content: "\e603";
 }

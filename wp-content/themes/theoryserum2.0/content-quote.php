@@ -1,6 +1,5 @@
-<div style="border-top: 1px solid #CCC;">
+<div class="article-container">
 	<h1>
 		<?php the_content(); ?>
 	</h1>
-	<h2>hey</h2>
 </div>

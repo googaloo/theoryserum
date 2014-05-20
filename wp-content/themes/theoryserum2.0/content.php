@@ -52,13 +52,12 @@
 
 				<p class="post-date"><?php the_date(); ?></p><!-- end .post-date -->
 				<h2 class="article-title"><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
-				<p class="article-comment-count"><i class="icon-bubble"></i><a href="<?php comments_link(); ?>"><?php comments_number('0','1','%'); ?></a></p><!-- end .article-comment-number -->
+				<p class="article-comment-count"><i class="icon-bubble"></i><a href="<?php comments_link(); ?>"><?php comments_number('0','1','%'); ?> comments</a></p><!-- end .article-comment-number -->
 
 			</header>
 
 			<article class="article-content">
 				<?php the_excerpt(); ?>
-				<a class="right" href="<?php echo get_permalink($post->ID); ?>">Read More</a>
 			</article>
 
 		</div><!-- end .article-content-container -->
@@ -68,14 +67,13 @@
 	</article><!-- end .article-container -->
 
 
-
-
-
-
+	<?php ///////////////// ?>
 	<?php // Related Posts ?>
+	<?php ///////////////// ?>
+
 	<?php if ( get_post_type( get_the_ID() ) === 'post' ) : ?>
 
-		<div class="large-3 columns">
+		<div class="large-3 columns hide-for-medium-down">
 
 		<h1><?php get_post_type( get_the_ID() ); ?></h1>
 

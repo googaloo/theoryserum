@@ -1,39 +1,41 @@
+		<div class="footer">		
+			<div class="row">
 
-		<div class="row footer">
+				<div class="footer-about large-6 columns">
 
-			<div class="footer-about large-6 columns">
+					<?php get_sidebar('about'); ?>
 
-				<?php get_sidebar('about'); ?>
+				</div>
 
-			</div>
+				<div class="footer-follow large-2 columns">
 
-			<div class="footer-follow large-2 columns">
+					<?php get_sidebar('follow'); ?>
 
-				<?php get_sidebar('follow'); ?>
+					<h3 class="subheader">Search</h3>
+					<?php get_search_form(); ?>
 
-				<h3 class="subheader">Search</h3>
-				<?php get_search_form(); ?>
+				</div>
 
-			</div>
+				<div class="footer-categories large-2 columns">
 
-			<div class="footer-categories large-2 columns">
+					<h3 class="subheader">Categories</h3>
+					<?php wp_list_categories( array('style'=>'none') ); ?>
 
-				<h3 class="subheader">Categories</h3>
-				<?php wp_list_categories( array('style'=>'none') ); ?>
+				</div> <!-- end .footer-about -->
 
-			</div> <!-- end .footer-about -->
+				<div class="footer-pages large-2 columns">
 
-			<div class="footer-pages large-2 columns">
+					<h3 class="subheader">Pages</h3>
+					<ul>
+						<li class="page_item"><a href="<?php echo get_site_url(); ?>">Blog</a></li>
+						<?php wp_list_pages( array('title_li' => '') ); ?>
+					</ul>
 
-				<h3 class="subheader">Pages</h3>
-				<ul>
-					<li class="page_item"><a href="<?php echo get_site_url(); ?>">Blog</a></li>
-					<?php wp_list_pages( array('title_li' => '') ); ?>
-				</ul>
+				</div> <!-- end .footer-about -->
 
-			</div> <!-- end .footer-about -->
+			</div> <!-- end .footer -->	
 
-		</div> <!-- end .footer -->	
+		</div>
 
 		<div class="ts-copyright right">&copy; <?php the_date('Y'); ?> <strong>TheorySerum</strong>. All Rights Reserved.</div>
 

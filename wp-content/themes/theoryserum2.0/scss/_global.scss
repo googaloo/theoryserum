@@ -45,9 +45,13 @@ a:hover {
 }
 
 p {
-	margin:0 0 1.3333em;
+	margin:0 0 1em;
 	word-spacing: $wordSpacingP;
 	line-height: 1.5em;
+}
+
+p:last-child {
+	margin: 0;
 }
 
 button, input[type="text"] {}
