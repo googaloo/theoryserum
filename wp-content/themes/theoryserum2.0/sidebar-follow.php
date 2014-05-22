@@ -1,4 +1,4 @@
-<div class="footer-follow footer-piece">
+<div class="footer-piece">
 
 	<h3 class="subheader">Follow</h3>
 	<ul class="social-icon-list">

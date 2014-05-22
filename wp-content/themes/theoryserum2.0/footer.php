@@ -1,13 +1,13 @@
 		<div class="footer">		
 			<div class="row">
 
-				<div class="footer-about large-6 columns">
+				<div class="footer-about large-6 medium-12 small-12 columns">
 
 					<?php get_sidebar('about'); ?>
 
 				</div>
 
-				<div class="footer-follow large-2 columns">
+				<div class="footer-follow large-2 medium-4 small-6 columns">
 
 					<?php get_sidebar('follow'); ?>
 
@@ -16,14 +16,14 @@
 
 				</div>
 
-				<div class="footer-categories large-2 columns">
+				<div class="footer-categories large-2 medium-4 small-6 columns">
 
 					<h3 class="subheader">Categories</h3>
 					<?php wp_list_categories( array('style'=>'none') ); ?>
 
 				</div> <!-- end .footer-about -->
 
-				<div class="footer-pages large-2 columns">
+				<div class="footer-pages large-2 medium-4 small-12 columns">
 
 					<h3 class="subheader">Pages</h3>
 					<ul>

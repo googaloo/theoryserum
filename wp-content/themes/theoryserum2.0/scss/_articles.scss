@@ -182,7 +182,7 @@
 // }
 
 .article-container {
-	border-top: 1px solid $lighterGray; 
+	border-top: 1px solid $aquaLighter; 
 }
 
 .article-container {
@@ -212,6 +212,10 @@
 
 .article-header {
 	margin-top: 1.5em;
+}
+
+.non-featured-article-header {
+	margin-top: 0;
 }
 
 .featured-title, .article-title {
@@ -257,4 +261,20 @@
 
 .ts-pagination i {
 	font-size: 0.75em;
+}
+
+// MEDIUM //
+@media only screen and (max-width: 64.063em) {
+
+	.non-featured-article-header {
+		margin-top: 1.5em;
+	}	
+
+}
+
+// SMALL //
+@media only screen and (max-width: 40em) {
+
+	
+
 }

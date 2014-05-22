@@ -89,3 +89,42 @@
 .footer {
 	margin-top: 3em;
 }
+
+.about-image {
+	padding: 0.5em;
+}
+
+.footer-social {
+	display: block;
+}
+
+.footer-social i {
+	font-size: 1.25em;
+}
+
+.social-text {
+	margin-left: 0.5em;
+}
+
+#searchsubmit {
+	background: $aqua;
+	color: #FFF;
+	border: none;
+}
+
+#searchsubmit:hover {
+	background: $aquaLight;
+}
+
+.ts-copyright {
+	margin-top: 3em;
+}
+
+// MEDIUM //
+@media only screen and (max-width: 64.063em) {
+
+	.footer-follow, .footer-categories, .footer-pages {
+		margin-top: 2em;
+	}
+
+}

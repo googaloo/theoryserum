@@ -45,8 +45,9 @@ function start_scripts() {
 // Enable featured images
 add_theme_support( 'post-thumbnails' );
 add_image_size('ts-thumbnail', 245, 140, true);
-add_image_size('ts-top-featured', 700, 395, true);
+//add_image_size('ts-top-featured', 700, 395, true);
 add_image_size('ts-books', 290, 450, true);
+add_image_size('ts-category', 1160, 450, true);
 add_image_size('ts-books-thumb', 145, 225, true);
 
 
@@ -67,7 +68,7 @@ function theoryserum_widgets_init() {
 	    'name'         => __( 'About', 'theoryserum2.0' ),
 	    'id'           => 'about',
 	    'description'  => __( 'Sidebar for About', 'theoryserum2.0' ),
-	    'before_title' => '<h3>',
+	    'before_title' => '<h3 class="subheader">',
 	    'after_title'  => '</h3><img src="' . get_template_directory_uri() . '/images/rustin-odom-8bit.png" alt="Rustin Odom 8bit" class="about-image" />',
 	    'before_widget' => '<div class="about-widget">',
 	    'after_widget' => '</div>'

@@ -1,14 +1,27 @@
+<?php // Set up featured // ?>
+<?php if ( get_post_meta( $post->ID, 'wpcf-featured-post', true ) === 'featured' ): ?>
+	<?php $featured = true; ?>
+<?php else : ?>
+	<?php $featured = false; ?>
+<?php endif; ?>
+
+<?php // Set up thumbnails // ?>
+<?php
+	$post_thumbnail_id = get_post_thumbnail_id();
+	$post_thumbnail_url = wp_get_attachment_url( $post_thumbnail_id );
+?>
+
 <div class="row article-container">
 
 	<article class="large-9 columns">
 
 		<div class="row">
 
-<?php if ( get_post_meta( $post->ID, 'wpcf-featured-post', true ) === 'featured' ): ?>
+<?php if ( $featured ): ?>
 
 			<div class="large-12 columns">
 
-				<a href="<?php echo get_permalink($post->ID); ?>"><?php the_post_thumbnail('full'); ?></a>
+				<a href="<?php echo get_permalink($post->ID); ?>"><img width="100%" src="<?php echo $post_thumbnail_url; ?>" /></a>
 
 			</div>
 
@@ -20,34 +33,27 @@
 
 <?php else : ?>
 
-				<div class="large-3 columns">
+				<div class="large-4 columns">
 
-					<a href="<?php echo get_permalink($post->ID); ?>"><?php the_post_thumbnail('ts-thumbnail'); ?></a>
+					<a href="<?php echo get_permalink($post->ID); ?>"><img width="100%" src="<?php echo $post_thumbnail_url; ?>" /></a>
 					<div class="post-cat-container"><div class="post-cat-box"><?php echo get_the_category_list(); ?></div></div><!-- end .post-cat-box -->
 
 				</div>
 
-				<div class="large-9 left columns">
+				<div class="large-8 left columns">
 
 <?php endif; ?>
 
-		<div class="article-img">
-
-			<a href="<?php echo get_permalink($post->ID); ?>">
-
-			</a>
-
-		</div><!-- end .article-img -->
-<?php if ( get_post_meta( $post->ID, 'wpcf-featured-post', true ) === 'featured' ): ?>
+<?php if ( $featured ): ?>
 		<div class="post-cat-container"><div class="post-cat-box"><?php echo get_the_category_list(); ?></div></div><!-- end .post-cat-box -->
 <?php endif; ?>
 
 		<div class="article-content-container">
 
-<?php if ( get_post_meta( $post->ID, 'wpcf-featured-post', true ) === 'featured' ): ?>
+<?php if ( $featured ): ?>
 			<header class="article-header">
 	<?php else : ?>
-			<header>
+			<header class="non-featured-article-header">
 <?php endif; ?>
 
 				<p class="post-date"><?php the_date(); ?></p><!-- end .post-date -->
@@ -61,6 +67,10 @@
 			</article>
 
 		</div><!-- end .article-content-container -->
+
+<?php if ( !$featured ): ?>
+	</div>
+<?php endif; ?>
 
 	</div>
 
