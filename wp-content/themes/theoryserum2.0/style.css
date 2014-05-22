@@ -631,3 +631,17 @@ SIDEBAR
 @media only screen and (max-width: 64.063em) {
   .footer-follow, .footer-categories, .footer-pages {
     margin-top: 2em; } }
+.share-header {
+  font-size: 1.5em;
+  margin-top: 1em;
+  float: left;
+  line-height: 1.5em; }
+
+.share-container {
+  margin-top: 1em;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: right; }
+
+.single-content {
+  margin-top: 1.5em; }

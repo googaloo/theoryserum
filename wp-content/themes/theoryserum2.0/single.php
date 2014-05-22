@@ -1,8 +1,13 @@
-<i class="icon-short-stories" style="color: black; font-size: 30px; padding-top: 50px;"></i>
 <?php get_header(); ?>
 
 <?php if ( have_posts() ) : ?>
 	<?php while ( have_posts() ) : the_post(); ?>
+
+<?php // Set up thumbnails // ?>
+<?php
+	$post_thumbnail_id = get_post_thumbnail_id();
+	$post_thumbnail_url = wp_get_attachment_url( $post_thumbnail_id );
+?>
 	
 <div class="row">
 	<div class="large-12 columns">
@@ -11,11 +16,11 @@
 			
 			<div class="large-12 columns">
 
-				<?php if ( has_post_thumbnail() ) {
-					the_post_thumbnail('full');
-				} ?>
+				<?php if ( has_post_thumbnail() ) : ?>
+					<img width="100%" src="<?php echo $post_thumbnail_url; ?>" />
+				<?php endif; ?>
 
-				<div class="post-cat-box"><?php echo get_the_category_list(); ?></div><!-- end .post-cat-box -->
+				<div class="post-cat-container"><div class="post-cat-box"><?php echo get_the_category_list(); ?></div></div><!-- end .post-cat-box -->
 
 			</div>
 
@@ -23,16 +28,26 @@
 
 		<header class="row">
 
-			<div class="large-12 columns">
+			<div class="large-10 columns">
 
-				<h2><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
-				<p class="featured-post-date"><?php the_date(); ?></p><!-- end .post-date -->
+				<header class="article-header">
 
-				<h3>Share: </h3>
-				<a target="_blank" href="javascript:myPopup('https://www.facebook.com/sharer.php?s=100&amp;p[title]=<?php the_title(); ?>&amp;p[summary]=yuuuuuup up')"><i class="icon-facebook"></i></a>
-				<a target="_blank" href="javascript:myPopup('https://twitter.com/home?status=<?php the_permalink(); ?>')"><i class="icon-twitter"></i></a>
-				<a target="_blank" href="javascript:myPopup('https://plus.google.com/share?url=<?php the_permalink(); ?>')"><i class="icon-googleplus"></i></a>
-				<a target="_blank" href="javascript:myPopup('http://reddit.com/submit?url=<?php the_permalink(); ?>')"><i class="icon-reddit"></i></a>
+					<p class="post-date"><?php the_date(); ?></p><!-- end .post-date -->
+					<h2 class="article-title"><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
+					<p class="article-comment-count"><i class="icon-bubble"></i><a href="<?php comments_link(); ?>"><?php comments_number('0','1','%'); ?> comments</a></p><!-- end .article-comment-number -->
+
+				</header>
+
+			</div>
+
+			<div class="large-2 columns">
+
+				<div class="share-container">
+					<a target="_blank" href="javascript:myPopup('https://www.facebook.com/sharer.php?s=100&amp;p[title]=<?php the_title(); ?>&amp;p[summary]=yuuuuuup up')"><i class="icon-facebook"></i></a>
+					<a target="_blank" href="javascript:myPopup('https://twitter.com/home?status=<?php the_permalink(); ?>')"><i class="icon-twitter"></i></a>
+					<a target="_blank" href="javascript:myPopup('https://plus.google.com/share?url=<?php the_permalink(); ?>')"><i class="icon-googleplus"></i></a>
+					<a target="_blank" href="javascript:myPopup('http://reddit.com/submit?url=<?php the_permalink(); ?>')"><i class="icon-reddit"></i></a>
+				</div>
 
 			</div>
 
@@ -40,7 +55,7 @@
 
 		<div class="row">
 
-			<div class="large-12 columns">
+			<div class="large-12 columns single-content">
 
 				<?php the_content(); ?>
 

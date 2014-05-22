@@ -19,7 +19,7 @@
 				<div class="footer-categories large-2 medium-4 small-6 columns">
 
 					<h3 class="subheader">Categories</h3>
-					<?php wp_list_categories( array('style'=>'none') ); ?>
+					<?php wp_list_categories( array('style'=>'none', 'exclude'=>1) ); ?>
 
 				</div> <!-- end .footer-about -->
 
