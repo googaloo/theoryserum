@@ -56,6 +56,16 @@ p:last-child {
 
 button, input[type="text"] {}
 
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(106,166,171,0), rgba(106,166,171,0.75), rgba(106,166,171,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(106,166,171,0), rgba(106,166,171,0.75), rgba(106,166,171,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(106,166,171,0), rgba(106,166,171,0.75), rgba(106,166,171,0)); 
+    background-image:      -o-linear-gradient(left, rgba(106,166,171,0), rgba(106,166,171,0.75), rgba(106,166,171,0)); 
+    margin: 4em 10em;
+}
+
 ////////////////////
 // GLOBAL CLASSES //
 ////////////////////

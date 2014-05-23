@@ -70,17 +70,23 @@
 	<?php endwhile; ?>
 <?php endif; ?>
 
-<div class="row">
+<hr>
 
-	<div class="large-4 columns left">
+<div class="single-pagination-container">
 
-		<span class="single-pagination-previous"><?php previous_post_link('<span class="single-pagination-arrow">&laquo;</span> %link'); ?></span>
+	<div class="row">
 
-	</div>
+		<div class="large-6 columns left single-pagination-previous">
 
-	<div class="large-4 columns right">
+			<span><?php previous_post_link('<i class="icon-arrow-left"></i> %link'); ?></span>
 
-		<span class="single-pagination-next"><?php next_post_link('%link <span class="single-pagination-arrow">&raquo;</span>'); ?></span>
+		</div>
+
+		<div class="large-6 columns right single-pagination-next">
+
+			<span><?php next_post_link('%link <i class="icon-arrow-right"></i>'); ?></span>
+
+		</div>
 
 	</div>
 
