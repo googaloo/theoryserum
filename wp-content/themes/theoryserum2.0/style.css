@@ -238,7 +238,7 @@ h2 {
 
 h3, h4 {
   font-size: 1em;
-  line-height: 0.66667em; }
+  line-height: 1.5em; }
 
 a {
   color: #7bc1c7;
@@ -266,6 +266,30 @@ p:last-child {
 
 .blog-header i {
   color: #a1dae2; }
+
+img.alignright {
+  float: right;
+  margin: 0 0 1em 1em; }
+
+img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0; }
+
+img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.alignright {
+  float: right; }
+
+.alignleft {
+  float: left; }
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 /*************
 	MASTHEAD
@@ -645,3 +669,12 @@ SIDEBAR
 
 .single-content {
   margin-top: 1.5em; }
+
+.single-content h2 {
+  margin: 2em 0 1em;
+  border-bottom: 2px solid silver; }
+
+.single-content h3, .single-content h4 {
+  margin: 0 0 1.5em;
+  border-bottom: 1px solid silver;
+  color: #6b6b6b; }

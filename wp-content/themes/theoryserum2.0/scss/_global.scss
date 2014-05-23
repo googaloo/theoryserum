@@ -32,7 +32,7 @@ h2 {
 
 h3, h4 {
 	font-size: 1em;
-	line-height: 0.66667em;
+	line-height: 1.5em;
 }
 
 a {
@@ -70,3 +70,14 @@ button, input[type="text"] {}
 .blog-header i {
 	color: $aquaLighter;
 }
+
+///////////////////////
+// Wordpress classes //
+///////////////////////
+
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+.alignright {float:right; }
+.alignleft {float:left; }
+.aligncenter {display: block; margin-left: auto; margin-right: auto}
