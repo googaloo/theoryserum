@@ -182,15 +182,17 @@
 // }
 
 .article-container {
-	border-top: 1px solid $aquaLighter; 
+	border-bottom: 1px solid $aquaLighter; 
+	padding: 3em 0;
 }
 
-.article-container {
-	padding: 3em 0;
+.article-container:last-child {
+	border: none;
 }
 
 .feature-article-container {
 	padding: 0 0 2em;
+	border-bottom: 1px solid $aquaLighter; 
 }
 
 .post-cat-container .post-cat-box a {

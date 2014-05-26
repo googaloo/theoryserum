@@ -78,15 +78,45 @@ code {
 // GLOBAL CLASSES //
 ////////////////////
 
-.blog-header {
+.blog-header, .page-header {
 	padding: 0.3125em 0; /* 10px */
 	font-size: 2.2857em; /* 32px */
 	line-height: 1.5em; /* 48 */
 	color: $aquaLighter;
+	margin-top: 1em;
 }
 
 .blog-header i {
 	color: $aquaLighter;
+}
+
+.coming-soon-header {
+	text-align: center;
+	margin: 2em 0;
+}
+
+.wpcf7-submit {
+	border-style: solid;
+	border-width: 0px;
+	cursor: pointer;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	line-height: normal;
+	margin: 0 0 1.25rem;
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	display: inline-block;
+	padding-top: 1rem;
+	padding-right: 2rem;
+	padding-bottom: 1.0625rem;
+	padding-left: 2rem;
+	font-size: 1rem;
+	background-color: #6aa6ab;
+	border-color: #6aa6ab;
+	color: white;
 }
 
 ///////////////////////

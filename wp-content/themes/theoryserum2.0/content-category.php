@@ -136,9 +136,7 @@
 
 	</div>
 
-<?php if ( !$featured ): ?>
 	</div>
-<?php endif; ?>
 
 	</article><!-- end .article-container -->
 

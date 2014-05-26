@@ -88,6 +88,10 @@
 
 .footer {
 	margin-top: 3em;
+	background: rgba(123, 193, 199, 0.15);
+	padding: 2em 0;
+	border-top: 2px solid $aquaLighter;
+	border-bottom	: 2px solid $aquaLighter;
 }
 
 .about-image {
@@ -117,7 +121,7 @@
 }
 
 .ts-copyright {
-	margin-top: 3em;
+	margin: 1em 0;
 }
 
 // MEDIUM //

@@ -10,21 +10,19 @@
 
 <?php get_header(); ?>
 
-<h1 class="stories-header"><i class="icon-short-stories page-title-icon"></i> Short Stories</h1>
+<h1 class="page-header"><i class="icon-short-stories page-title-icon"></i> Short Stories</h1>
 
 <?php $short_stories_query = new WP_Query( array( 'post_type' => 'my-short-stories','posts_per_page' => 10 ) ); ?>
 
-<?php while ( $short_stories_query->have_posts() ) : $short_stories_query->the_post(); ?>
+<?php if ( $short_stories_query->have_posts() ) : ?>
 
-	<?php if ( get_post_meta( $post->ID, 'wpcf-top-featured-post', true ) !== 'top-featured' ) : ?>
+	<?php while ( $short_stories_query->have_posts() ) : $short_stories_query->the_post(); ?>
 
+			<?php get_template_part( 'content', 'page' ); ?>
 
-		<?php get_template_part( 'content', get_post_format() ); ?>
-	
+	<?php endwhile; ?>
 
-	<?php endif; ?>
-
-<?php endwhile; ?>
+<?php endif; ?>
 
 	<!-- break global foundation grid -->
 	</div>

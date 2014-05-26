@@ -1,4 +1,13 @@
-		<div class="footer">		
+	</div>
+
+</div>
+
+<div class="footer">
+
+	<div class="row">
+
+		<div class="large-12 columns">
+
 			<div class="row">
 
 				<div class="footer-about large-6 medium-12 small-12 columns">
@@ -37,7 +46,11 @@
 
 		</div>
 
-		<div class="ts-copyright right">&copy; <?php the_date('Y'); ?> <strong>TheorySerum</strong>. All Rights Reserved.</div>
+	</div>
+
+</div>
+
+<div class="ts-copyright right">&copy; <?php the_date('Y'); ?> <strong>TheorySerum</strong>. All Rights Reserved.</div>
 
 	<div><!-- end main column -->
 

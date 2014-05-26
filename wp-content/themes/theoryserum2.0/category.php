@@ -24,6 +24,11 @@ if ( $next_link = get_next_posts_link() ) {
 
 ?>
 
+	<!-- break global foundation grid -->
+	</div>
+
+</div>
+
 <div class="ts-pagination">
 
 	<div class="row">
