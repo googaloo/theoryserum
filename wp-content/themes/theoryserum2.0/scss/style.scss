@@ -15,14 +15,11 @@ General comments (optional).
 
 @import "reset";
 @import "variables";
-
-
-
 @import "fonts";
 @import "global";
 @import "masthead";
 @import "articles";
-// @import "comments";
+@import "comments";
 @import "sidebar";
 @import "footer";
 @import "single";

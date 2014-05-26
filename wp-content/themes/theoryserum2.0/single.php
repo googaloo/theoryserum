@@ -70,9 +70,9 @@
 	<?php endwhile; ?>
 <?php endif; ?>
 
-<hr>
+<hr class="hide-for-medium-down">
 
-<div class="single-pagination-container">
+<div class="single-pagination-container hide-for-medium-down">
 
 	<div class="row">
 
@@ -91,6 +91,8 @@
 	</div>
 
 </div>
+
+<hr>
 
 <?php comments_template(); ?>
 

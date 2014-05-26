@@ -97,3 +97,5 @@ function theoryserum_widgets_init() {
 	) );
 
 }
+
+add_action('widgets_init', 'theoryserum_widgets_init');

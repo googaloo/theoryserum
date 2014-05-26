@@ -66,6 +66,14 @@ hr {
     margin: 4em 10em;
 }
 
+code {
+	font-family: monospace;
+	display: block;
+	margin: 0 auto;
+	width: 600px;
+	color: $lightGray;
+}
+
 ////////////////////
 // GLOBAL CLASSES //
 ////////////////////
