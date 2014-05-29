@@ -271,6 +271,18 @@ code {
   width: 600px;
   color: #6b6b6b; }
 
+blockquote {
+  font-size: 2em;
+  margin: 0 2em;
+  background: url("images/quote.png") no-repeat;
+  padding: 1em 0 1em 1em; }
+
+blockquote p {
+  color: #6b6b6b; }
+
+strong {
+  font-weight: bold; }
+
 .blog-header, .page-header {
   padding: 0.3125em 0;
   /* 10px */
@@ -591,6 +603,11 @@ img.aligncenter {
 
 .non-featured-article-header {
   margin-top: 0; }
+
+/* Youtube vids center */
+.youtube {
+  text-align: center;
+  margin: 2em 0; }
 
 .post-date {
   color: silver;

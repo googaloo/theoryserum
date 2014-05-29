@@ -74,6 +74,21 @@ code {
 	color: $lightGray;
 }
 
+blockquote {
+	font-size: 2em;
+	margin: 0 2em;
+	background: url('images/quote.png') no-repeat;
+	padding: 1em 0 1em 1em;
+}
+
+blockquote p {
+	color: $lightGray;
+}
+
+strong {
+	font-weight: bold;
+}
+
 ////////////////////
 // GLOBAL CLASSES //
 ////////////////////
