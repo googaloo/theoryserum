@@ -1,5 +1,5 @@
 <div class="article-container">
-	<h1>
+	<blockquote>
 		<?php the_content(); ?>
-	</h1>
+	</blockquote>
 </div>
