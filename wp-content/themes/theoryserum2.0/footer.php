@@ -20,15 +20,11 @@
 
 					<?php get_sidebar('follow'); ?>
 
-					<h3 class="subheader">Search</h3>
-					<?php get_search_form(); ?>
-
 				</div>
 
-				<div class="footer-categories large-2 medium-4 small-6 columns">
+				<div class="large-2 medium-4 small-6 columns">
 
-					<h3 class="subheader">Categories</h3>
-					<?php wp_list_categories( array('style'=>'none', 'exclude'=>1) ); ?>
+					<?php get_sidebar('search'); ?>
 
 				</div> <!-- end .footer-about -->
 

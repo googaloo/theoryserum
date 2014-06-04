@@ -10,8 +10,21 @@
 	padding: 0.5em;
 }
 
+.footer-piece li {
+	margin-top: 1.5em;
+	list-style: none;
+}
+
+.footer-piece li:first-child {
+	margin-top: 0;
+}	
+
 .footer-social {
 	display: block;
+}
+
+.social-icon-list {
+	margin: 0;
 }
 
 .footer-social i {

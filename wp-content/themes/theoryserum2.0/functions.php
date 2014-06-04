@@ -90,8 +90,18 @@ function theoryserum_widgets_init() {
 	    'name'         => __( 'Follow', 'theoryserum2.0' ),
 	    'id'           => 'follow',
 	    'description'  => __( 'Sidebar for Follow Social Connections', 'theoryserum2.0' ),
-	    'before_title' => '',
-	    'after_title'  => '',
+	    'before_title' => '<h3 class="subheader">',
+	    'after_title'  => '</h3>',
+	    'before_widget' => '<li>',
+	    'after_widget' => '</li>'
+	) );
+
+	register_sidebar( array(
+	    'name'         => __( 'Search', 'theoryserum2.0' ),
+	    'id'           => 'search',
+	    'description'  => __( 'Sidebar for Search', 'theoryserum2.0' ),
+	    'before_title' => '<h3 class="subheader">',
+	    'after_title'  => '</h3>',
 	    'before_widget' => '<li>',
 	    'after_widget' => '</li>'
 	) );

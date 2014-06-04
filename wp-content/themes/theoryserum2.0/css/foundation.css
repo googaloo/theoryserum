@@ -2733,7 +2733,7 @@ h5 {
 h6 {
   font-size: 1rem; }
 
-.subheader {
+.subheader, label[for="subscribe-field"] {
   line-height: 1.4;
   color: #6f6f6f;
   font-weight: normal;
@@ -4150,7 +4150,7 @@ form .row textarea.columns {
 /* Label Styles */
 label {
   font-size: 0.875rem;
-  color: #4d4d4d;
+  color: #6f6f6f;
   cursor: pointer;
   display: block;
   font-weight: normal;
