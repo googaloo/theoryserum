@@ -18,9 +18,10 @@
 
 				<?php if ( has_post_thumbnail() ) : ?>
 					<img width="100%" src="<?php echo $post_thumbnail_url; ?>" />
-				<?php endif; ?>
 
-				<div class="post-cat-container"><div class="post-cat-box"><?php echo get_the_category_list(); ?></div></div><!-- end .post-cat-box -->
+					<div class="post-cat-container"><div class="post-cat-box"><?php echo get_the_category_list(); ?></div></div><!-- end .post-cat-box -->
+
+				<?php endif; ?>
 
 			</div>
 
