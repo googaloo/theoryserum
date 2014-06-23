@@ -47,9 +47,6 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1; }
 
-ol, ul {
-  list-style: none; }
-
 blockquote, q {
   quotes: none; }
 
@@ -215,7 +212,7 @@ html {
 
 body {
   font-family: cabin;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5em;
   /* Baseline 24px */
   color: #6b6b6b; }
@@ -585,9 +582,16 @@ img.aligncenter {
 .article-container:last-child {
   border: none; }
 
+.article-container ul {
+  list-style: none; }
+
 .feature-article-container {
   padding: 0 0 2em;
-  border-bottom: 1px solid #a1dae2; }
+  border-bottom: 1px solid #a1dae2;
+  list-style: none; }
+
+.featured-article ul {
+  list-style: none; }
 
 .post-cat-container .post-cat-box a {
   padding: 5px;
@@ -748,6 +752,9 @@ SIDEBAR
   border-top: 2px solid #a1dae2;
   border-bottom: 2px solid #a1dae2; }
 
+.footer ul {
+  list-style: none; }
+
 .about-image {
   padding: 0.5em; }
 
@@ -807,6 +814,16 @@ SIDEBAR
   margin: 0 0 1.5em;
   border-bottom: 1px solid silver;
   color: #6b6b6b; }
+
+.single-content ul {
+  margin-bottom: 1.5em;
+  margin-left: 2em; }
+
+.single-content ul li {
+  margin-top: 1.5em; }
+
+.single-content ul li:first-child {
+  margin-top: 0; }
 
 .single-pagination-container {
   font-size: 1.25em;

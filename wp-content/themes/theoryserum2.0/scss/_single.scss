@@ -75,6 +75,19 @@
 	color: $gray;
 }
 
+.single-content ul {
+	margin-bottom: 1.5em;
+	margin-left: 2em;
+}
+
+.single-content ul li {
+	margin-top: 1.5em;
+}
+
+.single-content ul li:first-child {
+	margin-top: 0;
+}
+
 .single-pagination-container {
 	font-size: 1.25em;
 	line-height: 1.2em;

@@ -7,9 +7,18 @@
 	border: none;
 }
 
+.article-container ul {
+	list-style: none;
+}
+
 .feature-article-container {
 	padding: 0 0 2em;
 	border-bottom: 1px solid $aquaLighter; 
+	list-style: none;
+}
+
+.featured-article ul {
+	list-style: none;
 }
 
 .post-cat-container .post-cat-box a {
