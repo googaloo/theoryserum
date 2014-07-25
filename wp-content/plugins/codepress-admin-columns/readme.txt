@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: plugins, wordpress, admin, column, columns, custom columns, custom fields, image, dashboard, sortable, filters, posts, media, users, pages, posttypes, manage columns, wp-admin
 Requires at least: 3.5
 Tested up to: 3.9.1
-Stable tag: 2.2.1
+Stable tag: 2.2.4
 
 Customise columns on the administration screens for post(types), pages, media, comments, links and users with an easy to use drag-and-drop interface.
 
@@ -29,6 +29,8 @@ All of the new columns support sorting on all screens, and many of them support 
 
 = Third party plugin integration =
 Admin Columns works perfectly with just about all external plugins with custom columns. Examples include Yoast SEO (SEO columns), WooCommerce, Advanced Custom Fields, Types and Pods. Not only can you reorganize the custom columns added by these plugins, you can also add custom columns provided by Admin Columns in the overview!
+
+The Developer license of [Admin Columns Pro](http://admincolumns.com/?utm_source=wordpressorg&utm_medium=readme&utm_content=thirdpartyplugins&utm_campaign=cpac-pluginpage) includes [Advanced Custom Fields](http://admincolumns.com/advanced-custom-fields-integration/?utm_source=wordpressorg&utm_medium=readme&utm_content=thirdpartyplugins&utm_campaign=cpac-pluginpage) and [WooCommerce](http://admincolumns.com/woocommerce-integration/?utm_source=wordpressorg&utm_medium=readme&utm_content=thirdpartyplugins&utm_campaign=cpac-pluginpage) add-ons for easy integration and inline editing of data from these plugins.
 
 = Custom field column =
 Admin Columns allows you to display custom fields for posts (post meta) and users (user meta) for all custom fields you have. With many different custom field types supported, such as files, images, numbers and even post and user relations, you can create a beautiful overview of your custom content!
@@ -246,6 +248,26 @@ You can find a list of the available actions and filters (and examples on how to
 
 == Changelog ==
 
+= 2.2.4 =
+* [Added] New filter `cpac/storage_model/columns_default` for filtering the columns that should be loaded if there are no stored columns
+* [Added] Option (column property `hidden`) to hide column types from the dropdown list of column types
+* [Added] Use tooltip library for enhanced column value representation
+* [Added] Box for direct feedback on Admin Columns settings screen
+* [Added] Added method for retrieving current storage model (for overview pages such as the posts and page overviews)
+* [Added] Added WooCommerce add-on to list of add-ons
+* [Updated] Hide ACF5 field group post type from list of post types columns settings
+* [Updated] Updated structure of scripts and styles and way of enqueuing them
+
+= 2.2.3 =
+* [Added] Added Path column for post(types). Uses the permalink without the home url.
+
+= 2.2.2 =
+* [Fixed] Custom Fields for Media Library did not work.
+* [Fixed] Column type dropdown displayed an empty item.
+
+= 2.2.1.1 =
+* [Fixed] Fixed issue with Posts 2 Posts (and other third party plugins) columns not being displayed because of  hooking into late actions on post pages
+
 = 2.2.1 =
 * [Added] Option to make permalink in permalink column clickable (linking to post)
 * [Added] Direct support box in Admin Columns settings screen sidebar
@@ -324,7 +346,7 @@ You can find a list of the available actions and filters (and examples on how to
 = 2.0.1 =
 * [Fixed] Bug which caused columns to not include properly
 
-= 2.0.0 =
+= 2.0 =
 * [Notice] Database needs an update, make sure to backup first
 * [Changed] Sortorder licence is now an Pro Add-on
 * [Changed] Some filters and hooks have been changed, see online documentation

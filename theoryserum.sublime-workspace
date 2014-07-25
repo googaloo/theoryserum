@@ -4,326 +4,62 @@
 		"selected_items":
 		[
 			[
-				"text",
-				"text-align"
+				"new_",
+				"new_clean"
 			],
 			[
-				"table",
-				"table-cell"
+				"bigg",
+				"biggest_num"
 			],
 			[
-				"font",
-				"font-family"
+				"existing",
+				"existing_story"
 			],
 			[
-				"article",
-				"article-container"
+				"last",
+				"last_char"
 			],
 			[
-				"hea",
-				"header	Tag"
+				"exisi",
+				"existingStories"
 			],
 			[
-				"hexagonT",
-				"hexagonTarget"
-			],
-			[
-				"hexagon",
-				"hexagon1"
-			],
-			[
-				"after",
-				"after-banner-bucket"
-			],
-			[
-				"need_to",
-				"need_to_know"
-			],
-			[
-				"vol",
-				"vol_iss"
-			],
-			[
-				"after_",
-				"after_art_bucket"
-			],
-			[
-				"write",
-				"write_file"
-			],
-			[
-				"art",
-				"artCount"
-			],
-			[
-				"select-art-",
-				"select-art-dept"
-			],
-			[
-				"need_t",
-				"need_to_know"
-			],
-			[
-				"update",
-				"updatePreview"
-			],
-			[
-				"need",
-				"needKnow1"
-			],
-			[
-				"need_to_kno",
-				"need_to_know_header"
-			],
-			[
-				"rotating",
-				"rotating_banner_link"
-			],
-			[
-				"fee",
-				"feedback_link"
-			],
-			[
-				"sec",
-				"secondary_color"
-			],
-			[
-				"ft_ar",
-				"ft_art_body"
-			],
-			[
-				"ft",
-				"ft_art_head"
-			],
-			[
-				"inlin",
-				"inline-block"
+				"JSON",
+				"json_encode"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "wp-content/themes/theoryserum/functions.php",
-			"settings":
-			{
-				"buffer_size": 2372,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/theoryserum/scss/_variables.scss",
-			"settings":
-			{
-				"buffer_size": 111,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/theoryserum/scss/style.scss",
-			"settings":
-			{
-				"buffer_size": 596,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/theoryserum/scss/_global.scss",
-			"settings":
-			{
-				"buffer_size": 1270,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/theoryserum/header.php",
-			"settings":
-			{
-				"buffer_size": 3488,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/theoryserum/home.php",
-			"settings":
-			{
-				"buffer_size": 3654,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/theoryserum/scss/_masthead.scss",
-			"settings":
-			{
-				"buffer_size": 4932,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/theoryserum2.0/scss/style.scss",
-			"settings":
-			{
-				"buffer_size": 646,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 87.0,
+		"height": 54.0,
 		"selected_items":
 		[
 			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
-				"inst",
-				"Package Control: Install Package"
+				"json",
+				"Set Syntax: JSON"
 			],
 			[
 				"instal",
 				"Package Control: Install Package"
 			],
 			[
-				"package",
-				"Package Control: List Packages"
-			],
-			[
-				"pacagin",
-				"Package Control: Install Package"
-			],
-			[
-				"pack",
-				"Package Control: Install Package"
-			],
-			[
-				"packa",
-				"Package Control: Install Package"
-			],
-			[
-				"packin",
-				"Package Control: Install Package"
-			],
-			[
-				"packainst",
-				"Package Control: Install Package"
-			],
-			[
-				"packinst",
-				"Package Control: Install Package"
-			],
-			[
 				"install",
 				"Package Control: Install Package"
-			],
-			[
-				"syntahtml",
-				"Set Syntax: HTML"
-			],
-			[
-				"synta",
-				"Set Syntax: PHP"
-			],
-			[
-				"syntactio",
-				"Set Syntax: ActionScript"
-			],
-			[
-				"synjava",
-				"Set Syntax: JavaScript"
-			],
-			[
-				"packagein",
-				"Package Control: Install Package"
-			],
-			[
-				"Package Control: ",
-				"Package Control: Install Package"
-			],
-			[
-				"packag",
-				"Package Control: Install Package"
-			],
-			[
-				"syntaxjso",
-				"Set Syntax: JSON"
-			],
-			[
-				"syntaxjac",
-				"Set Syntax: JavaScript"
-			],
-			[
-				"syntaxph",
-				"Set Syntax: PHP"
-			],
-			[
-				"consol",
-				"Set Syntax: R Console"
-			],
-			[
-				"paca",
-				"Package Control: Install Package"
-			],
-			[
-				"packain",
-				"Package Control: Install Package"
-			],
-			[
-				"packageinst",
-				"Package Control: Install Package"
-			],
-			[
-				"packaginst",
-				"Package Control: Install Package"
-			],
-			[
-				"packinsta",
-				"Package Control: Install Package"
-			],
-			[
-				"package control install",
-				"Package Control: Install Package"
-			],
-			[
-				"syntaxphp",
-				"Set Syntax: PHP"
-			],
-			[
-				"scss",
-				"Set Syntax: SCSS"
-			],
-			[
-				"toggl",
-				"View: Toggle Open Files in Side Bar"
-			],
-			[
-				"toggle mini",
-				"View: Toggle Minimap"
-			],
-			[
-				"toggle min",
-				"View: Toggle Minimap"
-			],
-			[
-				"javascript",
-				"Set Syntax: JavaScript"
-			],
-			[
-				"mark",
-				"Set Syntax: Markdown"
-			],
-			[
-				"java",
-				"Set Syntax: JavaScript"
 			]
 		],
-		"width": 593.0
+		"width": 449.0
 	},
 	"console":
 	{
-		"height": 139.0
+		"height": 544.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
 	},
 	"distraction_free":
 	{
@@ -336,138 +72,138 @@
 	},
 	"file_history":
 	[
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum2.0/style.css",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_articles.scss",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_global.scss",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/functions.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/footer.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_fonts.scss",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/home.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/header.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/sidebar.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_sidebar.scss",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/template-my-books.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/index.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/404.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/comment-subscriptions.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_comments.scss",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/comments.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_masthead.scss",
-		"/Users/rlodom/Desktop/121113_UOPX_Advisor.html",
-		"/Users/rlodom/Desktop/r.html",
-		"/Users/rlodom/Desktop/r.htm",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/template_temp_books.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/js/script.js",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_single.scss",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_contact.scss",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/ie8_styles.css",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/template-short-stories.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_games.scss",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_short_stories.scss",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_books.scss",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/style.scss",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/style.css",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_footer.scss",
-		"/Users/rlodom/Desktop/drop/style.css",
-		"/Users/rlodom/Desktop/wp-config.php",
-		"/Users/rlodom/Desktop/canvas_template.svg",
-		"/Users/rlodom/Desktop/BingSiteAuth.xml",
-		"/Users/rlodom/Desktop/ts.sql",
-		"/Users/rlodom/Desktop/haxe_test/Test.hx",
-		"/Users/rlodom/Desktop/haxe_test/compile.hxml",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/template_contact.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/single.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_blog.scss",
-		"/Users/rlodom/Desktop/071813_History_Era2_Launch.html",
-		"/Applications/MAMP/htdocs/theoryserum/index.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/template_temp_games.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-includes/functions.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-config.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_reset.scss",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_variables.scss",
-		"/Users/rlodom/Desktop/theoryserum.sql",
-		"/Applications/MAMP/htdocs/theoryserum/wp-includes/theme-compat/footer.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/template-games.php",
-		"/Users/rlodom/Desktop/070913_PhoenixView.html",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/meyer_reset.css",
-		"/Users/rlodom/Desktop/page (4).html",
-		"/Users/rlodom/Desktop/page (3).html",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_meyer_reset.scss",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/category.php",
-		"/Users/rlodom/Desktop/Bebas-fontfacekit/web fonts/bebas_regular_macroman/stylesheet.css",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/single-my-games.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/_nav.scss",
-		"/Users/rlodom/Desktop/webfontkit-20130708-143114/stylesheet.css",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/sidebar.scss",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/js/test.js",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/normalize.css",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/my-books-template.php",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/articles.scss",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/js/hexagon-canvas.js",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/global.scss",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/scss/variables.scss",
-		"/Users/rlodom/Desktop/062713_ApolloExpress_25.html",
-		"/Users/rlodom/Desktop/EaselJS-master/examples/DragAndDrop_hitArea.html",
-		"/Users/rlodom/Desktop/EaselJS-master/examples/Filters_input.html",
-		"/Users/rlodom/Desktop/EaselJS-master/examples/Filters_simple.html",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/js/kineticjs.js",
-		"/Users/rlodom/Desktop/061213_Apollo_Edu_Mgrs_Doug.html",
-		"/Users/rlodom/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/js/BoxBlurFilter.js",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/theoryserum/js/easeljs-0.6.1.min.js",
-		"/Users/rlodom/Desktop/EaselJS-master/examples/Icons.html",
-		"/Applications/MAMP/htdocs/theoryserum/README.txt",
-		"/Applications/MAMP/htdocs/theoryserum/wp-content/themes/twentyeleven/style.css",
-		"/Volumes/campus/C-APO-Corporate/Public Affairs/Creative Services/Rusty/Resources/templates/WIU_template.html",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/js/ddSlick.js",
-		"/Volumes/campus/C-APO-Corporate/Public Affairs/Creative Services/Rusty/Resources/templates/Apollo_Advisor_Template.html",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/config/config.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/config/autoload.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/models/home_model.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/js/home.js",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/home_view.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/controllers/generator.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/controllers/home.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/js/generator.js",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/includes/template.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/controllers/create_newsletter.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/includes/header.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/libraries/templates/newsletters/Apollo_express.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/newsletter_view.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/libraries/templates/newsletters/Ping.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/css/scss/_preview.scss",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/libraries/templates/newsletters/Phoenix_view.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/libraries/templates/newsletters/Apollo_advisor.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/libraries/templates/newsletters/The_local.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/upload-ft-image.php",
-		"/Users/rlodom/Desktop/Back-To-School-Drive.html",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/css/style.css",
-		"/Users/rlodom/Desktop/haxe_test/hello.hxml",
-		"/Users/rlodom/Desktop/haxe_test/demo.hxml",
-		"/Users/rlodom/Desktop/haxe_test/Demo.hx",
-		"/Users/rlodom/Desktop/haxe_test/Hello.hx",
-		"/Users/rlodom/Desktop/whatever.hx",
-		"/Users/rlodom/Desktop/pages/page (8).html",
-		"/Users/rlodom/Desktop/nodeTest/server.js",
-		"/Users/rlodom/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/config/database.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/includes/footer.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/uploaded-banner-image.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/views/uploaded-ft-image.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/css/scss/_variables.scss",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/libraries/templates/newsletters/Phoenix_local.php",
-		"/Applications/MAMP/htdocs/email-newsletter-generator/application/.htaccess",
-		"/Users/rlodom/Desktop/generator.sql",
-		"/Users/rlodom/Desktop/gruntTest/src/game/game.ts",
-		"/Users/rlodom/Desktop/page.html",
-		"/Users/rlodom/Desktop/DreamBig Analytics/page (23).html",
-		"/Users/rlodom/Desktop/DreamBig Analytics/page (17).html",
-		"/Users/rlodom/Desktop/DreamBig Analytics/page (21).html",
-		"/Users/rlodom/Desktop/tinymce/js/tinymce/jquery.tinymce.min.js"
+		"/var/www/Storybook/storybook.sublime-project",
+		"/var/www/Storybook/node_modules/grunt/internal-tasks/subgrunt.js",
+		"/var/www/Storybook/vendor/predis/predis/lib/Predis/Command/SetUnion.php",
+		"/var/www/Storybook/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/sum.js",
+		"/var/www/Storybook/node_modules/grunt/node_modules/grunt-legacy-util/test/fixtures/spawn-multibyte.js",
+		"/var/www/Storybook/vendor/predis/predis/examples/MultiBulkReplyIterators.php",
+		"/var/www/Storybook/app/views/stories.blade.php",
+		"/var/www/Storybook/composer.json",
+		"/var/www/Storybook/app/models/User.php",
+		"/var/www/Storybook/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/SimpleHeaderSetTest.php",
+		"/var/www/Storybook/app/controllers/StoriesController.php",
+		"/var/www/Storybook/app/models/Story.php",
+		"/var/www/Storybook/app/views/stories/stories-finished-svg.blade.php",
+		"/var/www/Storybook/app/views/stories/write.blade.php",
+		"/var/www/Storybook/app/controllers/WriteController.php",
+		"/var/www/Storybook/app/routes.php",
+		"/var/www/Storybook/app/libraries/Writer.php",
+		"/var/www/Storybook/app/views/stories/story-writing.blade.php",
+		"/var/www/Storybook/app/views/stories/story-things.blade.php",
+		"/var/www/Storybook/.sass-cache/0b1691e87cc5ac1aa47374d3d294a0141f723285/styles.scssc",
+		"/var/www/Storybook/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/DummyOutput.php",
+		"/var/www/Storybook/vendor/bin/boris",
+		"/var/www/html/sunshine/wp-config.php",
+		"/var/www/html/sunshine/wp-content/themes/3clicks-child-theme/functions.php",
+		"/var/www/html/sunshine/.gitignore",
+		"/var/www/html/sunshine/wp-includes/class-oembed.php",
+		"/var/www/Storybook/app/controllers/UserController.php",
+		"/var/www/Storybook/app/config/workbench.php",
+		"/var/www/Storybook/app/views/user/settings.blade.php",
+		"/var/www/Storybook/app/start/global.php",
+		"/var/www/Storybook/app/models/Thing.php",
+		"/var/www/Storybook/app/views/user/profile.blade.php",
+		"/var/www/Storybook/app/views/layouts/master.blade.php",
+		"/var/www/Storybook/app/views/layouts/masthead.blade.php",
+		"/var/www/Storybook/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Tests/Session/Storage/Handler/WriteCheckSessionHandlerTest.php",
+		"/var/www/Storybook/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Session/Storage/Handler/WriteCheckSessionHandler.php",
+		"/var/www/Storybook/node_modules/grunt/node_modules/glob/.travis.yml",
+		"/var/www/Storybook/vendor/monolog/monolog/tests/Monolog/Handler/GelfHandlerLegacyTest.php",
+		"/var/www/Storybook/gruntfile.js",
+		"/var/www/Storybook/.gitignore",
+		"/var/www/Storybook/vendor/laravel/framework/src/Illuminate/Workbench/stubs/gitignore.txt",
+		"/var/www/Storybook/vendor/ircmaxell/password-compat/test/Unit/PasswordGetInfoTest.php",
+		"/var/www/Storybook/vendor/laravel/framework/src/Illuminate/Remote/GatewayInterface.php",
+		"/var/www/Storybook/node_modules/grunt-contrib-jshint/node_modules/jshint/data/non-ascii-identifier-part-only.js",
+		"/var/www/Storybook/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/test/Events/14-implicit-open-tags.json",
+		"/var/www/Storybook/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/domhandler/test/cases/14-comment_in_text_in_script.json",
+		"/var/www/Storybook/CONTRIBUTING.md",
+		"/var/www/Storybook/app/controllers/ThingsController.php",
+		"/var/www/Storybook/vendor/monolog/monolog/src/Monolog/Handler/TestHandler.php",
+		"/var/www/Storybook/vendor/predis/predis/lib/Predis/ResponseObjectInterface.php",
+		"/var/www/Storybook/readme.md",
+		"/var/www/Storybook/vendor/laravel/framework/src/Illuminate/Auth/UserInterface.php",
+		"/var/www/Storybook/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/UriSigner.php",
+		"/var/www/Storybook/vendor/laravel/framework/src/Illuminate/Session/Store.php",
+		"/var/www/Storybook/vendor/predis/predis/tests/Predis/Command/HashSetTest.php",
+		"/var/www/Storybook/vendor/nesbot/carbon/tests/StartEndOfTest.php",
+		"/var/www/Storybook/node_modules/grunt-contrib-sass/docs/sass-examples.md",
+		"/var/www/Storybook/app/database/production.sqlite",
+		"/var/www/Storybook/node_modules/grunt/node_modules/glob/test/pause-resume.js",
+		"/var/www/Storybook/app/controllers/PeopleController.php",
+		"/var/www/Storybook/app/views/user/create.blade.php",
+		"/var/www/Storybook/app/config/auth.php",
+		"/var/www/Storybook/app/views/login.blade.php",
+		"/var/www/Storybook/public/assets/js/script.js",
+		"/home/rusty/Desktop/test.json",
+		"/var/www/Storybook/node_modules/grunt-contrib-sass/AUTHORS",
+		"/var/www/Storybook/bootstrap/autoload.php",
+		"/var/www/Storybook/vendor/symfony/routing/Symfony/Component/Routing/Matcher/ApacheUrlMatcher.php",
+		"/var/www/Storybook/artisan",
+		"/var/www/Storybook/vendor/laravel/framework/src/Illuminate/Config/Repository.php",
+		"/var/www/Storybook/vendor/laravel/framework/src/Illuminate/Cache/Repository.php",
+		"/var/www/Storybook/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/Exception/TooManyRequestsHttpException.php",
+		"/var/www/Storybook/vendor/laravel/framework/src/Illuminate/Routing/Generators/stubs/destroy.stub",
+		"/var/www/Storybook/vendor/laravel/framework/src/Illuminate/View/Factory.php",
+		"/var/www/Storybook/vendor/laravel/framework/src/Illuminate/Validation/Factory.php",
+		"/var/www/Storybook/vendor/laravel/framework/src/Illuminate/Pagination/Factory.php",
+		"/var/www/Storybook/vendor/symfony/browser-kit/Symfony/Component/BrowserKit/Tests/HistoryTest.php",
+		"/var/www/Storybook/vendor/symfony/browser-kit/Symfony/Component/BrowserKit/History.php",
+		"/var/www/Storybook/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork/node_modules/qs/History.md",
+		"/var/www/Storybook/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/HISTORY.md",
+		"/var/www/Storybook/node_modules/grunt/node_modules/js-yaml/HISTORY.md",
+		"/var/www/Storybook/vendor/nesbot/carbon/history.md",
+		"/var/www/Storybook/app/views/stories/story-places.blade.php",
+		"/var/www/Storybook/app/views/stories/story-people.blade.php",
+		"/var/www/Storybook/app/controllers/StatsController.php",
+		"/var/www/Storybook/app/views/layouts/login-form.blade.php",
+		"/var/www/Storybook/app/start/local.php",
+		"/var/www/Storybook/app/lang/en/validation.php",
+		"/var/www/Storybook/vendor/nikic/php-parser/lib/PHPParser/NodeVisitorAbstract.php",
+		"/var/www/Storybook/app/config/view.php",
+		"/var/www/Storybook/vendor/phpseclib/phpseclib/build/code-sniffer-ruleset.xml",
+		"/var/www/Storybook/app/controllers/SessionsController.php",
+		"/var/www/Storybook/app/views/people.blade.php",
+		"/var/www/Storybook/app/models/People.php",
+		"/var/www/Storybook/app/views/layouts/sortable.blade.php",
+		"/var/www/Storybook/public/assets/js/datepicker.js",
+		"/var/www/Storybook/public/assets/css/datepicker.css",
+		"/var/www/Storybook/app/views/layouts/head.blade.php",
+		"/var/www/Storybook/vendor/predis/predis/lib/Predis/PredisException.php",
+		"/var/www/Storybook/package.json",
+		"/var/www/Storybook/node_modules/grunt-contrib-sass/docs/sass-options.md",
+		"/var/www/Storybook/app/models/Person.php",
+		"/var/www/Storybook/vendor/nikic/php-parser/lib/PHPParser/Node/Expr/BitwiseOr.php",
+		"/var/www/Storybook/vendor/predis/predis/examples/TransactionWithCAS.php",
+		"/var/www/Storybook/public/assets/js/bootstrap-datepicker.js",
+		"/var/www/Storybook/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Tests/IpUtilsTest.php",
+		"/var/www/Storybook/vendor/laravel/framework/src/Illuminate/Foundation/Console/MigratePublishCommand.php",
+		"/var/www/Storybook/app/config/database.php",
+		"/var/www/Storybook/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/definition_astext.txt",
+		"/var/www/Storybook/vendor/predis/predis/lib/Predis/Command/HashExists.php",
+		"/var/www/Storybook/app/views/home.blade.php",
+		"/var/www/Storybook/node_modules/grunt-contrib-jshint/node_modules/.bin/jshint",
+		"/var/www/Storybook/vendor/nikic/php-parser/lib/PHPParser/Node/Expr/LogicalOr.php",
+		"/var/www/Storybook/app/controllers/HomeController.php",
+		"/var/www/Storybook/bootstrap/start.php",
+		"/var/www/Storybook/phpunit.xml",
+		"/var/www/Storybook/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php",
+		"/var/www/Storybook/vendor/predis/predis/lib/Predis/Protocol/ProtocolInterface.php",
+		"/var/www/Storybook/app/views/users-create.blade.php",
+		"/var/www/Storybook/app/views/user-create.blade.php",
+		"/var/www/Storybook/app/controllers/UsersController.php",
+		"/var/www/Storybook/vendor/laravel/framework/src/Illuminate/Cache/StoreInterface.php",
+		"/var/www/Storybook/vendor/predis/predis/tests/Predis/Command/ServerTimeTest.php",
+		"/var/www/Storybook/vendor/predis/predis/lib/Predis/Command/StringBitOp.php",
+		"/var/www/Storybook/vendor/swiftmailer/swiftmailer/tests/StreamCollector.php",
+		"/var/www/Storybook/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Session/Storage/MockArraySessionStorage.php",
+		"/var/www/Storybook/vendor/laravel/framework/src/Illuminate/Database/Eloquent/MassAssignmentException.php",
+		"/var/www/Storybook/app/config/mail.php"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -481,137 +217,61 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"img",
-			"cabin-bolditalic-webfont",
-			"ga.src",
-			"backgroun",
-			"icomoon",
-			"line-heigh\n\n\n\nline-height",
-			"line-height",
-			"font-fami",
-			"blog-head",
-			"read-more",
-			"read",
-			"feat_query",
-			"comment",
-			"navHover",
-			"opacity",
-			"article-container",
-			"article 1",
-			"article",
-			"short_stories_query",
-			"book",
-			"books_query",
-			"feat_query",
-			"top-featu",
-			"hexagon[ranHex]",
-			"1",
-			"hexagon1",
-			"EEEEEE",
-			"hexegon",
-			"blur",
-			"-",
-			"boxblurfilte",
-			"boxblurfilter",
-			"displayobject",
-			"$bucket",
-			"$bucket\n\n\n\n\n\n\n\n\n$bucket",
-			"s3\ns3",
-			"s3",
-			"tinymce",
-			"ft_art_btn",
-			"ft_art_btn\n\n\n\n\nft_art_btn",
-			"ft_art_btn\n\n\n\nft_art_btn",
-			"cellpading",
-			"volume",
-			"$after_ft_bucket",
-			"$if_rotating_banner",
-			"$if_ft_article_image",
-			"$if_dividers",
-			"$need_to_know",
-			"$if_need_to_know",
-			"$vol_iss",
-			"$if_rotating_banner",
-			"$if_ft_article_image",
-			"$if_dividers",
-			"$if_need_to_know",
-			"$vol_iss",
-			"if_ft_article_image",
-			"divider",
-			"need_to_know",
-			"express",
-			"vol_iss",
-			"volume-issue-container",
-			"banner",
-			"'',",
-			"bucket",
-			"upload",
-			"express",
-			"$misc",
-			"apollo_express",
-			"apollo",
-			"text",
-			"feat-art-cta-",
-			"text",
-			"cta-text",
-			"ft-art-cta-text",
-			"ft_art_cta_text",
-			"ft_art_cta",
-			"rewrite",
-			"phaser",
-			"learn",
-			"ft-art-cta-text",
-			"$ft_art_btn",
-			"art_headline_color",
-			"all_articles",
-			"spacer",
-			"ft_art_btn",
-			"$ft_art_btn",
-			"jump",
-			"$ft_art_btn",
-			"$ft_art_btn\n\n\n$ft_art_btn",
-			"$ft_art_btn",
-			"ft_art_img",
-			"write_file",
-			"templ",
-			"char_limit",
-			"char-limit",
-			"char",
-			"article-box",
-			"=== 1",
-			"console.",
-			"#art-dept",
-			"var i",
-			"empty",
-			"count",
-			"table",
-			"need-know-1",
-			"artCount",
-			"deptColor",
-			"artDept",
-			"td",
-			"updateArticleNames",
-			"close-article",
-			"close",
-			"button_color",
-			"need-to-know-list",
-			"ul",
-			"after_ft_bucket",
-			"after_f",
-			"learn",
-			"leard",
-			"$title",
-			"content",
-			"4f96c6",
-			"after_ft_bucket",
-			"survey",
-			"img",
-			"survey",
-			"line-height",
-			"input type=\"text\""
+			"new",
+			"name",
+			"story",
+			"Story",
+			"story",
+			"stories",
+			"existing_story",
+			"story_id",
+			"user_story_ids",
+			"new_story",
+			"this",
+			"new",
+			"write",
+			"t1",
+			"biggest_num",
+			"char_to_trim",
+			"to_trim",
+			"user_story",
+			"trimmed_user_story",
+			"story_version_num",
+			"last_char",
+			"check_name",
+			"poop",
+			";\">",
+			",",
+			"'",
+			"is",
+			": ",
+			"')\n",
+			"),",
+			"JSON.stringify(",
+			"attr",
+			"),",
+			"$('.",
+			"val()",
+			":checked",
+			": ",
+			"auth_",
+			"endif",
+			"message",
+			"=>",
+			"isset(",
+			"user",
+			"'days', ",
+			"radio",
+			"per",
+			"<br>",
+			"-->\n",
+			"css",
+			"input",
+			"nickname",
+			"date"
 		],
 		"highlight": true,
-		"in_selection": true,
+		"in_selection": false,
 		"preserve_case": false,
 		"regex": false,
 		"replace_history":
@@ -626,644 +286,14 @@
 	"groups":
 	[
 		{
-			"selected": 7,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "wp-content/themes/theoryserum/functions.php",
-					"settings":
-					{
-						"buffer_size": 2372,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								733,
-								733
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2.0,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5.0,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10.0,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 17.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "wp-content/themes/theoryserum/scss/_variables.scss",
-					"settings":
-					{
-						"buffer_size": 111,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								110,
-								110
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2.0,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5.0,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10.0,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "wp-content/themes/theoryserum/scss/style.scss",
-					"settings":
-					{
-						"buffer_size": 596,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								352,
-								352
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2.0,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5.0,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10.0,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "wp-content/themes/theoryserum/scss/_global.scss",
-					"settings":
-					{
-						"buffer_size": 1270,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								181,
-								187
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "wp-content/themes/theoryserum/header.php",
-					"settings":
-					{
-						"buffer_size": 3488,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "wp-content/themes/theoryserum/home.php",
-					"settings":
-					{
-						"buffer_size": 3654,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								104,
-								104
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "wp-content/themes/theoryserum/scss/_masthead.scss",
-					"settings":
-					{
-						"buffer_size": 4932,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "wp-content/themes/theoryserum2.0/scss/style.scss",
-					"settings":
-					{
-						"buffer_size": 646,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								177,
-								177
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2.0,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5.0,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10.0,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 34.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -1292,9 +322,14 @@
 		]
 	},
 	"menu_visible": true,
-	"replace":
+	"output.find_results":
 	{
 		"height": 0.0
+	},
+	"project": "theoryserum.sublime-project",
+	"replace":
+	{
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1303,516 +338,182 @@
 		"selected_items":
 		[
 			[
-				"style",
-				"wp-content/themes/theoryserum2.0/scss/style.scss"
+				"masthead",
+				"app/views/layouts/masthead.blade.php"
 			],
 			[
-				"masthea",
-				"wp-content/themes/theoryserum/scss/_masthead.scss"
+				"user",
+				"app/models/User.php"
 			],
 			[
-				"home",
-				"wp-content/themes/theoryserum/home.php"
+				"create",
+				"app/views/user/create.blade.php"
 			],
 			[
-				"glob",
-				"wp-content/themes/theoryserum/scss/_global.scss"
+				"writer",
+				"app/libraries/Writer.php"
 			],
 			[
-				"global",
-				"wp-content/themes/theoryserum/scss/_global.scss"
+				"route",
+				"app/routes.php"
 			],
 			[
-				"styl",
-				"wp-content/themes/theoryserum/scss/style.scss"
+				"writecon",
+				"app/controllers/WriteController.php"
 			],
 			[
-				"var",
-				"wp-content/themes/theoryserum/scss/_variables.scss"
+				"stor",
+				"app/views/stories.blade.php"
 			],
 			[
-				"varia",
-				"wp-content/themes/theoryserum/scss/_variables.scss"
-			],
-			[
-				"functi",
-				"wp-content/themes/theoryserum/functions.php"
-			],
-			[
-				"head",
-				"wp-content/themes/theoryserum/header.php"
-			],
-			[
-				"articl",
-				"wp-content/themes/theoryserum/scss/_articles.scss"
-			],
-			[
-				"globa",
-				"wp-content/themes/theoryserum/scss/_global.scss"
-			],
-			[
-				"function",
-				"wp-content/themes/theoryserum/functions.php"
-			],
-			[
-				"footer",
-				"wp-content/themes/theoryserum/footer.php"
-			],
-			[
-				"font",
-				"wp-content/themes/theoryserum/scss/_fonts.scss"
-			],
-			[
-				"sideb",
-				"wp-content/themes/theoryserum/sidebar.php"
-			],
-			[
-				"scss",
-				"wp-content/themes/theoryserum/scss/_global.scss"
-			],
-			[
-				"sidebarscs",
-				"wp-content/themes/theoryserum/scss/_sidebar.scss"
-			],
-			[
-				"sidebar",
-				"wp-content/themes/theoryserum/sidebar.php"
-			],
-			[
-				"index",
-				"wp-content/themes/theoryserum/index.php"
-			],
-			[
-				"templ",
-				"wp-content/themes/theoryserum/template-my-books.php"
-			],
-			[
-				"commentscs",
-				"wp-content/themes/theoryserum/scss/_comments.scss"
-			],
-			[
-				"book",
-				"wp-content/themes/theoryserum/template_temp_books.php"
-			],
-			[
-				"commenscss",
-				"wp-content/themes/theoryserum/scss/_comments.scss"
-			],
-			[
-				"comment",
-				"wp-content/themes/theoryserum/comments.php"
-			],
-			[
-				"mast",
-				"wp-content/themes/theoryserum/scss/_masthead.scss"
-			],
-			[
-				"footerscs",
-				"wp-content/themes/theoryserum/scss/_footer.scss"
-			],
-			[
-				"script",
-				"wp-content/themes/theoryserum/js/script.js"
-			],
-			[
-				"template",
-				"wp-content/themes/theoryserum/template-short-stories.php"
-			],
-			[
-				"",
-				"wp-content/themes/theoryserum/scss/_global.scss"
-			],
-			[
-				"article",
-				"wp-content/themes/theoryserum/scss/_articles.scss"
-			],
-			[
-				"single",
-				"wp-content/themes/theoryserum/scss/_single.scss"
-			],
-			[
-				"contac",
-				"wp-content/themes/theoryserum/scss/_contact.scss"
-			],
-			[
-				"ie8",
-				"wp-content/themes/theoryserum/ie8_styles.css"
-			],
-			[
-				"gamesscs",
-				"wp-content/themes/theoryserum/scss/_games.scss"
-			],
-			[
-				"storiescss",
-				"wp-content/themes/theoryserum/scss/_short_stories.scss"
-			],
-			[
-				"bookscss",
-				"wp-content/themes/theoryserum/scss/_books.scss"
-			],
-			[
-				"templatebook",
-				"wp-content/themes/theoryserum/template_temp_books.php"
-			],
-			[
-				"sty",
-				"wp-content/themes/theoryserum/scss/style.scss"
-			],
-			[
-				"inde",
-				"wp-content/themes/theoryserum/index.php"
-			],
-			[
-				"blog",
-				"wp-content/themes/theoryserum/scss/_blog.scss"
-			],
-			[
-				"header",
-				"wp-content/themes/theoryserum/header.php"
-			],
-			[
-				"contact",
-				"wp-content/themes/theoryserum/template_contact.php"
-			],
-			[
-				"commentscss",
-				"wp-content/themes/theoryserum/scss/_comments.scss"
-			],
-			[
-				"singl",
-				"wp-content/themes/theoryserum/single.php"
-			],
-			[
-				"scrip",
-				"wp-content/themes/theoryserum/js/script.js"
-			],
-			[
-				"funct",
-				"wp-includes/functions.php"
-			],
-			[
-				"stye",
-				"wp-content/themes/theoryserum/style.css"
-			],
-			[
-				"reset",
-				"wp-content/themes/theoryserum/scss/_reset.scss"
-			],
-			[
-				"side",
-				"wp-content/themes/theoryserum/scss/_sidebar.scss"
+				"story",
+				"app/models/Story.php"
 			],
 			[
 				"config",
 				"wp-config.php"
 			],
 			[
-				"tem",
-				"wp-content/themes/theoryserum/template-games.php"
+				"usercontr",
+				"app/controllers/UserController.php"
 			],
 			[
-				"stylescss",
-				"wp-content/themes/theoryserum/scss/style.scss"
+				"stori",
+				"app/controllers/StoriesController.php"
 			],
 			[
-				"artic",
-				"wp-content/themes/theoryserum/scss/_articles.scss"
+				"sto",
+				"app/views/stories.blade.php"
 			],
 			[
-				"heade",
-				"wp-content/themes/theoryserum/header.php"
+				"writecontro",
+				"app/controllers/WriteController.php"
+			],
+			[
+				"global",
+				"app/start/global.php"
+			],
+			[
+				"gitig",
+				".gitignore"
+			],
+			[
+				"composer",
+				"composer.json"
+			],
+			[
+				"thing",
+				"app/models/Thing.php"
+			],
+			[
+				"master",
+				"app/views/layouts/master.blade.php"
+			],
+			[
+				"setting",
+				"app/views/user/settings.blade.php"
+			],
+			[
+				"profil",
+				"app/views/user/profile.blade.php"
+			],
+			[
+				"stories",
+				"app/controllers/StoriesController.php"
+			],
+			[
+				"auth",
+				"app/config/auth.php"
+			],
+			[
+				"mast",
+				"app/views/layouts/masthead.blade.php"
 			],
 			[
 				"scri",
-				"wp-content/themes/theoryserum/js/script.js"
+				"public/assets/js/script.js"
 			],
 			[
-				"glo",
-				"wp-content/themes/theoryserum/scss/_global.scss"
+				"login",
+				"app/views/login.blade.php"
 			],
 			[
-				"templatecont",
-				"wp-content/themes/theoryserum/template_contact.php"
+				"validat",
+				"app/lang/en/validation.php"
 			],
 			[
-				"books",
-				"wp-content/themes/theoryserum/my-books-template.php"
+				"people",
+				"app/controllers/PeopleController.php"
 			],
 			[
-				"masthe",
-				"wp-content/themes/theoryserum/scss/_masthead.scss"
+				"perso",
+				"app/views/persons.blade.php"
 			],
 			[
-				"norma",
-				"wp-content/themes/theoryserum/normalize.css"
+				"person",
+				"app/models/Person.php"
 			],
 			[
-				"can",
-				"wp-content/themes/theoryserum/js/hexagon-canvas.js"
+				"sorta",
+				"app/views/layouts/sortable.blade.php"
 			],
 			[
-				"boxbl",
-				"wp-content/themes/theoryserum/js/BoxBlurFilter.js"
+				"datepic",
+				"public/assets/js/bootstrap-datepicker.js"
 			],
 			[
-				"ease",
-				"wp-content/themes/theoryserum/js/easeljs-0.6.1.min.js"
+				"head",
+				"app/views/layouts/head.blade.php"
 			],
 			[
-				"easel",
-				"wp-content/themes/theoryserum/js/easeljs-0.6.1.min.js"
+				"usercon",
+				"app/controllers/UserController.php"
 			],
 			[
-				"conf",
-				"wp-config-sample.php"
+				"home",
+				"app/views/home.blade.php"
 			],
 			[
-				"gener",
-				"application/js/generator.js"
+				"sess",
+				"app/controllers/SessionsController.php"
 			],
 			[
-				"auto",
-				"application/config/autoload.php"
+				"homecon",
+				"app/controllers/HomeController.php"
 			],
 			[
-				"creanew",
-				"application/controllers/create_newsletter.php"
-			],
-			[
-				"create",
-				"application/controllers/create_newsletter.php"
-			],
-			[
-				"generat",
-				"application/js/generator.js"
-			],
-			[
-				"templa",
-				"application/views/includes/template.php"
-			],
-			[
-				"newvi",
-				"application/views/newsletter_view.php"
-			],
-			[
-				"apoll",
-				"application/libraries/templates/newsletters/Apollo_express.php"
-			],
-			[
-				"homemod",
-				"application/models/home_model.php"
-			],
-			[
-				"homev",
-				"application/views/home_view.php"
-			],
-			[
-				"hom",
-				"application/controllers/home.php"
-			],
-			[
-				"upload",
-				"application/views/upload-ft-image.php"
-			],
-			[
-				"css",
-				"application/css/style.css"
-			],
-			[
-				"prevscss",
-				"application/css/scss/_preview.scss"
-			],
-			[
-				"expres",
-				"application/libraries/templates/newsletters/Apollo_express.php"
-			],
-			[
-				"theloc",
-				"application/libraries/templates/newsletters/The_local.php"
-			],
-			[
-				"generjs",
-				"application/js/generator.js"
-			],
-			[
-				"local",
-				"application/libraries/templates/newsletters/Phoenix_local.php"
-			],
-			[
-				"homevi",
-				"application/views/home_view.php"
-			],
-			[
-				"databas",
-				"application/config/database.php"
-			],
-			[
-				"apollo",
-				"application/libraries/templates/newsletters/Apollo_express.php"
-			],
-			[
-				"view",
-				"application/views/newsletter_view.php"
-			],
-			[
-				"htacc",
-				"application/.htaccess"
-			],
-			[
-				"prev",
-				"application/css/scss/_preview.scss"
-			],
-			[
-				"prevscs",
-				"application/css/scss/_preview.scss"
-			],
-			[
-				"phoenixlo",
-				"application/libraries/templates/newsletters/Phoenix_local.php"
-			],
-			[
-				"previscs",
-				"application/css/scss/_preview.scss"
-			],
-			[
-				"generscss",
-				"application/css/scss/_generator.scss"
-			],
-			[
-				"preview",
-				"application/css/scss/_preview.scss"
-			],
-			[
-				"uploaded",
-				"application/views/uploaded-banner-image.php"
-			],
-			[
-				"generscs",
-				"application/css/scss/_generator.scss"
-			],
-			[
-				"previ",
-				"application/css/scss/_preview.scss"
-			],
-			[
-				"genera",
-				"application/css/scss/_generator.scss"
-			],
-			[
-				"genert",
-				"application/controllers/generator.php"
-			],
-			[
-				"hea",
-				"application/views/includes/header.php"
-			],
-			[
-				"jquer",
-				"application/js/jquery-tinymce.js"
-			],
-			[
-				"genercss",
-				"application/css/scss/_generator.scss"
-			],
-			[
-				"uplo",
-				"application/controllers/uploaded-image.php"
-			],
-			[
-				"gen",
-				"application/css/scss/_generator.scss"
-			],
-			[
-				"con",
-				"application/config/config.php"
-			],
-			[
-				"s3",
-				"application/config/s3.php"
-			],
-			[
-				"foot",
-				"application/views/includes/footer.php"
-			],
-			[
-				"vari",
-				"application/css/scss/_variables.scss"
-			],
-			[
-				"variab",
-				"application/css/scss/_variables.scss"
-			],
-			[
-				"homevie",
-				"application/views/home_view.php"
-			],
-			[
-				"apolloex",
-				"application/libraries/templates/newsletters/Apollo_express.php"
-			],
-			[
-				"newsletvi",
-				"application/views/newsletter_view.php"
-			],
-			[
-				"slider",
-				"wp-content/themes/beardedchildren/sidebar-bc-slider.php"
-			],
-			[
-				"bcslid",
-				"wp-content/themes/beardedchildren/js/bc-slider.js"
-			],
-			[
-				"front",
-				"wp-content/themes/beardedchildren/front-page.php"
-			],
-			[
-				"bcvid",
-				"wp-content/themes/beardedchildren/bc-video-archive.php"
-			],
-			[
-				"newl",
-				"application/views/newsletter_view.php"
-			],
-			[
-				"calend",
-				"system/libraries/Calendar.php"
-			],
-			[
-				"aes",
-				"application/libraries/templates/newsletters/Aes.php"
-			],
-			[
-				"confi",
-				"application/config/config.php"
-			],
-			[
-				"style.css",
-				"application/css/style.css"
-			],
-			[
-				"model",
-				"application/models/home_model.php"
-			],
-			[
-				"home_mode",
-				"application/models/home_model.php"
+				"start",
+				"vendor/laravel/framework/src/Illuminate/Foundation/start.php"
 			]
 		],
 		"width": 0.0
 	},
 	"select_project":
 	{
-		"height": 500.0,
+		"height": 0.0,
 		"selected_items":
 		[
 		],
-		"width": 380.0
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
 	},
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 217.0,
-	"status_bar_visible": true
+	"side_bar_visible": true,
+	"side_bar_width": 387.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }
